@@ -72,8 +72,8 @@ export function Empresa() {
               className="relative h-[500px] rounded-sm overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1974&auto=format&fit=crop"
-                alt="Soldadura Profesional"
+                src="/nave-equinox.jpg.png"
+                alt="Nave de Equinox Industrial Systems"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />

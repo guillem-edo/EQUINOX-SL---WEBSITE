@@ -110,7 +110,7 @@ export function Servicios() {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Services Grid - Technical Layout */}
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -121,26 +121,66 @@ export function Servicios() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-white rounded-sm shadow-lg overflow-hidden group flex flex-col h-full"
+                className="bg-white p-10 shadow-lg border-t-4 border-brand-steel hover:border-brand-accent transition-all group flex flex-col h-full rounded-sm"
               >
-                <div className="h-48 overflow-hidden relative">
-                  <img
-                    src={service.img}
-                    alt={service.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors duration-500"></div>
-                </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <div className="text-brand-accent mb-4">
+                <div className="flex justify-between items-start mb-8">
+                  <div className="text-brand-accent bg-brand-accent/5 p-4 rounded-sm group-hover:bg-brand-accent group-hover:text-white transition-colors">
                     {service.icon}
                   </div>
-                  <h3 className="text-2xl font-bold text-brand-dark mb-4">{service.title}</h3>
-                  <p className="text-brand-steel leading-relaxed mb-8 flex-grow">
-                    {service.desc}
-                  </p>
+                  <span className="text-brand-dark/5 font-display font-black text-4xl group-hover:text-brand-accent/10 transition-colors">0{i + 1}</span>
                 </div>
+                
+                <h3 className="text-2xl font-bold text-brand-dark mb-6 uppercase tracking-tight">{service.title}</h3>
+                <p className="text-brand-steel leading-relaxed mb-8 flex-grow">
+                  {service.desc}
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="text-[10px] font-bold uppercase tracking-widest text-brand-accent border-b border-brand-accent/20 pb-2 mb-4">Capacidades Técnicas</div>
+                  <ul className="space-y-3">
+                    {service.id === 'depositos' && ['Diseño ASME VIII Div.1 / EN-13445', 'Cálculo de espesores y soportes', 'Legalización y Marcado CE'].map((b, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
+                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
+                        {b}
+                      </li>
+                    ))}
+                    {service.id === 'medida' && ['Tolvas, Reactores y Ciclones', 'Aleaciones: Hastelloy, Duplex', 'Piezas especiales bajo plano'].map((b, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
+                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
+                        {b}
+                      </li>
+                    ))}
+                    {service.id === 'skids' && ['Sistemas modulares Plug & Play', 'Integración de bombas y válvulas', 'Pruebas FAT y SAT en taller'].map((b, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
+                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
+                        {b}
+                      </li>
+                    ))}
+                    {service.id === 'soldadura' && ['Homologaciones TIG / MIG-MAG', 'Ensayos No Destructivos (RX/LP)', 'Soldadura de alta responsabilidad'].map((b, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
+                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
+                        {b}
+                      </li>
+                    ))}
+                    {service.id === 'tuberia' && ['Soldadura orbital automática', 'Líneas de proceso higiénicas', 'Purga de gas inerte'].map((b, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
+                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
+                        {b}
+                      </li>
+                    ))}
+                    {service.id === 'montaje' && ['Montaje mecánico en planta', 'Mantenimiento preventivo/correctivo', 'Paradas técnicas programadas'].map((b, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
+                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <Link to="/contacto" className="mt-auto inline-flex items-center gap-3 text-brand-dark font-bold uppercase tracking-widest hover:text-brand-accent transition-colors group/link text-xs">
+                  Consultar Servicio
+                  <ArrowRight size={16} className="group-hover/link:translate-x-2 transition-transform" />
+                </Link>
               </motion.div>
             ))}
           </div>
