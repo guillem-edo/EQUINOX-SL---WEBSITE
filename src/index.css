@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  
+  --color-brand-dark: #1B365D;
+  --color-brand-accent: #E67E22;
+  --color-brand-steel: #4A4E51;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-brand-steel bg-white antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold text-brand-dark;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
+}
+
+.industrial-gradient {
+  background: linear-gradient(135deg, #1B365D 0%, #4A4E51 100%);
+}
