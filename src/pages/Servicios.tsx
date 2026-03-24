@@ -12,42 +12,42 @@ export function Servicios() {
       icon: <Droplets size={32} />,
       title: t('servicios.list.dep.title'),
       desc: t('servicios.list.dep.desc'),
-      img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1584263347416-85a18a482d99?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 'medida',
       icon: <Shield size={32} />,
       title: t('servicios.list.medida.title'),
       desc: t('servicios.list.medida.desc'),
-      img: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1974&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1565439390118-bbf3252f238f?q=80&w=2069&auto=format&fit=crop'
     },
     {
       id: 'skids',
       icon: <Box size={32} />,
       title: t('servicios.list.skids.title'),
       desc: t('servicios.list.skids.desc'),
-      img: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2069&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 'soldadura',
       icon: <Settings size={32} />,
       title: t('servicios.list.sold.title'),
       desc: t('servicios.list.sold.desc'),
-      img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1974&auto=format&fit=crop'
     },
     {
       id: 'tuberia',
       icon: <Activity size={32} />,
       title: t('servicios.list.tub.title'),
       desc: t('servicios.list.tub.desc'),
-      img: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 'montaje',
       icon: <Wrench size={32} />,
       title: t('servicios.list.mont.title'),
       desc: t('servicios.list.mont.desc'),
-      img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2070&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ec3?q=80&w=2070&auto=format&fit=crop'
     }
   ];
 
@@ -143,16 +143,6 @@ export function Servicios() {
                 </div>
               </motion.div>
             ))}
-          </div>
-
-          <div className="mt-16 text-center">
-            <Link
-              to="/contacto#presupuesto"
-              className="inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-brand-accent/90 text-white px-10 py-5 rounded-sm text-lg font-bold uppercase tracking-widest transition-all shadow-xl"
-            >
-              {t('common.solicitarPresupuesto')}
-              <ArrowRight size={20} />
-            </Link>
           </div>
         </div>
       </section>

@@ -67,9 +67,10 @@ export function Sectores() {
     {
       id: 'petroquimica',
       title: t('sectores.list.petro.title'),
+      handle: 'petroquimica',
       icon: <Fuel size={32} />,
       desc: t('sectores.list.petro.desc'),
-      img: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070&auto=format&fit=crop',
+      img: 'https://images.unsplash.com/photo-1529939440282-72971f486e91?q=80&w=2070&auto=format&fit=crop',
       projects: []
     },
     {
@@ -77,7 +78,7 @@ export function Sectores() {
       title: t('sectores.list.asfalto.title'),
       icon: <Droplet size={32} />,
       desc: t('sectores.list.asfalto.desc'),
-      img: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2069&auto=format&fit=crop',
+      img: 'https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?q=80&w=2070&auto=format&fit=crop',
       projects: []
     },
     {
@@ -96,7 +97,7 @@ export function Sectores() {
     <div className="flex flex-col pt-20">
       {/* Header */}
       <section className="bg-brand-dark py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity"></div>
+        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1581094751594-f3d8901f3f71?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity"></div>
         <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-display font-extrabold text-white mb-6">
             {t('sectores.heroTitle')}
@@ -108,75 +109,60 @@ export function Sectores() {
       </section>
 
       {/* Sectors Grid */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
             {sectors.map((sector, i) => (
               <motion.div
                 key={sector.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-white rounded-sm shadow-lg overflow-hidden group flex flex-col h-full border-t-4 border-transparent hover:border-brand-accent transition-all duration-300"
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="flex flex-col group"
               >
-                <div className="h-48 overflow-hidden relative">
-                  <img
-                    src={sector.img}
-                    alt={sector.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-brand-dark/40 group-hover:bg-brand-dark/20 transition-colors duration-500"></div>
-                  <div className="absolute bottom-4 left-4 bg-white p-3 rounded-sm shadow-lg text-brand-accent transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 bg-gray-50 flex items-center justify-center rounded-sm text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-all duration-300 shadow-sm">
                     {sector.icon}
                   </div>
+                  <h3 className="text-2xl font-display font-bold text-brand-dark border-b-2 border-transparent group-hover:border-brand-accent transition-all pb-1">
+                    {sector.title}
+                  </h3>
                 </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <h3 className="text-2xl font-bold text-brand-dark mb-4">{sector.title}</h3>
-                  <p className="text-brand-steel leading-relaxed mb-8 flex-grow">
-                    {sector.desc}
-                  </p>
+                
+                <p className="text-brand-steel leading-relaxed mb-6 text-sm">
+                  {sector.desc}
+                </p>
+                
+                <div className="mt-auto">
+                  <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-dark/40 mb-4 flex items-center gap-2">
+                    <span className="w-4 h-[1px] bg-brand-accent"></span>
+                    {sector.projects && sector.projects.length > 0 ? t('sectores.proyectosDestacados') : 'Aplicaciones'}
+                  </h4>
                   
-                  {sector.projects && sector.projects.length > 0 && (
-                    <div className="mt-auto pt-6 border-t border-gray-100">
-                      <h4 className="text-xs font-bold uppercase tracking-widest text-brand-dark mb-4">{t('sectores.proyectosDestacados')}</h4>
-                      <ul className="space-y-3">
-                        {sector.projects.map(p => (
-                          <li key={p.id} className="text-sm text-brand-steel flex items-start gap-2">
-                            <span className="text-brand-accent mt-1 text-lg leading-none">•</span>
-                            <div className="flex flex-col">
-                              <span className="font-semibold text-brand-dark">{p.title}</span>
-                              <span className="text-xs opacity-80 mt-0.5">{t('sectores.cliente')}: {p.client}</span>
-                            </div>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
+                  <ul className="space-y-3">
+                    {sector.projects && sector.projects.length > 0 ? (
+                      sector.projects.map(p => (
+                        <li key={p.id} className="flex items-start gap-3 group/item">
+                          <div className="w-1.5 h-1.5 rounded-full bg-brand-accent mt-1.5 shrink-0 group-hover/item:scale-125 transition-transform"></div>
+                          <div className="flex flex-col">
+                            <span className="text-sm font-semibold text-brand-dark leading-tight">{p.title}</span>
+                            <span className="text-[11px] text-brand-steel opacity-70">{p.client}</span>
+                          </div>
+                        </li>
+                      ))
+                    ) : (
+                      // Fallback bullets if no projects are defined
+                      <li className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-brand-accent mt-1.5 shrink-0"></div>
+                        <span className="text-sm text-brand-steel">Equipos de proceso a medida</span>
+                      </li>
+                    )}
+                  </ul>
                 </div>
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-white border-t border-gray-200">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-6">
-            {t('sectores.ctaTitle')}
-          </h2>
-          <p className="text-xl text-brand-steel mb-10 max-w-2xl mx-auto">
-            {t('sectores.ctaDesc')}
-          </p>
-          <Link
-            to="/contacto"
-            className="inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-brand-accent/90 text-white px-10 py-5 rounded-sm text-lg font-bold uppercase tracking-widest transition-all shadow-xl"
-          >
-            {t('common.consultanos')}
-            <ArrowRight size={20} />
-          </Link>
         </div>
       </section>
     </div>
