@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "inicio": "Startseite",
+    "empresa": "Unternehmen",
+    "servicios": "Dienstleistungen",
+    "sectores": "Sektoren",
+    "contacto": "Kontakt",
+    "presupuesto": "Angebot"
+  },
+  "common": {
+    "saberMas": "Mehr erfahren",
+    "verTodos": "Alle Sektoren ansehen",
+    "solicitarPresupuesto": "Angebot anfordern",
+    "hablarTecnico": "Mit einem Techniker sprechen",
+    "scroll": "Scrollen",
+    "verServicios": "Alle Dienstleistungen ansehen",
+    "consultanos": "Konsultieren Sie Ihr Projekt"
+  },
+  "home": {
+    "heroLabel": "Präzisionskesselbau",
+    "heroTitle": "Industrieller Kesselbau und Prozessausrüstung",
+    "heroSubtitle": "Seit über 30 Jahren verwandeln wir Ideen in solide Lösungen. Experten für Edelstahl, Kohlenstoffstahl und Speziallegierungen für die anspruchsvollsten Sektoren.",
+    "heroCta": "Angebot anfordern",
+    "heroSecondary": "Sektoren ansehen",
+    "sectoresLabel": "Sektoren",
+    "sectoresTitle": "Anwendungssektoren",
+    "sectoresDesc": "Unsere technische Expertise ermöglicht es uns, uns an die Vorschriften und Anforderungen der strengsten Industrien anzupassen.",
+    "sectoresLink": "Alle Sektoren ansehen",
+    "sectores": {
+      "farma": { "name": "Pharma & Kosmetik", "desc": "Sanitäre Oberflächen und Spiegelpolitur nach FDA- und GMP-Vorschriften." },
+      "alim": { "name": "Lebensmittel", "desc": "Hygienisches Design zur Vermeidung von Kreuzkontaminationen und zur Erleichterung der CIP-Reinigung." },
+      "quim": { "name": "Chemie & Petrochemie", "desc": "Ausrüstung aus Speziallegierungen für korrosive Prozesse und Hochdruck." }
+    },
+    "features": {
+      "diseno": { "title": "Design und Berechnung", "desc": "Detail-Engineering und Ausrüstungsberechnung nach internationalen Standards (ASME, EN-13445, TEMA, AD-Merkblätter)." },
+      "servicio": { "title": "Umfassender Service", "desc": "Von der Fertigung bis zur Installation, Wartung und Legalisierung der Ausrüstung in Ihrem Werk." },
+      "materiales": { "title": "Fortschrittliche Materialien", "desc": "Experten für Edelstahl, Kohlenstoffstahl und Speziallegierungen wie Hastelloy und Duplex." }
+    },
+    "serviciosLabel": "Unsere Fähigkeiten",
+    "serviciosTitle": "Kesselbaulösungen für die moderne Industrie",
+    "serviciosLink": "Alle Dienstleistungen ansehen",
+    "serviciosList": {
+      "dep": { "title": "Tanks und Behälter", "desc": "Herstellung von Druckbehältern und Lagertanks mit sanitären Oberflächen." },
+      "skid": { "title": "Industrielle Skids", "desc": "Modulare Baugruppen, die sofort in Ihre Prozesslinie integriert werden können." },
+      "sold": { "title": "WIG/MIG-Schweißen", "desc": "Spezialisten für hochpräzises Schweißen von Edelstahl und Legierungen." },
+      "mont": { "title": "Anlagenmontage", "desc": "Direkte Installation und vorbeugende Wartung in Ihren Einrichtungen." }
+    },
+    "saberMas": "Mehr erfahren",
+    "ctaTitle": "Haben Sie ein technisches Kesselbauprojekt?",
+    "ctaDesc": "Unser Engineering-Team analysiert Ihre Pläne und bietet Ihnen die effizienteste Edelstahllösung.",
+    "ctaPrimary": "Angebot anfordern",
+    "ctaSecondary": "Mit einem Techniker sprechen"
+  },
+  "empresa": {
+    "heroTitle": "Wir verwandeln Ideen seit 1990 in solide Lösungen",
+    "heroSubtitle": "Über Uns",
+    "heroDesc": "Mit über 30 Jahren Erfahrung ist EQUINOX S.L. auf industriellen Kesselbau und die Herstellung von Prozessausrüstung für die anspruchsvollsten Sektoren spezialisiert und garantiert Qualität, Präzision und Zuverlässigkeit.",
+    "compromisoTitle": "Unser Engagement für Exzellenz",
+    "compromisoDesc1": "Bei EQUINOX stellen wir nicht nur Ausrüstung her; wir bauen Vertrauen auf. Wir verstehen, dass in Sektoren wie Pharma oder Lebensmittel eine unvollkommene Oberfläche oder eine poröse Schweißnaht millionenschwere Produktionsstopps bedeuten kann.",
+    "compromisoDesc2": "Wir bieten einen umfassenden Service: Konstruktion und Berechnung nach internationalen Standards, Fertigung, Installation, Wartung und Legalisierung von Ausrüstungen. Wir arbeiten mit Edelstahl, Kohlenstoffstahl und Speziallegierungen.",
+    "compromisoList": [
+      "Konstruktion und Berechnung von Ausrüstungen (ASME, EN-13445, TEMA, AD-Merkblätter)",
+      "Edelstahl, Kohlenstoffstahl und Speziallegierungen (Hastelloy, Duplex)",
+      "Zertifiziertes Schweißen (WIG, MIG-MAG, SMAW)",
+      "Umfassender Service: Fertigung, Installation, Wartung und Legalisierung"
+    ],
+    "calidadTitle": "Zertifizierte Qualität",
+    "calidadDesc": "ISO 9001 & WPS/PQR",
+    "capacidadTitle": "Installierte Kapazität",
+    "capacidadDesc": "Wir verfügen über voll ausgestattete Einrichtungen und Spezialmaschinen, um umfassende Projekte im Kesselbau und in der Herstellung von Prozessausrüstungen in Angriff zu nehmen.",
+    "capacidadList": {
+      "inst": { "title": "Einrichtungen", "items": ["Über 700 m² Gesamtfläche", "100 m² für die Teilebearbeitung", "200 m² Außenhof für Lagerung und Tests", "2 Laufkräne für 6 Tn"] },
+      "maq": { "title": "Maschinen", "items": ["2 Zylinder, 1 Schere und 1 Abkantpresse", "1 Stanzmaschine und 1 Radialbohrmaschine", "1 Fräsmaschine und 1 mittlere konventionelle Drehmaschine", "Band-, Hub-, Reib- und Schleifsägen", "1 automatische Schneideanlage und 3 Plasmaschneider", "3 Paar unabhängige Rotatoren und 4 manuelle"] },
+      "sold": { "title": "Schweißen", "items": ["6 WIG-Maschinen (H.F. und P.A.)", "6 MIG-MAG-Maschinen", "5 Elektrodenmaschinen (SMAW)", "Werkzeuge zur Atmosphäreninertisierung", "2 Paar unabhängige Rotatoren", "1 Positionierer und 1 Rotatorzug"] }
+    },
+    "materialesTitle": "Materialien und Oberflächen",
+    "materialesDesc": "Wir fertigen unsere Produkte aus allen Arten von Metallen und wenden die anspruchsvollsten Oberflächenbehandlungen der Branche an.",
+    "materialesSub1": "Fertigungsmaterialien",
+    "materialesList": [
+      { "name": "Edelstähle", "desc": "Austenitisch (AISI-304.L, 316.L, 904.L) für Prozesse. Martensitisch (AISI-410, 420) für Hyper-Abschrecken." },
+      { "name": "Feuerfeste Stähle", "desc": "Für Öfen oder Teile bei hohen Temperaturen (AISI-309 und 310)." },
+      { "name": "Speziallegierungen", "desc": "Hohe Korrosion und Temperatur: Nickel (Alloy B2, C276, 800), Titan, Duplex." },
+      { "name": "Kohlenstoffstähle", "desc": "Für allgemeinen Kesselbau (S275JR, S355J2G3, P265GH, P295GH)." },
+      { "name": "Verschleißfeste Stähle", "desc": "Verwendet für hohe Verschleißfestigkeit." },
+      { "name": "Andere Metalle", "desc": "Messing, Kupfer und Aluminium für Schutzvorrichtungen oder spezifische Teile." }
+    ],
+    "acabadosSub2": "Behandlungen und Oberflächen",
+    "acabadosList": {
+      "inox": { "title": "In Edelstahl", "items": ["Beizen", "Passivieren", "Mattes und glänzendes industrielles Polieren", "Spiegelpolieren", "Elektropolieren", "Äußeres Sandstrahlen", "Teflonbeschichtungen"] },
+      "carb": { "title": "In Kohlenstoffstahl", "items": ["Epoxid-Grundierung", "Deckanstrich", "Stabilisierungen", "Feuerverzinken", "Elektrolytische Verzinkung", "Ebonitbeschichtung", "Teflonbeschichtungen", "Sandstrahlen"] }
+    }
+  },
+  "servicios": {
+    "heroTitle": "Unsere Dienstleistungen",
+    "heroDesc": "Umfassende Lösungen im Edelstahl-Kesselbau: vom Detail-Engineering bis zur Endmontage in Ihren Einrichtungen.",
+    "list": {
+      "dep": { "title": "Druckbehälter und Ausrüstung", "desc": "Konstruktion, Berechnung (ASME, EN-13445, TEMA) und Bau von Prozessausrüstung und Druckbehältern mit entsprechender Legalisierung." },
+      "medida": { "title": "Industrieller Kesselbau", "desc": "Herstellung von Trichtern, Reaktoren, Zyklonen und Spezialteilen. Wir verarbeiten Edelstahl, Kohlenstoffstahl und Speziallegierungen (Hastelloy, Duplex)." },
+      "skids": { "title": "Skids und industrielle Baugruppen", "desc": "\"Plug & Play\"-Modulstrukturen, die Pumpen, Ventile, Wärmetauscher und Rohrleitungen integrieren und sofort in Ihre Prozesslinie eingebunden werden können." },
+      "sold": { "title": "Zertifiziertes Schweißen", "desc": "Spezialisten für WIG-, MIG-MAG- und SMAW-Schweißen. Zertifizierte Schweißer für hochverantwortliche Verbindungen und umfassende Qualitätskontrolle." },
+      "tub": { "title": "Rohrleitungsbau und industrielle Verrohrung", "desc": "Installation von Prozesslinien. Orbital- und Handschweißen mit Gasspülung zur Gewährleistung maximaler Hygiene in Pharma- und Lebensmittelsektoren." },
+      "mont": { "title": "Installation und Wartung", "desc": "Umfassender Anlagenservice: Installation neuer Ausrüstung, Legalisierung, Wartungsstillstände und Nachrüstung bestehender Linien." }
+    },
+    "catalogTitle": "Fertigungs- und Dienstleistungskatalog",
+    "catalogDesc": "Umfassende Details unserer Fertigungskapazitäten, Prozessausrüstung und spezialisierten Dienstleistungen für die Industrie.",
+    "catalog": {
+      "react": { "title": "Reaktoren", "items": ["Mit Halbrohrschlange", "Mit Doppelmantel", "Mit Innenschlange", "Für hohe Temperaturen und Druck", "Hydrierer", "Kristallisatoren", "Mischer und Verdünner", "Fermenter"] },
+      "agit": { "title": "Rührwerke", "items": ["Hochleistungspropeller", "Marine- und Gamma-Propeller", "Doppelstrompropeller", "Axial- und Radialturbine", "Sägezahnscheibe", "Anker", "Doppelanker und Blatt", "Wendelband"] },
+      "inter": { "title": "Wärmetauscher", "items": ["Rohrbündel", "Mit Schlange", "Ein- und mehrgängig", "Rohrbündelverdampfer", "Rohrkondensatoren"] },
+      "dep": { "title": "Tanks", "desc": "Wir bauen Tanks jeder Größe und Qualität nach Kundenwunsch.", "items": ["Lagerung", "Heizung", "Steril", "Für Hochdruck", "Isoliert"] },
+      "aux": { "title": "Zusatzelemente", "items": ["Öfen: Vakuum, atmosphärisch, Durchlaufrollen, Luft, elektrisch, mit Dampf und Thermoöl", "Filter: Korb, mit verschiedenen Sieben und Platte", "Schlangen: jeder Form, Kühlung, Heizung und für Mischungen", "Spezialmischer: für hochviskose Pasten, für Feststoffe, Taumel- und Durchlaufmischer", "Kompaktanlagen: Heizung, Kühlung, Sammlung und Behandlung"] },
+      "cald": { "title": "Allgemeiner Kesselbau", "items": ["Lagertrichter und Wannen", "Spezialschieberventile", "Strukturen und Elemente für die Umwelt", "Schnecken und Siebe", "Förderbänder und Behälter"] },
+      "serv": { "title": "Spezielle Dienstleistungen", "items": ["Transport (national und international)", "Spezialtransport und Kräne", "Engineering-Projekte und Legalisierungen", "Regelmäßige Prüfungen (wir haben gesetzliche Genehmigungen)"] },
+      "inst": { "title": "Installationen", "desc": "Wir verfügen über Nachweise als Installateure.", "items": ["Prozessrohrleitungen, Dienstleistungen, Dampf, Thermoöl", "Wassernetze und Gasrohrleitungen", "Ausrüstungsmontage und Metallstrukturen", "Stundenarbeiten und Wartung"] }
+    }
+  },
+  "sectores": {
+    "heroTitle": "Anwendungssektoren und Projekte",
+    "heroDesc": "Unsere technische Expertise und Anpassungsfähigkeit ermöglichen es uns, die Vorschriften und Anforderungen der strengsten Industriesektoren zu erfüllen.",
+    "list": {
+      "farma": { "title": "Pharmazeutische Labore", "desc": "Ausrüstung mit sanitären Oberflächen, Spiegelpolitur und Orbitalschweißungen, die die strengsten Vorschriften (FDA, GMP) erfüllen, um maximale Sterilität und Rückverfolgbarkeit zu gewährleisten." },
+      "alim": { "title": "Lebensmittel", "desc": "Edelstahllösungen, die entwickelt wurden, um Kreuzkontaminationen zu vermeiden und die CIP/SIP-Reinigung in der Milch-, Getränke- und Lebensmittelverarbeitung zu erleichtern." },
+      "cosm": { "title": "Kosmetik und Verwandte", "desc": "Hochpräzise Reaktoren und Mischer für Emulsionen und Cremes, die Homogenität und exakte Temperaturkontrolle während des gesamten Herstellungsprozesses gewährleisten." },
+      "quimf": { "title": "Fein- und Synthesechemie", "desc": "Ausrüstung aus Speziallegierungen (Hastelloy, Duplex), die hochkorrosiven Prozessen und extremen Druck- und Temperaturbedingungen standhalten kann." },
+      "quim": { "title": "Chemie", "desc": "Schwerer Kesselbau und robuste Prozessausrüstung für die allgemeine chemische Industrie, einschließlich Wärmetauscher, Kolonnen und große Lagertanks." },
+      "pint": { "title": "Farben und Lacke", "desc": "Spezialisierte Rührsysteme, Dispergierer und ATEX-Reaktoren, die speziell für den sicheren Umgang mit Lösungsmitteln und brennbaren Produkten entwickelt wurden." },
+      "petro": { "title": "Petrochemie", "desc": "Bau von Druckbehältern, Rohrbündelwärmetauschern und Prozessrohrleitungen nach ASME-Code für die anspruchsvollen Bedingungen des petrochemischen Sektors." },
+      "asfalto": { "title": "Asphalt und Derivate", "desc": "Isolierte Tanks, Thermoöl-Heizsysteme und robuste Rührwerke für die Wartung und Verarbeitung von bituminösen Produkten." },
+      "medio": { "title": "Umwelt", "desc": "Ausrüstung für Wasseraufbereitungsanlagen (Kläranlagen), Dekanter, Filter und Strukturen für die Abfallwirtschaft und Emissionskontrolle." }
+    },
+    "proyectosDestacados": "Ausgewählte Projekte",
+    "cliente": "Kunde",
+    "ctaTitle": "Ist Ihr Sektor nicht auf der Liste?",
+    "ctaDesc": "Unsere maßgeschneiderte Fertigungskapazität ermöglicht es uns, uns an die spezifischen Bedürfnisse jeder Industrie anzupassen."
+  },
+  "contacto": {
+    "heroTitle": "Kontakt",
+    "heroDesc": "Wir stehen Ihnen zur Verfügung, um Fragen zu beantworten oder Ihr Projekt zu prüfen.",
+    "infoTitle": "Kontaktinformationen",
+    "inst": "Einrichtungen",
+    "tel": "Telefone",
+    "oficina": "Zentrale",
+    "dptoTec": "Technische Abt.",
+    "emails": "E-Mails",
+    "infoGen": "Allgemeine Informationen",
+    "proyectos": "Projekte und Angebote",
+    "horario": "Öffnungszeiten und Notfälle",
+    "lunesJueves": "Montag - Donnerstag",
+    "viernes": "Freitag",
+    "urgencias": "24/7 Anlagen-Notfälle",
+    "llamar": "Notruf anrufen",
+    "formTitle": "Angebot anfordern",
+    "formDesc": "Teilen Sie uns die Details Ihres Projekts mit und unser Engineering-Team wird sich innerhalb von 48 Stunden mit Ihnen in Verbindung setzen.",
+    "successTitle": "Anfrage erhalten",
+    "successDesc": "Wir haben die Details Ihres Projekts erhalten. Unser technisches Team wird sie analysieren und sich so schnell wie möglich mit Ihnen in Verbindung setzen.",
+    "detallesProyecto": "Projektdetails",
+    "nombre": "Vor- und Nachname *",
+    "empresa": "Unternehmen *",
+    "email": "Firmen-E-Mail *",
+    "telefono": "Telefon",
+    "tipoProyecto": "Projekttyp *",
+    "seleccione": "Wählen Sie eine Option...",
+    "opciones": {
+      "dep": "Tanks und Behälter",
+      "skid": "Industrielle Skids",
+      "tub": "Rohrleitungsinstallation",
+      "cald": "Maßgeschneiderter Kesselbau",
+      "mont": "Montage / Wartung",
+      "otros": "Andere"
+    },
+    "material": "Benötigtes Material",
+    "matOpciones": {
+      "aisi304": "Edelstahl AISI 304",
+      "aisi316": "Edelstahl AISI 316L",
+      "carbono": "Kohlenstoffstahl",
+      "aleaciones": "Speziallegierungen (Duplex, Hastelloy...)",
+      "asesoramiento": "Ich benötige technische Beratung"
+    },
+    "descTecnica": "Technische Beschreibung *",
+    "descPlaceholder": "Beschreiben Sie die Anforderungen Ihres Projekts (Kapazität, Druck, Temperatur, anwendbare Vorschriften...)",
+    "adjuntar": "Pläne oder Spezifikationen anhängen",
+    "adjuntarDesc": "Klicken Sie zum Hochladen oder ziehen Sie Ihre Dateien hierher",
+    "maxSize": "Maximale Größe: 20MB",
+    "privacidad1": "Ich habe die ",
+    "privacidadLink": "Datenschutzrichtlinie",
+    "privacidad2": " gelesen und akzeptiert und stimme der Verarbeitung meiner Daten zur Verwaltung dieses Angebots zu.",
+    "enviar": "Anfrage senden"
+  },
+  "footer": {
+    "desc": "Mit über 30 Jahren Erfahrung, Spezialisten für industriellen Kesselbau und die Herstellung von Prozessausrüstung aus Edelstahl, Kohlenstoffstahl und Speziallegierungen.",
+    "empresa": "Unternehmen",
+    "links": {
+      "inicio": "Startseite",
+      "quienesSomos": "Über Uns",
+      "servicios": "Dienstleistungen",
+      "sectores": "Sektoren",
+      "contacto": "Kontakt"
+    },
+    "servicios": "Dienstleistungen",
+    "serviciosList": {
+      "caldereria": "Maßgeschneiderter Kesselbau",
+      "depositos": "Tanks und Behälter",
+      "soldadura": "WIG/MIG-Schweißen",
+      "skids": "Industrielle Skids",
+      "montaje": "Anlagenmontage"
+    },
+    "contacto": "Kontakt",
+    "copyright": "© 2026 EQUINOX Equipos Inoxidables SL. Alle Rechte vorbehalten.",
+    "legal": "Rechtlicher Hinweis",
+    "privacidad": "Datenschutz",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "aviso": {
+      "title": "Rechtlicher Hinweis",
+      "intro": "In Übereinstimmung mit Artikel 10 des Gesetzes 34/2002 vom 11. Juli über Dienste der Informationsgesellschaft und den elektronischen Geschäftsverkehr (LSSICE) werden die Identifikationsdaten des Unternehmens dargelegt.",
+      "datos": "Identifikationsdaten",
+      "empresa": "Firmenname: EQUINOX Equipos Inoxidables SL",
+      "nif": "USt-IdNr.: B00000000",
+      "domicilio": "Adresse: Gewerbegebiet, Hauptstraße 123, 08000 Barcelona",
+      "email": "E-Mail: info@equinox.es",
+      "tel": "Telefon: +34 900 000 000",
+      "registro": "Registerdaten: Handelsregister von Barcelona, Band X, Folio Y, Blatt Z."
+    },
+    "privacidad": {
+      "title": "Datenschutzerklärung",
+      "intro": "EQUINOX Equipos Inoxidables SL informiert die Nutzer der Website über seine Politik bezüglich der Verarbeitung und des Schutzes personenbezogener Daten.",
+      "finalidad": "Zweck der Verarbeitung",
+      "finalidadDesc": "Die Erhebung und Verarbeitung personenbezogener Daten dient der Verwaltung von Anfragen und Angebotsanforderungen, die über das Kontaktformular eingehen.",
+      "derechos": "Ihre Rechte",
+      "derechosDesc": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten per E-Mail an info@equinox.es."
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "intro": "Diese Website verwendet Cookies, um die Benutzererfahrung zu verbessern.",
+      "queSon": "Was sind Cookies?",
+      "queSonDesc": "Ein Cookie ist eine kleine Datei, die beim Besuch einer Website im Browser des Nutzers gespeichert wird.",
+      "tipos": "Arten von Cookies",
+      "tiposDesc": "Wir verwenden technische Cookies (notwendig für den Betrieb) und analytische Cookies (um zu verstehen, wie die Website genutzt wird).",
+      "banner": {
+        "text": "Wir verwenden eigene Cookies und Cookies von Drittanbietern, um unsere Dienste zu verbessern und Ihnen Werbung anzuzeigen, die Ihren Präferenzen entspricht, indem wir Ihre Surfgewohnheiten analysieren.",
+        "accept": "Alle akzeptieren",
+        "settings": "Einstellungen",
+        "decline": "Ablehnen"
+      }
+    }
+  }
+}

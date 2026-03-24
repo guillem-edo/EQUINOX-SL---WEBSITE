@@ -1,14 +1,17 @@
 import { motion } from 'motion/react';
 import { ArrowRight, FlaskConical, Wheat, Sparkles, TestTube2, Beaker, PaintBucket, Droplet, Fuel, Leaf } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export function Sectores() {
+  const { t } = useTranslation();
+
   const sectors = [
     {
       id: 'farmacia',
-      title: 'Laboratorios Farmacéuticos',
+      title: t('sectores.list.farma.title'),
       icon: <FlaskConical size={32} />,
-      desc: 'Equipos con acabados sanitarios, pulido espejo y soldaduras orbitales que cumplen con las normativas más estrictas (FDA, GMP) para garantizar la máxima esterilidad y trazabilidad.',
+      desc: t('sectores.list.farma.desc'),
       img: 'https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?q=80&w=2070&auto=format&fit=crop',
       projects: [
         { id: 2, title: 'Skid de Filtración Tangencial', client: 'Laboratorio Farmacéutico' }
@@ -16,9 +19,9 @@ export function Sectores() {
     },
     {
       id: 'alimentacion',
-      title: 'Alimentación',
+      title: t('sectores.list.alim.title'),
       icon: <Wheat size={32} />,
-      desc: 'Soluciones en acero inoxidable diseñadas para evitar la contaminación cruzada y facilitar la limpieza CIP/SIP en procesos de lácteos, bebidas y procesado de alimentos.',
+      desc: t('sectores.list.alim.desc'),
       img: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2070&auto=format&fit=crop',
       projects: [
         { id: 3, title: 'Línea de Tubería Sanitaria', client: 'Planta Láctea' },
@@ -27,9 +30,9 @@ export function Sectores() {
     },
     {
       id: 'cosmetica',
-      title: 'Cosmética y Afines',
+      title: t('sectores.list.cosm.title'),
       icon: <Sparkles size={32} />,
-      desc: 'Reactores y mezcladores de alta precisión para emulsiones y cremas, asegurando homogeneidad y control exacto de temperatura durante todo el proceso de fabricación.',
+      desc: t('sectores.list.cosm.desc'),
       img: 'https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?q=80&w=2070&auto=format&fit=crop',
       projects: [
         { id: 5, title: 'Depósitos de Mezcla con Agitador', client: 'Fabricante de Cosmética' }
@@ -37,17 +40,17 @@ export function Sectores() {
     },
     {
       id: 'quimica-fina',
-      title: 'Química Fina y de Síntesis',
+      title: t('sectores.list.quimf.title'),
       icon: <TestTube2 size={32} />,
-      desc: 'Equipos fabricados en aleaciones especiales (Hastelloy, Duplex) capaces de soportar procesos altamente corrosivos y condiciones extremas de presión y temperatura.',
+      desc: t('sectores.list.quimf.desc'),
       img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop',
       projects: []
     },
     {
       id: 'quimica',
-      title: 'Química',
+      title: t('sectores.list.quim.title'),
       icon: <Beaker size={32} />,
-      desc: 'Calderería pesada y equipos de proceso robustos para la industria química general, incluyendo intercambiadores de calor, columnas y grandes depósitos de almacenamiento.',
+      desc: t('sectores.list.quim.desc'),
       img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop',
       projects: [
         { id: 1, title: 'Batería de Reactores 5.000L', client: 'Sector Químico' }
@@ -55,33 +58,33 @@ export function Sectores() {
     },
     {
       id: 'pinturas',
-      title: 'Pinturas y Barnices',
+      title: t('sectores.list.pint.title'),
       icon: <PaintBucket size={32} />,
-      desc: 'Sistemas de agitación especializados, dispersores y reactores ATEX diseñados específicamente para el manejo seguro de solventes y productos inflamables.',
+      desc: t('sectores.list.pint.desc'),
       img: 'https://images.unsplash.com/photo-1565439390118-bbf3252f238f?q=80&w=2069&auto=format&fit=crop',
       projects: []
     },
     {
       id: 'petroquimica',
-      title: 'Petroquímica',
+      title: t('sectores.list.petro.title'),
       icon: <Fuel size={32} />,
-      desc: 'Construcción de recipientes a presión, intercambiadores tubulares y tubería de proceso bajo código ASME para las exigentes condiciones del sector petroquímico.',
+      desc: t('sectores.list.petro.desc'),
       img: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070&auto=format&fit=crop',
       projects: []
     },
     {
       id: 'asfalto',
-      title: 'Asfalto y Derivados',
+      title: t('sectores.list.asfalto.title'),
       icon: <Droplet size={32} />,
-      desc: 'Depósitos calorifugados, sistemas de calentamiento por aceite térmico y agitadores robustos para el mantenimiento y procesado de productos bituminosos.',
+      desc: t('sectores.list.asfalto.desc'),
       img: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2069&auto=format&fit=crop',
       projects: []
     },
     {
       id: 'medio-ambiente',
-      title: 'Medio Ambiente',
+      title: t('sectores.list.medio.title'),
       icon: <Leaf size={32} />,
-      desc: 'Equipos para plantas de tratamiento de aguas (EDAR), decantadores, filtros y estructuras para la gestión de residuos y control de emisiones.',
+      desc: t('sectores.list.medio.desc'),
       img: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop',
       projects: [
         { id: 6, title: 'Decantadores de Acero Inoxidable', client: 'EDAR Municipal' }
@@ -96,10 +99,10 @@ export function Sectores() {
         <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity"></div>
         <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-display font-extrabold text-white mb-6">
-            Sectores de Aplicación y Proyectos
+            {t('sectores.heroTitle')}
           </h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto font-light leading-relaxed">
-            Nuestra experiencia técnica y capacidad de adaptación nos permite cumplir con las normativas y exigencias de los sectores industriales más rigurosos.
+            {t('sectores.heroDesc')}
           </p>
         </div>
       </section>
@@ -137,14 +140,14 @@ export function Sectores() {
                   
                   {sector.projects && sector.projects.length > 0 && (
                     <div className="mt-auto pt-6 border-t border-gray-100">
-                      <h4 className="text-xs font-bold uppercase tracking-widest text-brand-dark mb-4">Proyectos Destacados</h4>
+                      <h4 className="text-xs font-bold uppercase tracking-widest text-brand-dark mb-4">{t('sectores.proyectosDestacados')}</h4>
                       <ul className="space-y-3">
                         {sector.projects.map(p => (
                           <li key={p.id} className="text-sm text-brand-steel flex items-start gap-2">
                             <span className="text-brand-accent mt-1 text-lg leading-none">•</span>
                             <div className="flex flex-col">
                               <span className="font-semibold text-brand-dark">{p.title}</span>
-                              <span className="text-xs opacity-80 mt-0.5">Cliente: {p.client}</span>
+                              <span className="text-xs opacity-80 mt-0.5">{t('sectores.cliente')}: {p.client}</span>
                             </div>
                           </li>
                         ))}
@@ -162,16 +165,16 @@ export function Sectores() {
       <section className="py-24 bg-white border-t border-gray-200">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-6">
-            ¿Tu sector no está en la lista?
+            {t('sectores.ctaTitle')}
           </h2>
           <p className="text-xl text-brand-steel mb-10 max-w-2xl mx-auto">
-            Nuestra capacidad de fabricación a medida nos permite adaptarnos a las necesidades específicas de cualquier industria.
+            {t('sectores.ctaDesc')}
           </p>
           <Link
             to="/contacto"
             className="inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-brand-accent/90 text-white px-10 py-5 rounded-sm text-lg font-bold uppercase tracking-widest transition-all shadow-xl"
           >
-            Consúltanos tu proyecto
+            {t('common.consultanos')}
             <ArrowRight size={20} />
           </Link>
         </div>

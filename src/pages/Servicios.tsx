@@ -1,101 +1,98 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Settings, Droplets, Box, Wrench, Activity, Shield, Beaker, Fan, ArrowRightLeft, Database, Blocks, Hammer, Truck, PenTool } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export function Servicios() {
+  const { t } = useTranslation();
+
   const services = [
     {
       id: 'depositos',
       icon: <Droplets size={32} />,
-      title: 'Depósitos a Presión y Equipos',
-      desc: 'Diseño, cálculo (ASME, EN-13445, TEMA) y construcción de equipos de proceso y recipientes a presión con su correspondiente legalización.',
+      title: t('servicios.list.dep.title'),
+      desc: t('servicios.list.dep.desc'),
       img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 'medida',
       icon: <Shield size={32} />,
-      title: 'Calderería Industrial',
-      desc: 'Fabricación de tolvas, reactores, ciclones y piezas especiales. Trabajamos acero inoxidable, acero al carbono y aleaciones especiales (Hastelloy, Duplex).',
+      title: t('servicios.list.medida.title'),
+      desc: t('servicios.list.medida.desc'),
       img: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1974&auto=format&fit=crop'
     },
     {
       id: 'skids',
       icon: <Box size={32} />,
-      title: 'Skids y Conjuntos Industriales',
-      desc: 'Estructuras modulares "Plug & Play" que integran bombas, válvulas, intercambiadores y tubería, listas para conectar en su línea de proceso.',
+      title: t('servicios.list.skids.title'),
+      desc: t('servicios.list.skids.desc'),
       img: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2069&auto=format&fit=crop'
     },
     {
       id: 'soldadura',
       icon: <Settings size={32} />,
-      title: 'Soldadura Homologada',
-      desc: 'Especialistas en soldadura TIG, MIG-MAG y SMAW. Soldadores homologados para uniones de alta responsabilidad y control de calidad exhaustivo.',
+      title: t('servicios.list.sold.title'),
+      desc: t('servicios.list.sold.desc'),
       img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 'tuberia',
       icon: <Activity size={32} />,
-      title: 'Piping y Tubería Industrial',
-      desc: 'Instalación de líneas de proceso. Soldadura orbital y manual con purga de gas para garantizar la máxima higiene en sectores farma y alimentario.',
+      title: t('servicios.list.tub.title'),
+      desc: t('servicios.list.tub.desc'),
       img: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 'montaje',
       icon: <Wrench size={32} />,
-      title: 'Instalación y Mantenimiento',
-      desc: 'Servicio integral en planta: instalación de equipos nuevos, legalización, paradas de mantenimiento y reformas de líneas existentes.',
+      title: t('servicios.list.mont.title'),
+      desc: t('servicios.list.mont.desc'),
       img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2070&auto=format&fit=crop'
     }
   ];
 
   const detailedCatalog = [
     {
-      title: 'Reactores',
+      title: t('servicios.catalog.react.title'),
       icon: <Beaker size={24} />,
-      items: ['Con media caña', 'Con camisa', 'Con serpentín interior', 'Para altas temperaturas y presión', 'Hidrogenadores', 'Cristalizadores', 'Mezcladores y diluidores', 'Fermentadores']
+      items: t('servicios.catalog.react.items', { returnObjects: true }) as string[]
     },
     {
-      title: 'Agitadores',
+      title: t('servicios.catalog.agit.title'),
       icon: <Fan size={24} />,
-      items: ['Hélice de alto rendimiento', 'Hélice marina y gamma', 'Hélice doble flujo', 'Turbina axial y radial', 'Disco diente sierra', 'Áncora', 'Doble áncora y pala', 'Cinta helicoidal']
+      items: t('servicios.catalog.agit.items', { returnObjects: true }) as string[]
     },
     {
-      title: 'Intercambiadores',
+      title: t('servicios.catalog.inter.title'),
       icon: <ArrowRightLeft size={24} />,
-      items: ['Con haz tubular', 'Con serpentín', 'De simple y múltiples pasos', 'Evaporadores de haces tubulares', 'Condensadores de tubos']
+      items: t('servicios.catalog.inter.items', { returnObjects: true }) as string[]
     },
     {
-      title: 'Depósitos',
+      title: t('servicios.catalog.dep.title'),
       icon: <Database size={24} />,
-      desc: 'Construimos depósitos de cualquier medida y calidad a necesidad del cliente.',
-      items: ['De almacenamiento', 'De calefacción', 'Estériles', 'Para alta presión', 'Calorifugados']
+      desc: t('servicios.catalog.dep.desc'),
+      items: t('servicios.catalog.dep.items', { returnObjects: true }) as string[]
     },
     {
-      title: 'Elementos Auxiliares',
+      title: t('servicios.catalog.aux.title'),
       icon: <Blocks size={24} />,
-      items: [
-        'Estufas: de vacío, atmosféricas, continua de rodillos, de aire, eléctricas, con vapor y aceite térmico',
-        'Filtros: de cesta, con diferentes tamices y de plato',
-        'Serpentines: de cualquier forma, refrigeración, calefacción y para mezclas',
-        'Mezcladoras especiales: para pastas muy viscosas, para sólidos, volteadoras y continuas',
-        'Unidades compactas: calefactoras, de refrigeración, de recogida y tratamiento'
-      ]
+      items: t('servicios.catalog.aux.items', { returnObjects: true }) as string[]
     },
     {
-      title: 'Calderería General',
+      title: t('servicios.catalog.cald.title'),
       icon: <Hammer size={24} />,
-      items: ['Tolvas y Cubas de almacenamiento', 'Válvulas de tajadera especiales', 'Estructuras y Elementos para medio ambiente', 'Sinfines y Cribas', 'Cintas transportadoras y Binds']
+      items: t('servicios.catalog.cald.items', { returnObjects: true }) as string[]
     },
     {
-      title: 'Servicios Especiales',
+      title: t('servicios.catalog.serv.title'),
       icon: <Truck size={24} />,
-      items: ['Transportes (nacionales e internacionales)', 'Transportes especiales y Grúas', 'Proyectos de ingeniería y Legalizaciones', 'Pruebas periódicas (disponemos de permisos legales)']
+      items: t('servicios.catalog.serv.items', { returnObjects: true }) as string[]
     },
     {
-      title: 'Instalaciones',
+      title: t('servicios.catalog.inst.title'),
       icon: <PenTool size={24} />,
-      desc: 'Disponemos de documentación acreditativa como instaladores.',
-      items: ['Tuberías de proceso, servicios, vapor, AC. térmico', 'Redes para agua y Tuberías para gases', 'Montajes de equipos y Estructuras metálicas', 'Trabajos y mantenimientos por horas']
+      desc: t('servicios.catalog.inst.desc'),
+      items: t('servicios.catalog.inst.items', { returnObjects: true }) as string[]
     }
   ];
 
@@ -105,10 +102,10 @@ export function Servicios() {
       <section className="bg-brand-dark py-20">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-display font-extrabold text-white mb-6">
-            Nuestros Servicios
+            {t('servicios.heroTitle')}
           </h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto font-light">
-            Soluciones integrales de calderería inoxidable: desde la ingeniería de detalle hasta el montaje final en sus instalaciones.
+            {t('servicios.heroDesc')}
           </p>
         </div>
       </section>
@@ -150,10 +147,10 @@ export function Servicios() {
 
           <div className="mt-16 text-center">
             <Link
-              to="/contacto"
+              to="/contacto#presupuesto"
               className="inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-brand-accent/90 text-white px-10 py-5 rounded-sm text-lg font-bold uppercase tracking-widest transition-all shadow-xl"
             >
-              Solicitar Presupuesto
+              {t('common.solicitarPresupuesto')}
               <ArrowRight size={20} />
             </Link>
           </div>
@@ -163,9 +160,9 @@ export function Servicios() {
       <section className="py-24 bg-white border-t border-gray-200">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-4">Catálogo de Fabricación y Servicios</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-4">{t('servicios.catalogTitle')}</h2>
             <p className="text-brand-steel">
-              Detalle exhaustivo de nuestras capacidades de fabricación, equipos de proceso y servicios especializados para la industria.
+              {t('servicios.catalogDesc')}
             </p>
           </div>
 
@@ -189,7 +186,7 @@ export function Servicios() {
                   <p className="text-sm text-brand-steel mb-4 italic">{category.desc}</p>
                 )}
                 <ul className="space-y-2">
-                  {category.items.map((item, idx) => (
+                  {Array.isArray(category.items) && category.items.map((item, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-sm text-brand-steel">
                       <span className="text-brand-accent mt-1 text-[10px]">■</span>
                       <span className="leading-tight">{item}</span>

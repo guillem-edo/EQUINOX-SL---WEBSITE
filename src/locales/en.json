@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "empresa": "Company",
+    "servicios": "Services",
+    "sectores": "Sectors",
+    "contacto": "Contact",
+    "presupuesto": "Quote"
+  },
+  "common": {
+    "saberMas": "Learn more",
+    "verTodos": "View all sectors",
+    "solicitarPresupuesto": "Request a Quote",
+    "hablarTecnico": "Talk to a technician",
+    "scroll": "Scroll",
+    "verServicios": "View all services",
+    "consultanos": "Consult your project"
+  },
+  "home": {
+    "heroLabel": "Precision Boilermaking",
+    "heroTitle": "Industrial Boilermaking and Process Equipment",
+    "heroSubtitle": "Over 30 years transforming ideas into solid solutions. Experts in stainless steel, carbon steel, and special alloys for the most demanding sectors.",
+    "heroCta": "Request a Quote",
+    "heroSecondary": "View Sectors",
+    "sectoresLabel": "Sectors",
+    "sectoresTitle": "Application Sectors",
+    "sectoresDesc": "Our technical expertise allows us to adapt to the regulations and demands of the most rigorous industries.",
+    "sectoresLink": "View all sectors",
+    "sectores": {
+      "farma": { "name": "Pharma & Cosmetics", "desc": "Sanitary finishes and mirror polishing under FDA and GMP regulations." },
+      "alim": { "name": "Food & Beverage", "desc": "Hygienic designs to prevent cross-contamination and facilitate CIP cleaning." },
+      "quim": { "name": "Chemical & Petrochemical", "desc": "Equipment in special alloys for corrosive processes and high pressure." }
+    },
+    "features": {
+      "diseno": { "title": "Design and Calculation", "desc": "Detail engineering and equipment calculation according to international standards (ASME, EN-13445, TEMA, AD-Merkblätter)." },
+      "servicio": { "title": "Comprehensive Service", "desc": "From manufacturing to installation, maintenance, and equipment legalization in your plant." },
+      "materiales": { "title": "Advanced Materials", "desc": "Experts in stainless steel, carbon steel, and special alloys like Hastelloy and Duplex." }
+    },
+    "serviciosLabel": "Our Capabilities",
+    "serviciosTitle": "Boilermaking Solutions for Modern Industry",
+    "serviciosLink": "View all services",
+    "serviciosList": {
+      "dep": { "title": "Tanks and Vessels", "desc": "Manufacturing of pressure vessels and storage tanks with sanitary finishes." },
+      "skid": { "title": "Industrial Skids", "desc": "Modular assemblies ready to connect and operate in your process line." },
+      "sold": { "title": "TIG/MIG Welding", "desc": "Specialists in high-precision welding for stainless steel and alloys." },
+      "mont": { "title": "Plant Assembly", "desc": "Direct installation and preventive maintenance at your facilities." }
+    },
+    "saberMas": "Learn more",
+    "ctaTitle": "Do you have a technical boilermaking project?",
+    "ctaDesc": "Our engineering team will analyze your plans and offer you the most efficient stainless steel solution.",
+    "ctaPrimary": "Request a Quote",
+    "ctaSecondary": "Talk to a technician"
+  },
+  "empresa": {
+    "heroTitle": "Transforming ideas into solid solutions since 1990",
+    "heroSubtitle": "About Us",
+    "heroDesc": "With over 30 years of experience, EQUINOX S.L. specializes in industrial boilermaking and process equipment manufacturing for the most demanding sectors, ensuring quality, precision, and reliability.",
+    "compromisoTitle": "Our Commitment to Excellence",
+    "compromisoDesc1": "At EQUINOX, we don't just manufacture equipment; we build trust. We understand that in sectors like pharmaceutical or food, an imperfect finish or porous weld can mean million-dollar production stops.",
+    "compromisoDesc2": "We offer a comprehensive service: design and calculation according to international standards, manufacturing, installation, maintenance, and equipment legalization. We work with stainless steel, carbon steel, and special alloys.",
+    "compromisoList": [
+      "Equipment design and calculation (ASME, EN-13445, TEMA, AD-Merkblätter)",
+      "Stainless steel, carbon steel, and special alloys (Hastelloy, Duplex)",
+      "Certified welding (TIG, MIG-MAG, SMAW)",
+      "Comprehensive service: manufacturing, installation, maintenance, and legalization"
+    ],
+    "calidadTitle": "Certified Quality",
+    "calidadDesc": "ISO 9001 & WPS/PQR",
+    "capacidadTitle": "Installed Capacity",
+    "capacidadDesc": "We have fully equipped facilities and specialized machinery to tackle comprehensive boilermaking and process equipment manufacturing projects.",
+    "capacidadList": {
+      "inst": { "title": "Facilities", "items": ["Over 700 sqm total area", "100 sqm for part machining", "200 sqm outdoor yard for storage and testing", "2 overhead cranes for 6 Tn"] },
+      "maq": { "title": "Machinery", "items": ["2 cylinders, 1 shear, and 1 press brake", "1 punching machine and 1 radial arm drill", "1 milling machine and 1 medium conventional lathe", "Band, reciprocating, friction, and abrasive saws", "1 automatic cutting equipment and 3 plasma cutters", "3 pairs of independent rotators and 4 manual ones"] },
+      "sold": { "title": "Welding", "items": ["6 TIG machines (H.F. and P.A.)", "6 MIG-MAG machines", "5 electrode machines (SMAW)", "Tools for atmosphere inerting", "2 pairs of independent rotators", "1 positioner and 1 rotator train"] }
+    },
+    "materialesTitle": "Materials and Finishes",
+    "materialesDesc": "We manufacture our products in all types of metals, applying the most demanding surface treatments in the sector.",
+    "materialesSub1": "Manufacturing Materials",
+    "materialesList": [
+      { "name": "Stainless Steels", "desc": "Austenitic (AISI-304.L, 316.L, 904.L) for process. Martensitic (AISI-410, 420) for hyper-quenching." },
+      { "name": "Refractory Steels", "desc": "For furnaces or parts at high temperatures (AISI-309 and 310)." },
+      { "name": "Special Alloys", "desc": "High corrosion and temperature: Nickel (Alloy B2, C276, 800), Titanium, Duplex." },
+      { "name": "Carbon Steels", "desc": "For general boilermaking (S275JR, S355J2G3, P265GH, P295GH)." },
+      { "name": "Wear-resistant Steels", "desc": "Used for high wear resistance." },
+      { "name": "Other Metals", "desc": "Brass, copper, and aluminum for protections or specific parts." }
+    ],
+    "acabadosSub2": "Treatments and Finishes",
+    "acabadosList": {
+      "inox": { "title": "In Stainless Steel", "items": ["Pickling", "Passivation", "Matte and bright industrial polishing", "Mirror polishing", "Electropolishing", "Exterior sandblasting", "Teflon coatings"] },
+      "carb": { "title": "In Carbon Steel", "items": ["Epoxy primer", "Finish painting", "Stabilizations", "Hot-dip galvanizing", "Electrolytic zinc plating", "Ebonite coating", "Teflon coatings", "Sandblasting"] }
+    }
+  },
+  "servicios": {
+    "heroTitle": "Our Services",
+    "heroDesc": "Comprehensive stainless steel boilermaking solutions: from detail engineering to final assembly at your facilities.",
+    "list": {
+      "dep": { "title": "Pressure Vessels and Equipment", "desc": "Design, calculation (ASME, EN-13445, TEMA), and construction of process equipment and pressure vessels with their corresponding legalization." },
+      "medida": { "title": "Industrial Boilermaking", "desc": "Manufacturing of hoppers, reactors, cyclones, and special parts. We work with stainless steel, carbon steel, and special alloys (Hastelloy, Duplex)." },
+      "skids": { "title": "Skids and Industrial Assemblies", "desc": "\"Plug & Play\" modular structures integrating pumps, valves, heat exchangers, and piping, ready to connect in your process line." },
+      "sold": { "title": "Certified Welding", "desc": "Specialists in TIG, MIG-MAG, and SMAW welding. Certified welders for high-responsibility joints and exhaustive quality control." },
+      "tub": { "title": "Piping and Industrial Tubing", "desc": "Installation of process lines. Orbital and manual welding with gas purging to ensure maximum hygiene in pharma and food sectors." },
+      "mont": { "title": "Installation and Maintenance", "desc": "Comprehensive plant service: installation of new equipment, legalization, maintenance shutdowns, and retrofitting of existing lines." }
+    },
+    "catalogTitle": "Manufacturing and Services Catalog",
+    "catalogDesc": "Exhaustive detail of our manufacturing capabilities, process equipment, and specialized services for the industry.",
+    "catalog": {
+      "react": { "title": "Reactors", "items": ["With half-pipe", "With jacket", "With inner coil", "For high temperatures and pressure", "Hydrogenators", "Crystallizers", "Mixers and diluters", "Fermenters"] },
+      "agit": { "title": "Agitators", "items": ["High-performance propeller", "Marine and gamma propeller", "Double flow propeller", "Axial and radial turbine", "Sawtooth disc", "Anchor", "Double anchor and blade", "Helical ribbon"] },
+      "inter": { "title": "Heat Exchangers", "items": ["Shell and tube", "With coil", "Single and multiple pass", "Tube bundle evaporators", "Tube condensers"] },
+      "dep": { "title": "Tanks", "desc": "We build tanks of any size and quality according to customer needs.", "items": ["Storage", "Heating", "Sterile", "For high pressure", "Insulated"] },
+      "aux": { "title": "Auxiliary Elements", "items": ["Ovens: vacuum, atmospheric, continuous roller, air, electric, with steam and thermal oil", "Filters: basket, with different sieves and plate", "Coils: of any shape, cooling, heating, and for mixtures", "Special mixers: for highly viscous pastes, for solids, tumbling, and continuous", "Compact units: heating, cooling, collection, and treatment"] },
+      "cald": { "title": "General Boilermaking", "items": ["Storage hoppers and vats", "Special slide valves", "Structures and elements for the environment", "Augers and screens", "Conveyor belts and bins"] },
+      "serv": { "title": "Special Services", "items": ["Transport (national and international)", "Special transport and cranes", "Engineering projects and legalizations", "Periodic testing (we have legal permits)"] },
+      "inst": { "title": "Installations", "desc": "We have supporting documentation as installers.", "items": ["Process piping, services, steam, thermal oil", "Water networks and gas piping", "Equipment assembly and metal structures", "Hourly work and maintenance"] }
+    }
+  },
+  "sectores": {
+    "heroTitle": "Application Sectors and Projects",
+    "heroDesc": "Our technical expertise and adaptability allow us to comply with the regulations and demands of the most rigorous industrial sectors.",
+    "list": {
+      "farma": { "title": "Pharmaceutical Laboratories", "desc": "Equipment with sanitary finishes, mirror polishing, and orbital welds that comply with the strictest regulations (FDA, GMP) to ensure maximum sterility and traceability." },
+      "alim": { "title": "Food & Beverage", "desc": "Stainless steel solutions designed to prevent cross-contamination and facilitate CIP/SIP cleaning in dairy, beverage, and food processing." },
+      "cosm": { "title": "Cosmetics and Related", "desc": "High-precision reactors and mixers for emulsions and creams, ensuring homogeneity and exact temperature control throughout the manufacturing process." },
+      "quimf": { "title": "Fine and Synthesis Chemistry", "desc": "Equipment manufactured in special alloys (Hastelloy, Duplex) capable of withstanding highly corrosive processes and extreme pressure and temperature conditions." },
+      "quim": { "title": "Chemistry", "desc": "Heavy boilermaking and robust process equipment for the general chemical industry, including heat exchangers, columns, and large storage tanks." },
+      "pint": { "title": "Paints and Varnishes", "desc": "Specialized agitation systems, dispersers, and ATEX reactors designed specifically for the safe handling of solvents and flammable products." },
+      "petro": { "title": "Petrochemicals", "desc": "Construction of pressure vessels, tubular heat exchangers, and process piping under ASME code for the demanding conditions of the petrochemical sector." },
+      "asfalto": { "title": "Asphalt and Derivatives", "desc": "Insulated tanks, thermal oil heating systems, and robust agitators for the maintenance and processing of bituminous products." },
+      "medio": { "title": "Environment", "desc": "Equipment for water treatment plants (WWTP), clarifiers, filters, and structures for waste management and emission control." }
+    },
+    "proyectosDestacados": "Featured Projects",
+    "cliente": "Client",
+    "ctaTitle": "Is your sector not on the list?",
+    "ctaDesc": "Our custom manufacturing capacity allows us to adapt to the specific needs of any industry."
+  },
+  "contacto": {
+    "heroTitle": "Contact",
+    "heroDesc": "We are at your disposal to answer any questions or study your project.",
+    "infoTitle": "Contact Information",
+    "inst": "Facilities",
+    "tel": "Phones",
+    "oficina": "Central Office",
+    "dptoTec": "Technical Dept.",
+    "emails": "Emails",
+    "infoGen": "General Information",
+    "proyectos": "Projects and Quotes",
+    "horario": "Hours and Emergencies",
+    "lunesJueves": "Monday - Thursday",
+    "viernes": "Friday",
+    "urgencias": "24/7 Plant Emergencies",
+    "llamar": "Call Emergencies",
+    "formTitle": "Request a Quote",
+    "formDesc": "Tell us the details of your project and our engineering team will contact you within 48 hours.",
+    "successTitle": "Request Received",
+    "successDesc": "We have received the details of your project. Our technical team will analyze it and contact you as soon as possible.",
+    "detallesProyecto": "Project Details",
+    "nombre": "Full Name *",
+    "empresa": "Company *",
+    "email": "Corporate Email *",
+    "telefono": "Phone",
+    "tipoProyecto": "Project Type *",
+    "seleccione": "Select an option...",
+    "opciones": {
+      "dep": "Tanks and Vessels",
+      "skid": "Industrial Skids",
+      "tub": "Piping Installation",
+      "cald": "Custom Boilermaking",
+      "mont": "Assembly / Maintenance",
+      "otros": "Other"
+    },
+    "material": "Required Material",
+    "matOpciones": {
+      "aisi304": "Stainless Steel AISI 304",
+      "aisi316": "Stainless Steel AISI 316L",
+      "carbono": "Carbon Steel",
+      "aleaciones": "Special Alloys (Duplex, Hastelloy...)",
+      "asesoramiento": "I need technical advice"
+    },
+    "descTecnica": "Technical Description *",
+    "descPlaceholder": "Describe the needs of your project (capacity, pressure, temperature, applicable regulations...)",
+    "adjuntar": "Attach Plans or Specifications",
+    "adjuntarDesc": "Click to upload or drag and drop your files here",
+    "maxSize": "Maximum size: 20MB",
+    "privacidad1": "I have read and accept the ",
+    "privacidadLink": "Privacy Policy",
+    "privacidad2": " and consent to the processing of my data for the management of this quote.",
+    "enviar": "Send Request"
+  },
+  "footer": {
+    "desc": "With over 30 years of experience, specialists in industrial boilermaking and process equipment manufacturing in stainless steel, carbon steel, and special alloys.",
+    "empresa": "Company",
+    "links": {
+      "inicio": "Home",
+      "quienesSomos": "About Us",
+      "servicios": "Services",
+      "sectores": "Sectors",
+      "contacto": "Contact"
+    },
+    "servicios": "Services",
+    "serviciosList": {
+      "caldereria": "Custom Boilermaking",
+      "depositos": "Tanks and Vessels",
+      "soldadura": "TIG/MIG Welding",
+      "skids": "Industrial Skids",
+      "montaje": "Plant Assembly"
+    },
+    "contacto": "Contact",
+    "copyright": "© 2026 EQUINOX Equipos Inoxidables SL. All rights reserved.",
+    "legal": "Legal Notice",
+    "privacidad": "Privacy Policy",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "aviso": {
+      "title": "Legal Notice",
+      "intro": "In compliance with Article 10 of Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSICE), the identifying data of the company are presented.",
+      "datos": "Identifying Data",
+      "empresa": "Company Name: EQUINOX Equipos Inoxidables SL",
+      "nif": "Tax ID: B00000000",
+      "domicilio": "Address: Industrial Estate, Main Street 123, 08000 Barcelona",
+      "email": "Email: info@equinox.es",
+      "tel": "Phone: +34 900 000 000",
+      "registro": "Registration Data: Commercial Registry of Barcelona, Volume X, Folio Y, Sheet Z."
+    },
+    "privacidad": {
+      "title": "Privacy Policy",
+      "intro": "EQUINOX Equipos Inoxidables SL informs users of the website about its policy regarding the treatment and protection of personal data.",
+      "finalidad": "Purpose of treatment",
+      "finalidadDesc": "The collection and treatment of personal data are intended to manage inquiries and quote requests received through the contact form.",
+      "derechos": "Your rights",
+      "derechosDesc": "You have the right to access, rectify, delete, and object to the treatment of your personal data by sending an email to info@equinox.es."
+    },
+    "cookies": {
+      "title": "Cookies Policy",
+      "intro": "This website uses cookies to improve the user experience.",
+      "queSon": "What are cookies?",
+      "queSonDesc": "A cookie is a small file stored in the user's browser when visiting a website.",
+      "tipos": "Types of cookies",
+      "tiposDesc": "We use technical cookies (necessary for operation) and analytical cookies (to understand how the web is used).",
+      "banner": {
+        "text": "We use our own and third-party cookies to improve our services and show you advertising related to your preferences by analyzing your browsing habits.",
+        "accept": "Accept all",
+        "settings": "Settings",
+        "decline": "Decline"
+      }
+    }
+  }
+}

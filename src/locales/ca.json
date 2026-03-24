@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "inicio": "Inici",
+    "empresa": "Empresa",
+    "servicios": "Serveis",
+    "sectores": "Sectors",
+    "contacto": "Contacte",
+    "presupuesto": "Pressupost"
+  },
+  "common": {
+    "saberMas": "Saber-ne més",
+    "verTodos": "Veure tots els sectors",
+    "solicitarPresupuesto": "Sol·licitar Pressupost",
+    "hablarTecnico": "Parlar amb un tècnic",
+    "scroll": "Scroll",
+    "verServicios": "Veure tots els serveis",
+    "consultanos": "Consulta'ns el teu projecte"
+  },
+  "home": {
+    "heroLabel": "Caldereria de Precisió",
+    "heroTitle": "Caldereria Industrial i Equips de Procés",
+    "heroSubtitle": "Més de 30 anys transformant idees en solucions sòlides. Experts en acer inoxidable, acer al carboni i aliatges especials per als sectors més exigents.",
+    "heroCta": "Sol·licitar Pressupost",
+    "heroSecondary": "Veure Sectors",
+    "sectoresLabel": "Sectors",
+    "sectoresTitle": "Sectors d'Aplicació",
+    "sectoresDesc": "La nostra experiència tècnica ens permet adaptar-nos a les normatives i exigències de les indústries més rigoroses.",
+    "sectoresLink": "Veure tots els sectors",
+    "sectores": {
+      "farma": { "name": "Farmàcia i Cosmètica", "desc": "Acabats sanitaris i polit mirall sota normatives FDA i GMP." },
+      "alim": { "name": "Alimentació", "desc": "Dissenys higiènics per evitar contaminació creuada i facilitar neteja CIP." },
+      "quim": { "name": "Química i Petroquímica", "desc": "Equips en aliatges especials per a processos corrosius i alta pressió." }
+    },
+    "features": {
+      "diseno": { "title": "Disseny i Càlcul", "desc": "Enginyeria de detall i càlcul d'equips segons normatives internacionals (ASME, EN-13445, TEMA, AD-Merkblätter)." },
+      "servicio": { "title": "Servei Integral", "desc": "Des de la fabricació fins a la instal·lació, manteniment i legalització d'equips a la seva planta." },
+      "materiales": { "title": "Materials Avançats", "desc": "Experts en acer inoxidable, acer al carboni i aliatges especials com Hastelloy i Duplex." }
+    },
+    "serviciosLabel": "Les Nostres Capacitats",
+    "serviciosTitle": "Solucions de Caldereria per a la Indústria Moderna",
+    "serviciosLink": "Veure tots els serveis",
+    "serviciosList": {
+      "dep": { "title": "Dipòsits i Tancs", "desc": "Fabricació de recipients a pressió i emmagatzematge amb acabats sanitaris." },
+      "skid": { "title": "Skids Industrials", "desc": "Conjunts modulars llestos per connectar i funcionar a la seva línia de procés." },
+      "sold": { "title": "Soldadura TIG/MIG", "desc": "Especialistes en soldadura d'alta precisió per a acer inoxidable i aliatges." },
+      "mont": { "title": "Muntatge a Planta", "desc": "Instal·lació i manteniment preventiu directe a les seves instal·lacions." }
+    },
+    "saberMas": "Saber-ne més",
+    "ctaTitle": "Tens un projecte de caldereria tècnica?",
+    "ctaDesc": "El nostre equip d'enginyeria analitzarà els teus plànols i t'oferirà la solució més eficient en acer inoxidable.",
+    "ctaPrimary": "Sol·licitar Pressupost",
+    "ctaSecondary": "Parlar amb un tècnic"
+  },
+  "empresa": {
+    "heroTitle": "Transformant idees en solucions sòlides des de 1990",
+    "heroSubtitle": "Qui Som",
+    "heroDesc": "Amb més de 30 anys d'experiència, EQUINOX S.L. és especialista en caldereria industrial i fabricació d'equips de procés per als sectors més exigents, garantint qualitat, precisió i fiabilitat.",
+    "compromisoTitle": "El Nostre Compromís amb l'Excel·lència",
+    "compromisoDesc1": "A EQUINOX no només fabriquem equips; construïm confiança. Entenem que en sectors com el farmacèutic o l'alimentari, un acabat imperfecte o una soldadura porosa poden suposar parades de producció milionàries.",
+    "compromisoDesc2": "Oferim un servei integral: disseny i càlcul segons normes internacionals, fabricació, instal·lació, manteniment i legalització d'equips. Treballem amb acer inoxidable, acer al carboni i aliatges especials.",
+    "compromisoList": [
+      "Disseny i càlcul d'equips (ASME, EN-13445, TEMA, AD-Merkblätter)",
+      "Acer inoxidable, acer al carboni i aliatges especials (Hastelloy, Duplex)",
+      "Soldadura homologada (TIG, MIG-MAG, SMAW)",
+      "Servei integral: fabricació, instal·lació, manteniment i legalització"
+    ],
+    "calidadTitle": "Qualitat Certificada",
+    "calidadDesc": "ISO 9001 & WPS/PQR",
+    "capacidadTitle": "Capacitat Instal·lada",
+    "capacidadDesc": "Disposem d'instal·lacions totalment equipades i maquinària especialitzada per abordar projectes integrals de caldereria i fabricació d'equips de procés.",
+    "capacidadList": {
+      "inst": { "title": "Instal·lacions", "items": ["Més de 700 m² de superfície total", "100 m² destinats a mecanització de peces", "200 m² de pati exterior per a emmagatzematge i proves", "2 ponts grua per a 6 Tn"] },
+      "maq": { "title": "Maquinària", "items": ["2 cilindres, 1 cisalla i 1 plegadora", "1 punxonadora i 1 trepant de braç radial", "1 fresadora i 1 torn convencional mitjà", "Serres de cinta, alternatives, fricció i abrasives", "1 equip automàtic de tall i 3 de plasma", "3 parelles de viradors indep. i 4 manuals"] },
+      "sold": { "title": "Soldadura", "items": ["6 màquines TIG (H.F. i P.A.)", "6 màquines MIG-MAG", "5 màquines per elèctrode (SMAW)", "Estris per a inertització d'atmosfera", "2 parelles de viradors independents", "1 posicionador i 1 tren virador"] }
+    },
+    "materialesTitle": "Materials i Acabats",
+    "materialesDesc": "Fabriquem els nostres productes en tot tipus de metalls, aplicant els tractaments superficials més exigents del sector.",
+    "materialesSub1": "Materials de Fabricació",
+    "materialesList": [
+      { "name": "Acers Inoxidables", "desc": "Austenítics (AISI-304.L, 316.L, 904.L) per a procés. Martensítics (AISI-410, 420) per a hipertemple." },
+      { "name": "Acers Refractaris", "desc": "Per a forns o peces a temperatures elevades (AISI-309 i 310)." },
+      { "name": "Aliatges Especials", "desc": "Alta corrosió i temperatura: Níquel (Alloy B2, C276, 800), Titani, Duplex." },
+      { "name": "Acers al Carboni", "desc": "Per a caldereria general (S275JR, S355J2G3, P265GH, P295GH)." },
+      { "name": "Acers Antidesgast", "desc": "Utilitzats per a alta resistència al desgast." },
+      { "name": "Altres Metalls", "desc": "Llautó, coure i alumini per a proteccions o peces específiques." }
+    ],
+    "acabadosSub2": "Tractaments i Acabats",
+    "acabadosList": {
+      "inox": { "title": "En Acer Inoxidable", "items": ["Decapats", "Passivats", "Polits industrials mats i brillants", "Polit mirall", "Electropolits", "Gotejat exterior", "Recobriments en tefló"] },
+      "carb": { "title": "En Acer al Carboni", "items": ["Imprimació epoxi", "Pintura d'acabat", "Estabilitzacions", "Galvanitzat en calent", "Zincat electrolític", "Ebonitat", "Recobriments en tefló", "Gotejat"] }
+    }
+  },
+  "servicios": {
+    "heroTitle": "Els Nostres Serveis",
+    "heroDesc": "Solucions integrals de caldereria inoxidable: des de l'enginyeria de detall fins al muntatge final a les seves instal·lacions.",
+    "list": {
+      "dep": { "title": "Dipòsits a Pressió i Equips", "desc": "Disseny, càlcul (ASME, EN-13445, TEMA) i construcció d'equips de procés i recipients a pressió amb la seva corresponent legalització." },
+      "medida": { "title": "Caldereria Industrial", "desc": "Fabricació de tremuges, reactors, ciclons i peces especials. Treballem acer inoxidable, acer al carboni i aliatges especials (Hastelloy, Duplex)." },
+      "skids": { "title": "Skids i Conjunts Industrials", "desc": "Estructures modulars \"Plug & Play\" que integren bombes, vàlvules, bescanviadors i canonada, llestes per connectar a la seva línia de procés." },
+      "sold": { "title": "Soldadura Homologada", "desc": "Especialistes en soldadura TIG, MIG-MAG i SMAW. Soldadors homologats per a unions d'alta responsabilitat i control de qualitat exhaustiu." },
+      "tub": { "title": "Piping i Canonada Industrial", "desc": "Instal·lació de línies de procés. Soldadura orbital i manual amb purga de gas per garantir la màxima higiene en sectors farma i alimentari." },
+      "mont": { "title": "Instal·lació i Manteniment", "desc": "Servei integral a planta: instal·lació d'equips nous, legalització, parades de manteniment i reformes de línies existents." }
+    },
+    "catalogTitle": "Catàleg de Fabricació i Serveis",
+    "catalogDesc": "Detall exhaustiu de les nostres capacitats de fabricació, equips de procés i serveis especialitzats per a la indústria.",
+    "catalog": {
+      "react": { "title": "Reactors", "items": ["Amb mitja canya", "Amb camisa", "Amb serpentí interior", "Per a altes temperatures i pressió", "Hidrogenadors", "Cristal·litzadors", "Mescladors i diluïdors", "Fermentadors"] },
+      "agit": { "title": "Agitadors", "items": ["Hèlix d'alt rendiment", "Hèlix marina i gamma", "Hèlix doble flux", "Turbina axial i radial", "Disc dent de serra", "Àncora", "Doble àncora i pala", "Cinta helicoïdal"] },
+      "inter": { "title": "Bescanviadors", "items": ["Amb feix tubular", "Amb serpentí", "De simple i múltiples passos", "Evaporadors de feixos tubulars", "Condensadors de tubs"] },
+      "dep": { "title": "Dipòsits", "desc": "Construïm dipòsits de qualsevol mida i qualitat a necessitat del client.", "items": ["D'emmagatzematge", "De calefacció", "Estèrils", "Per a alta pressió", "Calorifugats"] },
+      "aux": { "title": "Elements Auxiliars", "items": ["Estufes: de buit, atmosfèriques, contínua de corrons, d'aire, elèctriques, amb vapor i oli tèrmic", "Filtres: de cistella, amb diferents tamisos i de plat", "Serpentins: de qualsevol forma, refrigeració, calefacció i per a mescles", "Mescladores especials: per a pastes molt viscoses, per a sòlids, voltejadores i contínues", "Unitats compactes: calefactores, de refrigeració, de recollida i tractament"] },
+      "cald": { "title": "Caldereria General", "items": ["Tremuges i Cubes d'emmagatzematge", "Vàlvules de tall especials", "Estructures i Elements per a medi ambient", "Sinfins i Cribes", "Cintes transportadores i Binds"] },
+      "serv": { "title": "Serveis Especials", "items": ["Transports (nacionals i internacionals)", "Transports especials i Grues", "Projectes d'enginyeria i Legalitzacions", "Proves periòdiques (disposem de permisos legals)"] },
+      "inst": { "title": "Instal·lacions", "desc": "Disposem de documentació acreditativa com a instal·ladors.", "items": ["Canonades de procés, serveis, vapor, AC. tèrmic", "Xarxes per a aigua i Canonades per a gasos", "Muntatges d'equips i Estructures metàl·liques", "Treballs i manteniments per hores"] }
+    }
+  },
+  "sectores": {
+    "heroTitle": "Sectors d'Aplicació i Projectes",
+    "heroDesc": "La nostra experiència tècnica i capacitat d'adaptació ens permet complir amb les normatives i exigències dels sectors industrials més rigorosos.",
+    "list": {
+      "farma": { "title": "Laboratoris Farmacèutics", "desc": "Equips amb acabats sanitaris, polit mirall i soldadures orbitals que compleixen amb les normatives més estrictes (FDA, GMP) per garantir la màxima esterilitat i traçabilitat." },
+      "alim": { "title": "Alimentació", "desc": "Solucions en acer inoxidable dissenyades per evitar la contaminació creuada i facilitar la neteja CIP/SIP en processos de lactis, begudes i processat d'aliments." },
+      "cosm": { "title": "Cosmètica i Afins", "desc": "Reactors i mescladors d'alta precisió per a emulsions i cremes, assegurant homogeneïtat i control exacte de temperatura durant tot el procés de fabricació." },
+      "quimf": { "title": "Química Fina i de Síntesi", "desc": "Equips fabricats en aliatges especials (Hastelloy, Duplex) capaços de suportar processos altament corrosius i condicions extremes de pressió i temperatura." },
+      "quim": { "title": "Química", "desc": "Caldereria pesada i equips de procés robustos per a la indústria química general, incloent bescanviadors de calor, columnes i grans dipòsits d'emmagatzematge." },
+      "pint": { "title": "Pintures i Vernissos", "desc": "Sistemes d'agitació especialitzats, dispersors i reactors ATEX dissenyats específicament per al maneig segur de solvents i productes inflamables." },
+      "petro": { "title": "Petroquímica", "desc": "Construcció de recipients a pressió, bescanviadors tubulars i canonada de procés sota codi ASME per a les exigents condicions del sector petroquímic." },
+      "asfalto": { "title": "Asfalt i Derivats", "desc": "Dipòsits calorifugats, sistemes d'escalfament per oli tèrmic i agitadors robustos per al manteniment i processat de productes bituminosos." },
+      "medio": { "title": "Medi Ambient", "desc": "Equips per a plantes de tractament d'aigües (EDAR), decantadors, filtres i estructures per a la gestió de residus i control d'emissions." }
+    },
+    "proyectosDestacados": "Projectes Destacats",
+    "cliente": "Client",
+    "ctaTitle": "El teu sector no està a la llista?",
+    "ctaDesc": "La nostra capacitat de fabricació a mida ens permet adaptar-nos a les necessitats específiques de qualsevol indústria."
+  },
+  "contacto": {
+    "heroTitle": "Contacte",
+    "heroDesc": "Estem a la seva disposició per resoldre qualsevol dubte o estudiar el seu projecte.",
+    "infoTitle": "Informació de Contacte",
+    "inst": "Instal·lacions",
+    "tel": "Telèfons",
+    "oficina": "Oficina Central",
+    "dptoTec": "Dpt. Tècnic",
+    "emails": "Emails",
+    "infoGen": "Informació General",
+    "proyectos": "Projectes i Pressupostos",
+    "horario": "Horari i Urgències",
+    "lunesJueves": "Dilluns - Dijous",
+    "viernes": "Divendres",
+    "urgencias": "Urgències 24/7 a planta",
+    "llamar": "Trucar a Urgències",
+    "formTitle": "Sol·licitar Pressupost",
+    "formDesc": "Expliqui'ns els detalls del seu projecte i el nostre equip d'enginyeria es posarà en contacte amb vostè en menys de 48 hores.",
+    "successTitle": "Sol·licitud Rebuda",
+    "successDesc": "Hem rebut els detalls del seu projecte. El nostre equip tècnic ho analitzarà i es posarà en contacte amb vostè al més aviat possible.",
+    "detallesProyecto": "Detalls del Projecte",
+    "nombre": "Nom i Cognoms *",
+    "empresa": "Empresa *",
+    "email": "Email Corporatiu *",
+    "telefono": "Telèfon",
+    "tipoProyecto": "Tipus de Projecte *",
+    "seleccione": "Seleccioni una opció...",
+    "opciones": {
+      "dep": "Dipòsits i Recipients",
+      "skid": "Skids Industrials",
+      "tub": "Instal·lació de Canonada",
+      "cald": "Caldereria a Mida",
+      "mont": "Muntatge / Manteniment",
+      "otros": "Altres"
+    },
+    "material": "Material Requerit",
+    "matOpciones": {
+      "aisi304": "Acer Inoxidable AISI 304",
+      "aisi316": "Acer Inoxidable AISI 316L",
+      "carbono": "Acer al Carboni",
+      "aleaciones": "Aliatges Especials (Duplex, Hastelloy...)",
+      "asesoramiento": "Necessito assessorament tècnic"
+    },
+    "descTecnica": "Descripció Tècnica *",
+    "descPlaceholder": "Escrigui les necessitats del seu projecte (capacitat, pressió, temperatura, normatives aplicables...)",
+    "adjuntar": "Adjuntar Plànols o Especificacions",
+    "adjuntarDesc": "Faci clic per pujar o arrossegui i deixi anar els seus arxius aquí",
+    "maxSize": "Mida màxima: 20MB",
+    "privacidad1": "He llegit i accepto la ",
+    "privacidadLink": "Política de Privadesa",
+    "privacidad2": " i consento el tractament de les meves dades per a la gestió d'aquest pressupost.",
+    "enviar": "Enviar Sol·licitud"
+  },
+  "footer": {
+    "desc": "Amb més de 30 anys d'experiència, especialistes en caldereria industrial i fabricació d'equips de procés en acer inoxidable, acer al carboni i aliatges especials.",
+    "empresa": "Empresa",
+    "links": {
+      "inicio": "Inici",
+      "quienesSomos": "Qui som",
+      "servicios": "Serveis",
+      "sectores": "Sectors",
+      "contacto": "Contacte"
+    },
+    "servicios": "Serveis",
+    "serviciosList": {
+      "caldereria": "Caldereria a mida",
+      "depositos": "Dipòsits i Tancs",
+      "soldadura": "Soldadura TIG/MIG",
+      "skids": "Skids Industrials",
+      "montaje": "Muntatge a Planta"
+    },
+    "contacto": "Contacte",
+    "copyright": "© 2026 EQUINOX Equipos Inoxidables SL. Tots els drets reservats.",
+    "legal": "Avís Legal",
+    "privacidad": "Privadesa",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "aviso": {
+      "title": "Avís Legal",
+      "intro": "En compliment de l'article 10 de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i Comerç Electrònic (LSSICE), s'exposen les dades identificatives de l'empresa.",
+      "datos": "Dades Identificatives",
+      "empresa": "Raó Social: EQUINOX Equipos Inoxidables SL",
+      "nif": "NIF: B00000000",
+      "domicilio": "Domicili: Polígon Industrial, Carrer Principal 123, 08000 Barcelona",
+      "email": "Email: info@equinox.es",
+      "tel": "Telèfon: +34 900 000 000",
+      "registro": "Dades Registrals: Registre Mercantil de Barcelona, Tom X, Foli Y, Full Z."
+    },
+    "privacidad": {
+      "title": "Política de Privadesa",
+      "intro": "EQUINOX Equipos Inoxidables SL informa els usuaris del lloc web sobre la seva política respecte del tractament i protecció de les dades de caràcter personal.",
+      "finalidad": "Finalitat del tractament",
+      "finalidadDesc": "La recollida i tractament de les dades personals té com a finalitat la gestió de les consultes i sol·licituds de pressupost rebudes a través del formulari de contacte.",
+      "derechos": "Els seus drets",
+      "derechosDesc": "Vostè té dret a accedir, rectificar, suprimir i oposar-se al tractament de les seves dades personals enviant un correu a info@equinox.es."
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "intro": "Aquest lloc web utilitza cookies per millorar l'experiència de l'usuari.",
+      "queSon": "Què són les cookies?",
+      "queSonDesc": "Una cookie és un petit fitxer que s'emmagatzema al navegador de l'usuari en visitar una pàgina web.",
+      "tipos": "Tipus de cookies",
+      "tiposDesc": "Utilitzem cookies tècniques (necessàries per al funcionament) i analítiques (per entendre com s'usa el web).",
+      "banner": {
+        "text": "Utilitzem cookies pròpies i de tercers per millorar els nostres serveis i mostrar-li publicitat relacionada amb les seves preferències mitjançant l'anàlisi dels seus hàbits de navegació.",
+        "accept": "Acceptar totes",
+        "settings": "Configurar",
+        "decline": "Rebutjar"
+      }
+    }
+  }
+}

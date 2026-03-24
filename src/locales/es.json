@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "empresa": "Empresa",
+    "servicios": "Servicios",
+    "sectores": "Sectores",
+    "contacto": "Contacto",
+    "presupuesto": "Presupuesto"
+  },
+  "common": {
+    "saberMas": "Saber más",
+    "verTodos": "Ver todos los sectores",
+    "solicitarPresupuesto": "Solicitar Presupuesto",
+    "hablarTecnico": "Hablar con un técnico",
+    "scroll": "Scroll",
+    "verServicios": "Ver todos los servicios",
+    "consultanos": "Consúltanos tu proyecto"
+  },
+  "home": {
+    "heroLabel": "Calderería de Precisión",
+    "heroTitle": "Calderería Industrial y Equipos de Proceso",
+    "heroSubtitle": "Más de 30 años transformando ideas en soluciones sólidas. Expertos en acero inoxidable, acero al carbono y aleaciones especiales para los sectores más exigentes.",
+    "heroCta": "Solicitar Presupuesto",
+    "heroSecondary": "Ver Sectores",
+    "sectoresLabel": "Sectores",
+    "sectoresTitle": "Sectores de Aplicación",
+    "sectoresDesc": "Nuestra experiencia técnica nos permite adaptarnos a las normativas y exigencias de las industrias más rigurosas.",
+    "sectoresLink": "Ver todos los sectores",
+    "sectores": {
+      "farma": { "name": "Farmacia y Cosmética", "desc": "Acabados sanitarios y pulido espejo bajo normativas FDA y GMP." },
+      "alim": { "name": "Alimentación", "desc": "Diseños higiénicos para evitar contaminación cruzada y facilitar limpieza CIP." },
+      "quim": { "name": "Química y Petroquímica", "desc": "Equipos en aleaciones especiales para procesos corrosivos y alta presión." }
+    },
+    "features": {
+      "diseno": { "title": "Diseño y Cálculo", "desc": "Ingeniería de detalle y cálculo de equipos según normativas internacionales (ASME, EN-13445, TEMA, AD-Merkblätter)." },
+      "servicio": { "title": "Servicio Integral", "desc": "Desde la fabricación hasta la instalación, mantenimiento y legalización de equipos en su planta." },
+      "materiales": { "title": "Materiales Avanzados", "desc": "Expertos en acero inoxidable, acero al carbono y aleaciones especiales como Hastelloy y Duplex." }
+    },
+    "serviciosLabel": "Nuestras Capacidades",
+    "serviciosTitle": "Soluciones de Calderería para la Industria Moderna",
+    "serviciosLink": "Ver todos los servicios",
+    "serviciosList": {
+      "dep": { "title": "Depósitos y Tanques", "desc": "Fabricación de recipientes a presión y almacenamiento con acabados sanitarios." },
+      "skid": { "title": "Skids Industriales", "desc": "Conjuntos modulares listos para conectar y funcionar en su línea de proceso." },
+      "sold": { "title": "Soldadura TIG/MIG", "desc": "Especialistas en soldadura de alta precisión para acero inoxidable y aleaciones." },
+      "mont": { "title": "Montaje en Planta", "desc": "Instalación y mantenimiento preventivo directo en sus instalaciones." }
+    },
+    "saberMas": "Saber más",
+    "ctaTitle": "¿Tienes un proyecto de calderería técnica?",
+    "ctaDesc": "Nuestro equipo de ingeniería analizará tus planos y te ofrecerá la solución más eficiente en acero inoxidable.",
+    "ctaPrimary": "Solicitar Presupuesto",
+    "ctaSecondary": "Hablar con un técnico"
+  },
+  "empresa": {
+    "heroTitle": "Transformando ideas en soluciones sólidas desde 1990",
+    "heroSubtitle": "Quiénes Somos",
+    "heroDesc": "Con más de 30 años de experiencia, EQUINOX S.L. es especialista en calderería industrial y fabricación de equipos de proceso para los sectores más exigentes, garantizando calidad, precisión y fiabilidad.",
+    "compromisoTitle": "Nuestro Compromiso con la Excelencia",
+    "compromisoDesc1": "En EQUINOX no solo fabricamos equipos; construimos confianza. Entendemos que en sectores como el farmacéutico o el alimentario, un acabado imperfecto o una soldadura porosa pueden suponer paradas de producción millonarias.",
+    "compromisoDesc2": "Ofrecemos un servicio integral: diseño y cálculo según normas internacionales, fabricación, instalación, mantenimiento y legalización de equipos. Trabajamos con acero inoxidable, acero al carbono y aleaciones especiales.",
+    "compromisoList": [
+      "Diseño y cálculo de equipos (ASME, EN-13445, TEMA, AD-Merkblätter)",
+      "Acero inoxidable, acero al carbono y aleaciones especiales (Hastelloy, Duplex)",
+      "Soldadura homologada (TIG, MIG-MAG, SMAW)",
+      "Servicio integral: fabricación, instalación, mantenimiento y legalización"
+    ],
+    "calidadTitle": "Calidad Certificada",
+    "calidadDesc": "ISO 9001 & WPS/PQR",
+    "capacidadTitle": "Capacidad Instalada",
+    "capacidadDesc": "Disponemos de instalaciones totalmente equipadas y maquinaria especializada para abordar proyectos integrales de calderería y fabricación de equipos de proceso.",
+    "capacidadList": {
+      "inst": { "title": "Instalaciones", "items": ["Más de 700 m² de superficie total", "100 m² destinados a mecanización de piezas", "200 m² de patio exterior para almacenamiento y pruebas", "2 puentes grúa para 6 Tn"] },
+      "maq": { "title": "Maquinaria", "items": ["2 cilindros, 1 cizalla y 1 plegadora", "1 punzonadora y 1 taladro de brazo radial", "1 fresadora y 1 torno convencional mediano", "Sierras de cinta, alternativas, fricción y abrasivas", "1 equipo automático de corte y 3 de plasma", "3 parejas de viradores indep. y 4 manuales"] },
+      "sold": { "title": "Soldadura", "items": ["6 máquinas TIG (H.F. y P.A.)", "6 máquinas MIG-MAG", "5 máquinas por electrodo (SMAW)", "Útiles para inertización de atmósfera", "2 parejas de viradores independientes", "1 posicionador y 1 tren virador"] }
+    },
+    "materialesTitle": "Materiales y Acabados",
+    "materialesDesc": "Fabricamos nuestros productos en todo tipo de metales, aplicando los tratamientos superficiales más exigentes del sector.",
+    "materialesSub1": "Materiales de Fabricación",
+    "materialesList": [
+      { "name": "Aceros Inoxidables", "desc": "Austeníticos (AISI-304.L, 316.L, 904.L) para proceso. Martensíticos (AISI-410, 420) para hipertemple." },
+      { "name": "Aceros Refractarios", "desc": "Para hornos o piezas a temperaturas elevadas (AISI-309 y 310)." },
+      { "name": "Aleaciones Especiales", "desc": "Alta corrosión y temperatura: Níquel (Alloy B2, C276, 800), Titanio, Duplex." },
+      { "name": "Aceros al Carbono", "desc": "Para calderería general (S275JR, S355J2G3, P265GH, P295GH)." },
+      { "name": "Aceros Antidesgaste", "desc": "Utilizados para alta resistencia al desgaste." },
+      { "name": "Otros Metales", "desc": "Latón, cobre y aluminio para protecciones o piezas específicas." }
+    ],
+    "acabadosSub2": "Tratamientos y Acabados",
+    "acabadosList": {
+      "inox": { "title": "En Acero Inoxidable", "items": ["Decapados", "Pasivados", "Pulidos industriales mates y brillantes", "Pulido espejo", "Electropulidos", "Chorreado exterior", "Recubrimientos en teflón"] },
+      "carb": { "title": "En Acero al Carbono", "items": ["Imprimación epoxi", "Pintura de acabado", "Estabilizaciones", "Galvanizado en caliente", "Zincado electrolítico", "Ebonitado", "Recubrimientos en teflón", "Chorreado"] }
+    }
+  },
+  "servicios": {
+    "heroTitle": "Nuestros Servicios",
+    "heroDesc": "Soluciones integrales de calderería inoxidable: desde la ingeniería de detalle hasta el montaje final en sus instalaciones.",
+    "list": {
+      "dep": { "title": "Depósitos a Presión y Equipos", "desc": "Diseño, cálculo (ASME, EN-13445, TEMA) y construcción de equipos de proceso y recipientes a presión con su correspondiente legalización." },
+      "medida": { "title": "Calderería Industrial", "desc": "Fabricación de tolvas, reactores, ciclones y piezas especiales. Trabajamos acero inoxidable, acero al carbono y aleaciones especiales (Hastelloy, Duplex)." },
+      "skids": { "title": "Skids y Conjuntos Industriales", "desc": "Estructuras modulares \"Plug & Play\" que integran bombas, válvulas, intercambiadores y tubería, listas para conectar en su línea de proceso." },
+      "sold": { "title": "Soldadura Homologada", "desc": "Especialistas en soldadura TIG, MIG-MAG y SMAW. Soldadores homologados para uniones de alta responsabilidad y control de calidad exhaustivo." },
+      "tub": { "title": "Piping y Tubería Industrial", "desc": "Instalación de líneas de proceso. Soldadura orbital y manual con purga de gas para garantizar la máxima higiene en sectores farma y alimentario." },
+      "mont": { "title": "Instalación y Mantenimiento", "desc": "Servicio integral en planta: instalación de equipos nuevos, legalización, paradas de mantenimiento y reformas de líneas existentes." }
+    },
+    "catalogTitle": "Catálogo de Fabricación y Servicios",
+    "catalogDesc": "Detalle exhaustivo de nuestras capacidades de fabricación, equipos de proceso y servicios especializados para la industria.",
+    "catalog": {
+      "react": { "title": "Reactores", "items": ["Con media caña", "Con camisa", "Con serpentín interior", "Para altas temperaturas y presión", "Hidrogenadores", "Cristalizadores", "Mezcladores y diluidores", "Fermentadores"] },
+      "agit": { "title": "Agitadores", "items": ["Hélice de alto rendimiento", "Hélice marina y gamma", "Hélice doble flujo", "Turbina axial y radial", "Disco diente sierra", "Áncora", "Doble áncora y pala", "Cinta helicoidal"] },
+      "inter": { "title": "Intercambiadores", "items": ["Con haz tubular", "Con serpentín", "De simple y múltiples pasos", "Evaporadores de haces tubulares", "Condensadores de tubos"] },
+      "dep": { "title": "Depósitos", "desc": "Construimos depósitos de cualquier medida y calidad a necesidad del cliente.", "items": ["De almacenamiento", "De calefacción", "Estériles", "Para alta presión", "Calorifugados"] },
+      "aux": { "title": "Elementos Auxiliares", "items": ["Estufas: de vacío, atmosféricas, continua de rodillos, de aire, eléctricas, con vapor y aceite térmico", "Filtros: de cesta, con diferentes tamices y de plato", "Serpentines: de cualquier forma, refrigeración, calefacción y para mezclas", "Mezcladoras especiales: para pastas muy viscosas, para sólidos, volteadoras y continuas", "Unidades compactas: calefactoras, de refrigeración, de recogida y tratamiento"] },
+      "cald": { "title": "Calderería General", "items": ["Tolvas y Cubas de almacenamiento", "Válvulas de tajadera especiales", "Estructuras y Elementos para medio ambiente", "Sinfines y Cribas", "Cintas transportadoras y Binds"] },
+      "serv": { "title": "Servicios Especiales", "items": ["Transportes (nacionales e internacionales)", "Transportes especiales y Grúas", "Proyectos de ingeniería y Legalizaciones", "Pruebas periódicas (disponemos de permisos legales)"] },
+      "inst": { "title": "Instalaciones", "desc": "Disponemos de documentación acreditativa como instaladores.", "items": ["Tuberías de proceso, servicios, vapor, AC. térmico", "Redes para agua y Tuberías para gases", "Montajes de equipos y Estructuras metálicas", "Trabajos y mantenimientos por horas"] }
+    }
+  },
+  "sectores": {
+    "heroTitle": "Sectores de Aplicación y Proyectos",
+    "heroDesc": "Nuestra experiencia técnica y capacidad de adaptación nos permite cumplir con las normativas y exigencias de los sectores industriales más rigurosos.",
+    "list": {
+      "farma": { "title": "Laboratorios Farmacéuticos", "desc": "Equipos con acabados sanitarios, pulido espejo y soldaduras orbitales que cumplen con las normativas más estrictas (FDA, GMP) para garantizar la máxima esterilidad y trazabilidad." },
+      "alim": { "title": "Alimentación", "desc": "Soluciones en acero inoxidable diseñadas para evitar la contaminación cruzada y facilitar la limpieza CIP/SIP en procesos de lácteos, bebidas y procesado de alimentos." },
+      "cosm": { "title": "Cosmética y Afines", "desc": "Reactores y mezcladores de alta precisión para emulsiones y cremas, asegurando homogeneidad y control exacto de temperatura durante todo el proceso de fabricación." },
+      "quimf": { "title": "Química Fina y de Síntesis", "desc": "Equipos fabricados en aleaciones especiales (Hastelloy, Duplex) capaces de soportar procesos altamente corrosivos y condiciones extremas de presión y temperatura." },
+      "quim": { "title": "Química", "desc": "Calderería pesada y equipos de proceso robustos para la industria química general, incluyendo intercambiadores de calor, columnas y grandes depósitos de almacenamiento." },
+      "pint": { "title": "Pinturas y Barnices", "desc": "Sistemas de agitación especializados, dispersores y reactores ATEX diseñados específicamente para el manejo seguro de solventes y productos inflamables." },
+      "petro": { "title": "Petroquímica", "desc": "Construcción de recipientes a presión, intercambiadores tubulares y tubería de proceso bajo código ASME para las exigentes condiciones del sector petroquímico." },
+      "asfalto": { "title": "Asfalto y Derivados", "desc": "Depósitos calorifugados, sistemas de calentamiento por aceite térmico y agitadores robustos para el mantenimiento y procesado de productos bituminosos." },
+      "medio": { "title": "Medio Ambiente", "desc": "Equipos para plantas de tratamiento de aguas (EDAR), decantadores, filtros y estructuras para la gestión de residuos y control de emisiones." }
+    },
+    "proyectosDestacados": "Proyectos Destacados",
+    "cliente": "Cliente",
+    "ctaTitle": "¿Tu sector no está en la lista?",
+    "ctaDesc": "Nuestra capacidad de fabricación a medida nos permite adaptarnos a las necesidades específicas de cualquier industria."
+  },
+  "contacto": {
+    "heroTitle": "Contacto",
+    "heroDesc": "Estamos a su disposición para resolver cualquier duda o estudiar su proyecto.",
+    "infoTitle": "Información de Contacto",
+    "inst": "Instalaciones",
+    "tel": "Teléfonos",
+    "oficina": "Oficina Central",
+    "dptoTec": "Dpto. Técnico",
+    "emails": "Emails",
+    "infoGen": "Información General",
+    "proyectos": "Proyectos y Presupuestos",
+    "horario": "Horario y Urgencias",
+    "lunesJueves": "Lunes - Jueves",
+    "viernes": "Viernes",
+    "urgencias": "Urgencias 24/7 en planta",
+    "llamar": "Llamar a Urgencias",
+    "formTitle": "Solicitar Presupuesto",
+    "formDesc": "Cuéntenos los detalles de su proyecto y nuestro equipo de ingeniería se pondrá en contacto con usted en menos de 48 horas.",
+    "successTitle": "Solicitud Recibida",
+    "successDesc": "Hemos recibido los detalles de su proyecto. Nuestro equipo técnico lo analizará y se pondrá en contacto con usted a la mayor brevedad posible.",
+    "detallesProyecto": "Detalles del Proyecto",
+    "nombre": "Nombre y Apellidos *",
+    "empresa": "Empresa *",
+    "email": "Email Corporativo *",
+    "telefono": "Teléfono",
+    "tipoProyecto": "Tipo de Proyecto *",
+    "seleccione": "Seleccione una opción...",
+    "opciones": {
+      "dep": "Depósitos y Recipientes",
+      "skid": "Skids Industriales",
+      "tub": "Instalación de Tubería",
+      "cald": "Calderería a Medida",
+      "mont": "Montaje / Mantenimiento",
+      "otros": "Otros"
+    },
+    "material": "Material Requerido",
+    "matOpciones": {
+      "aisi304": "Acero Inoxidable AISI 304",
+      "aisi316": "Acero Inoxidable AISI 316L",
+      "carbono": "Acero al Carbono",
+      "aleaciones": "Aleaciones Especiales (Duplex, Hastelloy...)",
+      "asesoramiento": "Necesito asesoramiento técnico"
+    },
+    "descTecnica": "Descripción Técnica *",
+    "descPlaceholder": "Describa las necesidades de su proyecto (capacidad, presión, temperatura, normativas aplicables...)",
+    "adjuntar": "Adjuntar Planos o Especificaciones",
+    "adjuntarDesc": "Haga clic para subir o arrastre y suelte sus archivos aquí",
+    "maxSize": "Tamaño máximo: 20MB",
+    "privacidad1": "He leído y acepto la ",
+    "privacidadLink": "Política de Privacidad",
+    "privacidad2": " y consiento el tratamiento de mis datos para la gestión de este presupuesto.",
+    "enviar": "Enviar Solicitud"
+  },
+  "footer": {
+    "desc": "Con más de 30 años de experiencia, especialistas en calderería industrial y fabricación de equipos de proceso en acero inoxidable, acero al carbono y aleaciones especiales.",
+    "empresa": "Empresa",
+    "links": {
+      "inicio": "Inicio",
+      "quienesSomos": "Quiénes somos",
+      "servicios": "Servicios",
+      "sectores": "Sectores",
+      "contacto": "Contacto"
+    },
+    "servicios": "Servicios",
+    "serviciosList": {
+      "caldereria": "Calderería a medida",
+      "depositos": "Depósitos y Tanques",
+      "soldadura": "Soldadura TIG/MIG",
+      "skids": "Skids Industriales",
+      "montaje": "Montaje en Planta"
+    },
+    "contacto": "Contacto",
+    "copyright": "© 2026 EQUINOX Equipos Inoxidables SL. Todos los derechos reservados.",
+    "legal": "Aviso Legal",
+    "privacidad": "Privacidad",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "aviso": {
+      "title": "Aviso Legal",
+      "intro": "En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSICE), se exponen los datos identificativos de la empresa.",
+      "datos": "Datos Identificativos",
+      "empresa": "Razón Social: EQUINOX Equipos Inoxidables SL",
+      "nif": "NIF: B00000000",
+      "domicilio": "Domicilio: Polígono Industrial, Calle Principal 123, 08000 Barcelona",
+      "email": "Email: info@equinox.es",
+      "tel": "Teléfono: +34 900 000 000",
+      "registro": "Datos Registrales: Registro Mercantil de Barcelona, Tomo X, Folio Y, Hoja Z."
+    },
+    "privacidad": {
+      "title": "Política de Privacidad",
+      "intro": "EQUINOX Equipos Inoxidables SL informa a los usuarios del sitio web sobre su política respecto del tratamiento y protección de los datos de carácter personal.",
+      "finalidad": "Finalidad del tratamiento",
+      "finalidadDesc": "La recogida y tratamiento de los datos personales tiene como finalidad la gestión de las consultas y solicitudes de presupuesto recibidas a través del formulario de contacto.",
+      "derechos": "Sus derechos",
+      "derechosDesc": "Usted tiene derecho a acceder, rectificar, suprimir y oponerse al tratamiento de sus datos personales enviando un correo a info@equinox.es."
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "intro": "Este sitio web utiliza cookies para mejorar la experiencia del usuario.",
+      "queSon": "¿Qué son las cookies?",
+      "queSonDesc": "Una cookie es un pequeño archivo que se almacena en el navegador del usuario al visitar una página web.",
+      "tipos": "Tipos de cookies",
+      "tiposDesc": "Utilizamos cookies técnicas (necesarias para el funcionamiento) y analíticas (para entender cómo se usa la web).",
+      "banner": {
+        "text": "Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación.",
+        "accept": "Aceptar todas",
+        "settings": "Configurar",
+        "decline": "Rechazar"
+      }
+    }
+  }
+}

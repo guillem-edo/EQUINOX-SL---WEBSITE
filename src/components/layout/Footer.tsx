@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Linkedin, Instagram, ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-brand-dark text-white pt-20 pb-10">
       <div className="container mx-auto px-4 md:px-6">
@@ -22,7 +25,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-white/70 text-sm leading-relaxed max-w-xs">
-              Con más de 30 años de experiencia, especialistas en calderería industrial y fabricación de equipos de proceso en acero inoxidable, acero al carbono y aleaciones especiales.
+              {t('footer.desc')}
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
@@ -36,36 +39,43 @@ export function Footer() {
 
           {/* Links Column */}
           <div>
-            <h4 className="font-display font-bold text-lg mb-8 uppercase tracking-widest text-brand-accent">Empresa</h4>
+            <h4 className="font-display font-bold text-lg mb-8 uppercase tracking-widest text-brand-accent">{t('footer.empresa')}</h4>
             <ul className="flex flex-col gap-4">
-              {['Inicio', 'Quiénes somos', 'Servicios', 'Sectores', 'Contacto'].map((item) => (
-                <li key={item}>
-                  <Link to="#" className="text-white/70 hover:text-white flex items-center gap-2 group transition-all">
-                    <ArrowRight size={14} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              {['Inicio', 'Quiénes somos', 'Servicios', 'Sectores', 'Contacto'].map((item, index) => {
+                const keys = ['inicio', 'quienesSomos', 'servicios', 'sectores', 'contacto'];
+                const paths = ['/', '/empresa', '/servicios', '/sectores', '/contacto'];
+                return (
+                  <li key={item}>
+                    <Link to={paths[index]} className="text-white/70 hover:text-white flex items-center gap-2 group transition-all">
+                      <ArrowRight size={14} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                      {t(`footer.links.${keys[index]}`)}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
           {/* Services Column */}
           <div>
-            <h4 className="font-display font-bold text-lg mb-8 uppercase tracking-widest text-brand-accent">Servicios</h4>
+            <h4 className="font-display font-bold text-lg mb-8 uppercase tracking-widest text-brand-accent">{t('footer.servicios')}</h4>
             <ul className="flex flex-col gap-4">
-              {['Calderería a medida', 'Depósitos y Tanques', 'Soldadura TIG/MIG', 'Skids Industriales', 'Montaje en Planta'].map((item) => (
-                <li key={item}>
-                  <Link to="#" className="text-white/70 hover:text-white text-sm">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              {['Calderería a medida', 'Depósitos y Tanques', 'Soldadura TIG/MIG', 'Skids Industriales', 'Montaje en Planta'].map((item, index) => {
+                const keys = ['caldereria', 'depositos', 'soldadura', 'skids', 'montaje'];
+                return (
+                  <li key={item}>
+                    <Link to="/servicios" className="text-white/70 hover:text-white text-sm">
+                      {t(`footer.serviciosList.${keys[index]}`)}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
           {/* Contact Column */}
           <div>
-            <h4 className="font-display font-bold text-lg mb-8 uppercase tracking-widest text-brand-accent">Contacto</h4>
+            <h4 className="font-display font-bold text-lg mb-8 uppercase tracking-widest text-brand-accent">{t('footer.contacto')}</h4>
             <ul className="flex flex-col gap-6">
               <li className="flex gap-4">
                 <MapPin className="text-brand-accent shrink-0" size={20} />
@@ -85,12 +95,12 @@ export function Footer() {
 
         <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-white/40 text-xs">
-            © 2026 EQUINOX Equipos Inoxidables SL. Todos los derechos reservados.
+            {t('footer.copyright')}
           </p>
           <div className="flex gap-8">
-            <Link to="#" className="text-white/40 hover:text-white text-xs">Aviso Legal</Link>
-            <Link to="#" className="text-white/40 hover:text-white text-xs">Privacidad</Link>
-            <Link to="#" className="text-white/40 hover:text-white text-xs">Cookies</Link>
+            <Link to="/aviso-legal" className="text-white/40 hover:text-white text-xs">{t('footer.legal')}</Link>
+            <Link to="/privacidad" className="text-white/40 hover:text-white text-xs">{t('footer.privacidad')}</Link>
+            <Link to="/cookies" className="text-white/40 hover:text-white text-xs">{t('footer.cookies')}</Link>
           </div>
         </div>
       </div>

@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone, Mail, Globe } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
+import { useTranslation } from 'react-i18next';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,11 +19,18 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { name: 'Inicio', path: '/' },
-    { name: 'Empresa', path: '/empresa' },
-    { name: 'Servicios', path: '/servicios' },
-    { name: 'Sectores', path: '/sectores' },
-    { name: 'Contacto', path: '/contacto' },
+    { name: t('nav.inicio'), path: '/' },
+    { name: t('nav.empresa'), path: '/empresa' },
+    { name: t('nav.servicios'), path: '/servicios' },
+    { name: t('nav.sectores'), path: '/sectores' },
+    { name: t('nav.contacto'), path: '/contacto' },
+  ];
+
+  const languages = [
+    { code: 'es', label: 'ES' },
+    { code: 'en', label: 'EN' },
+    { code: 'de', label: 'DE' },
+    { code: 'ca', label: 'CA' },
   ];
 
   return (
@@ -64,24 +73,67 @@ export function Header() {
               </Link>
             ))}
             <Link
-              to="/contacto"
+              to="/contacto#presupuesto"
               className="bg-brand-accent hover:bg-brand-accent/90 text-white px-6 py-2.5 rounded-sm text-sm font-bold uppercase tracking-widest transition-all shadow-lg hover:shadow-brand-accent/20"
             >
-              Presupuesto
+              {t('nav.presupuesto')}
             </Link>
+            
+            {/* Language Switcher */}
+            <div className="flex items-center gap-2 ml-4 border-l pl-4 border-gray-300/30">
+              <Globe size={16} className={cn(isScrolled ? "text-brand-steel" : "text-white/80")} />
+              <div className="flex gap-1">
+                {languages.map((lng) => (
+                  <button
+                    key={lng.code}
+                    onClick={() => i18n.changeLanguage(lng.code)}
+                    className={cn(
+                      "text-xs font-bold px-1.5 py-1 rounded-sm transition-colors",
+                      i18n.language === lng.code
+                        ? "bg-brand-accent text-white"
+                        : isScrolled 
+                          ? "text-brand-steel hover:text-brand-dark hover:bg-gray-100" 
+                          : "text-white/70 hover:text-white hover:bg-white/10"
+                    )}
+                  >
+                    {lng.label}
+                  </button>
+                ))}
+              </div>
+            </div>
           </nav>
 
-          {/* Mobile Toggle */}
-          <button
-            className="lg:hidden text-brand-dark"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? (
-              <X className={isScrolled ? "text-brand-dark" : "text-white"} />
-            ) : (
-              <Menu className={isScrolled ? "text-brand-dark" : "text-white"} />
-            )}
-          </button>
+          {/* Mobile Toggle & Lang */}
+          <div className="flex items-center gap-4 lg:hidden">
+            <div className="flex gap-1">
+              {languages.map((lng) => (
+                <button
+                  key={lng.code}
+                  onClick={() => i18n.changeLanguage(lng.code)}
+                  className={cn(
+                    "text-[10px] font-bold px-1.5 py-1 rounded-sm transition-colors",
+                    i18n.language === lng.code
+                      ? "bg-brand-accent text-white"
+                      : isScrolled 
+                        ? "text-brand-steel" 
+                        : "text-white/80"
+                  )}
+                >
+                  {lng.label}
+                </button>
+              ))}
+            </div>
+            <button
+              className="text-brand-dark"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? (
+                <X className={isScrolled ? "text-brand-dark" : "text-white"} />
+              ) : (
+                <Menu className={isScrolled ? "text-brand-dark" : "text-white"} />
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
