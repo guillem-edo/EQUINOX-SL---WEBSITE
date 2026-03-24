@@ -38,7 +38,7 @@ export function Footer() {
           <div>
             <h4 className="font-display font-bold text-lg mb-8 uppercase tracking-widest text-brand-accent">Empresa</h4>
             <ul className="flex flex-col gap-4">
-              {['Inicio', 'Quiénes somos', 'Servicios', 'Sectores', 'Proyectos', 'Contacto'].map((item) => (
+              {['Inicio', 'Quiénes somos', 'Servicios', 'Sectores', 'Contacto'].map((item) => (
                 <li key={item}>
                   <Link to="#" className="text-white/70 hover:text-white flex items-center gap-2 group transition-all">
                     <ArrowRight size={14} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />

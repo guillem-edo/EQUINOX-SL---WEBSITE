@@ -10,7 +10,7 @@ export function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop"
             alt="Soldadura Industrial"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -60,8 +60,8 @@ export function Home() {
                 Solicitar Presupuesto
                 <ArrowRight className="group-hover:translate-x-2 transition-transform" />
               </Link>
-              <Link to="/proyectos" className="border border-white/30 hover:border-white text-white px-10 py-5 rounded-sm text-lg font-bold uppercase tracking-widest transition-all backdrop-blur-sm flex items-center justify-center">
-                Ver Proyectos
+              <Link to="/sectores" className="border border-white/30 hover:border-white text-white px-10 py-5 rounded-sm text-lg font-bold uppercase tracking-widest transition-all backdrop-blur-sm flex items-center justify-center">
+                Ver Sectores
               </Link>
             </motion.div>
           </div>
@@ -80,7 +80,7 @@ export function Home() {
 
       {/* Sectores de Aplicación (Resumen) */}
       <section className="py-24 bg-brand-dark text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity"></div>
+        <div className="absolute inset-0 opacity-5 bg-[url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-2xl">
@@ -189,22 +189,22 @@ export function Home() {
               {
                 title: 'Depósitos y Tanques',
                 desc: 'Fabricación de recipientes a presión y almacenamiento con acabados sanitarios.',
-                img: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1974&auto=format&fit=crop'
+                img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop'
               },
               {
                 title: 'Skids Industriales',
                 desc: 'Conjuntos modulares listos para conectar y funcionar en su línea de proceso.',
-                img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop'
+                img: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2069&auto=format&fit=crop'
               },
               {
                 title: 'Soldadura TIG/MIG',
                 desc: 'Especialistas en soldadura de alta precisión para acero inoxidable y aleaciones.',
-                img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop'
+                img: 'https://images.unsplash.com/photo-1565439390118-bbf3252f238f?q=80&w=2069&auto=format&fit=crop'
               },
               {
                 title: 'Montaje en Planta',
                 desc: 'Instalación y mantenimiento preventivo directo en sus instalaciones.',
-                img: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2069&auto=format&fit=crop'
+                img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2070&auto=format&fit=crop'
               }
             ].map((service, idx) => (
               <div key={idx} className="group relative h-[400px] overflow-hidden rounded-sm">

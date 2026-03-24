@@ -9,21 +9,21 @@ export function Servicios() {
       icon: <Droplets size={32} />,
       title: 'Depósitos a Presión y Equipos',
       desc: 'Diseño, cálculo (ASME, EN-13445, TEMA) y construcción de equipos de proceso y recipientes a presión con su correspondiente legalización.',
-      img: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1974&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 'medida',
       icon: <Shield size={32} />,
       title: 'Calderería Industrial',
       desc: 'Fabricación de tolvas, reactores, ciclones y piezas especiales. Trabajamos acero inoxidable, acero al carbono y aleaciones especiales (Hastelloy, Duplex).',
-      img: 'https://images.unsplash.com/photo-1565439390118-bbf3252f238f?q=80&w=2069&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1974&auto=format&fit=crop'
     },
     {
       id: 'skids',
       icon: <Box size={32} />,
       title: 'Skids y Conjuntos Industriales',
       desc: 'Estructuras modulares "Plug & Play" que integran bombas, válvulas, intercambiadores y tubería, listas para conectar en su línea de proceso.',
-      img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2069&auto=format&fit=crop'
     },
     {
       id: 'soldadura',
@@ -37,14 +37,14 @@ export function Servicios() {
       icon: <Activity size={32} />,
       title: 'Piping y Tubería Industrial',
       desc: 'Instalación de líneas de proceso. Soldadura orbital y manual con purga de gas para garantizar la máxima higiene en sectores farma y alimentario.',
-      img: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2069&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 'montaje',
       icon: <Wrench size={32} />,
       title: 'Instalación y Mantenimiento',
       desc: 'Servicio integral en planta: instalación de equipos nuevos, legalización, paradas de mantenimiento y reformas de líneas existentes.',
-      img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2070&auto=format&fit=crop'
     }
   ];
 
@@ -143,16 +143,19 @@ export function Servicios() {
                   <p className="text-brand-steel leading-relaxed mb-8 flex-grow">
                     {service.desc}
                   </p>
-                  <Link
-                    to="/contacto"
-                    className="inline-flex items-center gap-2 text-brand-dark font-bold uppercase tracking-widest text-sm hover:text-brand-accent transition-colors mt-auto"
-                  >
-                    Solicitar Información
-                    <ArrowRight size={16} />
-                  </Link>
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          <div className="mt-16 text-center">
+            <Link
+              to="/contacto"
+              className="inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-brand-accent/90 text-white px-10 py-5 rounded-sm text-lg font-bold uppercase tracking-widest transition-all shadow-xl"
+            >
+              Solicitar Presupuesto
+              <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>

@@ -8,7 +8,7 @@ export function Empresa() {
       <section className="relative py-24 bg-brand-dark overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <img
-            src="https://images.unsplash.com/photo-1565439390118-bbf3252f238f?q=80&w=2069&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop"
             alt="Taller de calderería"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -74,8 +74,8 @@ export function Empresa() {
               className="relative h-[500px] rounded-sm overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop"
-                alt="Soldadura de precisión"
+                src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?q=80&w=2070&auto=format&fit=crop"
+                alt="Ingeniería y Calidad"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />

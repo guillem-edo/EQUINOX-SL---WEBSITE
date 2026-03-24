@@ -4,9 +4,18 @@ import { MapPin, Phone, Mail, UploadCloud, Send, CheckCircle2 } from 'lucide-rea
 
 export function Contacto() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [honeypot, setHoneypot] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Basic security: Honeypot check to prevent bot spam
+    // If the hidden field is filled, it's a bot. We silently reject it.
+    if (honeypot) {
+      console.warn("Bot detected. Form submission rejected.");
+      return;
+    }
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitted(true);
@@ -91,6 +100,20 @@ export function Contacto() {
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+                    {/* Honeypot field - Hidden from real users, visible to bots */}
+                    <div className="hidden" aria-hidden="true">
+                      <label htmlFor="website">Website</label>
+                      <input 
+                        type="text" 
+                        id="website" 
+                        name="website" 
+                        tabIndex={-1} 
+                        autoComplete="off"
+                        value={honeypot}
+                        onChange={(e) => setHoneypot(e.target.value)}
+                      />
+                    </div>
+
                     <h3 className="text-2xl font-bold text-brand-dark mb-2">Detalles del Proyecto</h3>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

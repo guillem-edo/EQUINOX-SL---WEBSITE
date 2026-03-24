@@ -3,7 +3,6 @@ import { Home } from './pages/Home';
 import { Empresa } from './pages/Empresa';
 import { Servicios } from './pages/Servicios';
 import { Sectores } from './pages/Sectores';
-import { Proyectos } from './pages/Proyectos';
 import { Contacto } from './pages/Contacto';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
@@ -21,7 +20,6 @@ export default function App() {
             <Route path="/empresa" element={<Empresa />} />
             <Route path="/servicios" element={<Servicios />} />
             <Route path="/sectores" element={<Sectores />} />
-            <Route path="/proyectos" element={<Proyectos />} />
             <Route path="/contacto" element={<Contacto />} />
           </Routes>
         </main>

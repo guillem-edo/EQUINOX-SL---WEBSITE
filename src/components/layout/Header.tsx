@@ -21,7 +21,6 @@ export function Header() {
     { name: 'Empresa', path: '/empresa' },
     { name: 'Servicios', path: '/servicios' },
     { name: 'Sectores', path: '/sectores' },
-    { name: 'Proyectos', path: '/proyectos' },
     { name: 'Contacto', path: '/contacto' },
   ];
 
