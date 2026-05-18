@@ -23,6 +23,7 @@ export function Header() {
     { name: t('nav.empresa'), path: '/empresa' },
     { name: t('nav.servicios'), path: '/servicios' },
     { name: t('nav.sectores'), path: '/sectores' },
+    { name: t('nav.proyectos'), path: '/proyectos' },
     { name: t('nav.contacto'), path: '/contacto' },
   ];
 

@@ -1,12 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, UploadCloud, Send, CheckCircle2, Clock, AlertTriangle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router-dom';
 
 export function Contacto() {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [honeypot, setHoneypot] = useState('');
+  
+  // State for precomposed values
+  const [descTecnica, setDescTecnica] = useState('');
+  const [tipoProyecto, setTipoProyecto] = useState('');
+
+  useEffect(() => {
+    const refParam = searchParams.get('ref');
+    const catParam = searchParams.get('cat');
+    if (refParam) {
+      setDescTecnica(`Solicitud de cotización e información técnica detallada para el equipo con Referencia #${refParam}.`);
+    }
+    if (catParam) {
+      // Map 'depositos', 'reactores', 'intercambiadores', 'caldereria' to option value
+      if (catParam === 'depositos') setTipoProyecto('depositos');
+      else if (catParam === 'reactores') setTipoProyecto('otros'); // or appropriate mappings
+      else if (catParam === 'intercambiadores') setTipoProyecto('otros');
+      else if (catParam === 'caldereria') setTipoProyecto('medida');
+    }
+  }, [searchParams]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -186,7 +207,12 @@ export function Contacto() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-semibold text-brand-dark">{t('contacto.tipoProyecto')}</label>
-                      <select required className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all text-brand-steel">
+                      <select 
+                        required 
+                        value={tipoProyecto}
+                        onChange={(e) => setTipoProyecto(e.target.value)}
+                        className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all text-brand-steel"
+                      >
                         <option value="">{t('contacto.seleccione')}</option>
                         <option value="depositos">{t('contacto.opciones.dep')}</option>
                         <option value="skids">{t('contacto.opciones.skid')}</option>
@@ -210,7 +236,14 @@ export function Contacto() {
 
                   <div className="flex flex-col gap-2">
                     <label className="text-sm font-semibold text-brand-dark">{t('contacto.descTecnica')}</label>
-                    <textarea required rows={4} className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all resize-none" placeholder={t('contacto.descPlaceholder')}></textarea>
+                    <textarea 
+                      required 
+                      rows={4} 
+                      value={descTecnica}
+                      onChange={(e) => setDescTecnica(e.target.value)}
+                      className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all resize-none" 
+                      placeholder={t('contacto.descPlaceholder')}
+                    ></textarea>
                   </div>
 
                   <div className="flex flex-col gap-2">
