@@ -23,6 +23,12 @@
     "heroSubtitle": "Més de 30 anys transformant idees en solucions sòlides. Experts en acer inoxidable, acer al carboni i aliatges especials per als sectors més exigents.",
     "heroCta": "Sol·licitar Pressupost",
     "heroSecondary": "Veure Sectors",
+    "stats": {
+      "years": "Anys d'Experiència",
+      "projects": "Projectes Realitzats",
+      "quality": "Qualitat Certificada",
+      "sectors": "Sectors Estratègics"
+    },
     "sectoresLabel": "Sectors",
     "sectoresTitle": "Sectors d'Aplicació",
     "sectoresDesc": "La nostra experiència tècnica ens permet adaptar-nos a les normatives i exigències de les indústries més rigoroses.",
@@ -30,9 +36,11 @@
     "sectores": {
       "farma": { "name": "Farmàcia i Cosmètica", "desc": "Acabats sanitaris i polit mirall sota normatives FDA i GMP." },
       "alim": { "name": "Alimentació", "desc": "Dissenys higiènics per evitar contaminació creuada i facilitar neteja CIP." },
-      "quim": { "name": "Química i Petroquímica", "desc": "Equips en aliatges especials per a processos corrosius i alta pressió." }
+      "quim": { "name": "Química i Petroquímica", "desc": "Equips en aliatges especials per a processos corrosius i alta pressió." },
+      "cosm": { "name": "Cosmètica", "desc": "Solucions especialitzades per a la indústria de la bellesa i cura personal." }
     },
     "features": {
+      "qa": "Segur de Qualitat",
       "diseno": { "title": "Disseny i Càlcul", "desc": "Enginyeria de detall i càlcul d'equips segons normatives internacionals (ASME, EN-13445, TEMA, AD-Merkblätter)." },
       "servicio": { "title": "Servei Integral", "desc": "Des de la fabricació fins a la instal·lació, manteniment i legalització d'equips a la seva planta." },
       "materiales": { "title": "Materials Avançats", "desc": "Experts en acer inoxidable, acer al carboni i aliatges especials com Hastelloy i Duplex." }
@@ -41,10 +49,26 @@
     "serviciosTitle": "Solucions de Caldereria per a la Indústria Moderna",
     "serviciosLink": "Veure tots els serveis",
     "serviciosList": {
-      "dep": { "title": "Dipòsits i Tancs", "desc": "Fabricació de recipients a pressió i emmagatzematge amb acabats sanitaris." },
-      "skid": { "title": "Skids Industrials", "desc": "Conjunts modulars llestos per connectar i funcionar a la seva línia de procés." },
-      "sold": { "title": "Soldadura TIG/MIG", "desc": "Especialistes en soldadura d'alta precisió per a acer inoxidable i aliatges." },
-      "mont": { "title": "Muntatge a Planta", "desc": "Instal·lació i manteniment preventiu directe a les seves instal·lacions." }
+      "dep": { 
+        "title": "Dipòsits i Tancs", 
+        "desc": "Fabricació de recipients a pressió i emmagatzematge amb acabats sanitaris.",
+        "bullets": ["Recipientes a presión (ASME/EN)", "Emmagatzematge sanitari", "Acabats polit mirall"]
+      },
+      "skid": { 
+        "title": "Skids Industrials", 
+        "desc": "Conjunts modulars llestos per connectar i funcionar a la seva línia de procés.",
+        "bullets": ["Disseny modular Plug & Play", "Integració d'instrumentació", "Proves de funcionament FAT"]
+      },
+      "sold": { 
+        "title": "Soldadura TIG/MIG", 
+        "desc": "Especialistes en soldadura d'alta precisió per a acer inoxidable i aliatges.",
+        "bullets": ["Soldadors homologats", "TIG / MIG-MAG / SMAW", "Control de qualitat per RX/Líquids"]
+      },
+      "mont": { 
+        "title": "Muntatge a Planta", 
+        "desc": "Instal·lació i manteniment preventivo directo en sus instalaciones.",
+        "bullets": ["Instal·lació directa a planta", "Manteniment preventiu", "Legalització d'equips"]
+      }
     },
     "saberMas": "Saber-ne més",
     "ctaTitle": "Tens un projecte de caldereria tècnica?",
@@ -94,6 +118,7 @@
   "servicios": {
     "heroTitle": "Els Nostres Serveis",
     "heroDesc": "Solucions integrals de caldereria inoxidable: des de l'enginyeria de detall fins al muntatge final a les seves instal·lacions.",
+    "capacidades": "Capacitats Tècniques",
     "list": {
       "dep": { "title": "Dipòsits a Pressió i Equips", "desc": "Disseny, càlcul (ASME, EN-13445, TEMA) i construcció d'equips de procés i recipients a pressió amb la seva corresponent legalització." },
       "medida": { "title": "Caldereria Industrial", "desc": "Fabricació de tremuges, reactors, ciclons i peces especials. Treballem acer inoxidable, acer al carboni i aliatges especials (Hastelloy, Duplex)." },
@@ -118,6 +143,8 @@
   "sectores": {
     "heroTitle": "Sectors d'Aplicació i Projectes",
     "heroDesc": "La nostra experiència tècnica i capacitat d'adaptació ens permet complir amb les normatives i exigències dels sectors industrials més rigorosos.",
+    "aplicaciones": "Aplicacions",
+    "medida": "Equips de procés a mida",
     "list": {
       "farma": { "title": "Laboratoris Farmacèutics", "desc": "Equips amb acabats sanitaris, polit mirall i soldadures orbitals que compleixen amb les normatives més estrictes (FDA, GMP) per garantir la màxima esterilitat i traçabilitat." },
       "alim": { "title": "Alimentació", "desc": "Solucions en acer inoxidable dissenyades per evitar la contaminació creuada i facilitar la neteja CIP/SIP en processos de lactis, begudes i processat d'aliments." },
@@ -243,6 +270,469 @@
         "accept": "Acceptar totes",
         "settings": "Configurar",
         "decline": "Rebutjar"
+      }
+    }
+  },
+  "proyectos": {
+    "heroLabel": "GALERIA REAL DE CALDERERIA INDUSTRIAL",
+    "heroTitle": "Els Nostres Equips",
+    "heroDesc": "Catàleg directe dels nostres projectes reals industrials. Visualitza les fabricacions associades a cada secció del taller amb plànol CAD o fotos reals.",
+    "filterLabel": "Cerca Ràpida",
+    "filterPlaceholder": "Escriu referència, material (316, 304)...",
+    "photoFilterLabel": "Filtrar Documents per Fotografia",
+    "filterAll": "Tots",
+    "filterReal": "Amb Foto",
+    "filterCad": "Plànol CAD",
+    "showing": "Mostrant",
+    "of": "de",
+    "industrialFabrications": "fabricacions industrials",
+    "noResults": "Sense Resultats",
+    "noResultsDesc": "No s'han trobat registres al nostre dossier que coincideixin amb els filtres aplicats en aquest moment.",
+    "resetFilters": "Restablir Cercador",
+    "clearSearch": "Netejar cerca",
+    "viewFile": "Fitxa",
+    "refLabel": "REF",
+    "ref": "Ref.",
+    "material": "Material",
+    "alloy": "AL·LEACIÓ",
+    "application": "APLICACIÓ",
+    "additionalSpecs": "Especificacions Addicionals",
+    "workshopPhoto": "Foto Taller",
+    "cadBlueprint": "Plànol Tècnic CAD",
+    "cadNote": "Ref. disponible en dossier de cotització formal.",
+    "blueprintCode": "Codi de Plànol:",
+    "modalTitle": "Fitxa Tècnica d'Homologació",
+    "close": "Tancar",
+    "requestQuote": "Sol·licitar Pressupost",
+    "footerTitle": "Busques una fabricació a mida?",
+    "footerDesc": "Oferim traçabilitat total de materials amb certificat de colades 3.1, homologació de processos de soldadura per EN o ASME i dossier de qualitat oficial.",
+    "footerCta1": "Pressupostos i Plànols Tècnics",
+    "footerCta2": "Acreditacions de Soldadura",
+    "folders": {
+      "reactores": {
+        "title": "Reactors de Procés Química i Farmàcia",
+        "shortTitle": "REACTORS",
+        "desc": "Reactors i hidrolitzadors dissenyats per a pressions elevades i buit, equipats amb camises tèrmiques, serpentins de mitja canya i sistemes d'agitació coaxial avançats.",
+        "features": ["Fins a 5.000 Litres de capacitat", "Homologació de buit i pressió certificada", "Sistemes d'agitació coaxial / àncora a mida", "Acabats sanitaris fins amb electropulit ASME BPE"]
+      },
+      "depositos": {
+        "title": "Dipòsits i Tancs d'Emmagatzematge",
+        "shortTitle": "DIPÒSITS",
+        "desc": "Tancs d'emmagatzematge, mescla, dosificació i classificació atmosfèrics o pressuritzats. Models calorifugats i isotèrmics estancs soldats sota procés TIG.",
+        "features": ["Estructures monocubes o encamisades", "Aïllaments de llana de roca amb revestiment soldat", "Boles de neteja CIP integrades multidireccionals", "Cèl·lules de càrrega de gran sensibilitat per a dosificació"]
+      },
+      "intercambiadores": {
+        "title": "Intercanviadors de Calor Multitubulars",
+        "shortTitle": "INTERCANVIADORS",
+        "desc": "Intercanviadors tèrmics de feix tubular o de doble placa tubular (DTS) dissenyats per prevenir contaminacions creuades en l'escalfament o condensació.",
+        "features": ["Feixos tubulars mandrinats i soldats", "Dissenyat segons codis ASME Sec VIII i EN-13445", "Cambres de fuga visible per a seguretat màxima", "Opció de tub corrugat per a fluids pesats"]
+      },
+      "caldereria": {
+        "title": "Caldereria Tècnica i Enginyeria Vària",
+        "shortTitle": "CALDERERIA",
+        "desc": "Elements auxiliars d'alta precisió a mida: col·lectors, tremuges asimètriques, conductes d'evacuació de vapors corrosius i bancades estructurals autoportants.",
+        "features": ["Col·lectors sanitaris amb soldadura orbital", "Tremuges asimètriques anti-bòveda per a pols", "Casquets embutits mitjançant premsa hidràulica", "Estructures robustes de xapa inoxidable cepillada"]
+      }
+    },
+    "cad": {
+      "diameter": "Ø",
+      "pipingCode": "PIPING EN-13480",
+      "anchor": "ÀNCORA / 45 RPM",
+      "thermal": "MITJA CANYA TÈRMICA",
+      "inletOutlet": "INLET / OUTLET",
+      "tubeBundle": "FEIX MULTITUBULAR",
+      "asymmetricPart": "PEÇA ASIMÈTRICA"
+    },
+    "items": {
+      "1": {
+        "title": "Tanc de Procés Químic Texapel",
+        "desc": "Dipòsit pulmó de dosificació i mescla controlada per a formulacions químiques complexes i resines.",
+        "material": "Acer Inoxidable AISI 316L",
+        "sector": "Química Industrial / Subministraments",
+        "specs": [
+          "Capacitat útil: 8.500 Litres",
+          "Fons cònic inclinat autodrenant per a purga completa de resines",
+          "Agitació superior d'hèlix marina de doble parell motor",
+          "Polit mecànic intern Ra < 0.6 µm i decapat integral",
+          "Visor acristallallat de seguretat per a control ocular directe"
+        ]
+      },
+      "2": {
+        "title": "Dipòsit Decantador de Fases Ref. 1593",
+        "desc": "Equip acumulador amb separador intern estanc per a buidatge i classificació de mescles bifàsiques en continu.",
+        "material": "Acer Inoxidable AISI 304L / AISI 316",
+        "sector": "Medi Ambient / Conservació",
+        "specs": [
+          "Capacitat útil: 6.000 Litres",
+          "Bafles interns pasivats per a separació laminar estàtica",
+          "Sistema de canonades de purga superior regulable en alçada",
+          "Pressió admissible: Pressió atmosfèrica",
+          "Suports acoblats al xassís reforçats contra sismes"
+        ]
+      },
+      "3": {
+        "title": "Tanc Pulmó Sanitari Calorifugat Ref. 1737",
+        "desc": "Emmagatzematge tèrmic per a fluids fins o alimentaris estèrils amb camisa d'aigua calenta i llana mineral.",
+        "material": "Acer Inoxidable Sanitari AISI 316L (contacte)",
+        "sector": "Cosmètica i Higiene / Lacti",
+        "specs": [
+          "Capacitat útil: 11.000 Litres",
+          "Aïllament de llana de roca de 80 mm de gruix soldat a xapa exterior",
+          "Camisa de serpentí interior de circulació ràpida d'aigua a 85°C",
+          "Boles de neteja CIP integrades multidireccionals",
+          "Tractament de juntes sanitàries segons normatives FDA"
+        ]
+      },
+      "4": {
+        "title": "Tanc Isotèrmic a la Intempèrie Ref. 1952",
+        "desc": "Dipòsit exterior aïllat amb revestiment estanc soldat per procés TIG, immune a condensacions d'humitat.",
+        "material": "Acer Inoxidable AISI 316 i Xapa Exterior de Protecció AISI 304",
+        "sector": "Química General i Auxiliar",
+        "specs": [
+          "Capacitat útil: 15.000 Litres",
+          "Camisa exterior tipus dimple-jacket per a manteniment tèrmic uniforme",
+          "Granallat i pasivat químic total posterior al cordó de soldadura",
+          "Boca d'home el·líptica en virola amb brida lateral de junta elàstica",
+          "Instal·lació amb escaires d'ancoratge de perfils pesants"
+        ]
+      },
+      "5": {
+        "title": "Recipient Acumulador a Pressió Ref. 2153",
+        "desc": "Dipòsit hermètic reforçat certificat sota la Directiva Europea 2014/68/UE d'Equips a Pressió.",
+        "material": "Acer Inoxidable Súper Austenític AISI 316L",
+        "sector": "Química Hidràulica / Petroquímica",
+        "specs": [
+          "Capacitat útil: 3.200 Litres",
+          "Pressió de disseny: +8.5 bar a +100°C",
+          "Fons embotits tipus Klopper amb gruixos ajustats per software FEA",
+          "Inspecció al 100% de soldadures longitudinales per radiografia industrial",
+          "Certificació CE i dossier de proves hidrostàtiques oficials"
+        ]
+      },
+      "6": {
+        "title": "Dipòsit de Dosificació Farmacèutic Ref. 2157 B-1",
+        "desc": "Dipòsit intermedi d'ultra-puresa, polit mirall mecànic per a la correcta esterilitat de la mescla.",
+        "material": "Acer Inoxidable AISI 316L Electropulit ASME BPE",
+        "sector": "Farmacèutic / Biotecnologia",
+        "specs": [
+          "Capacitat útil: 900 Litres",
+          "Polit d'alta qualitat interna amb rugositat certificada Ra < 0.38 µm",
+          "Absència total de zones mortes i fils de rosca interiors",
+          "Connexions ràpides tipus Clamp sanitàries",
+          "Instal·lació sobre bancada amb peus antivibratoris regulables"
+        ]
+      },
+      "7": {
+        "title": "Tanc de Refredament per Glicol Ref. 2178-D",
+        "desc": "Dipòsit estèril proveït de camises inferiors preparades per al ràpid refredament de bases alimentàries.",
+        "material": "Acer Inoxidable AISI 316L / AISI 304",
+        "sector": "Alimentació / Begudes de Procés",
+        "specs": [
+          "Capacitat útil: 10.000 Litres",
+          "Circuit de placa Pillow-Plate per a circulació d'aigua glicolada a -5°C",
+          "Aïllament de poliuretà injectat d'alta durabilitat",
+          "Agitador de baixes r.p.m. de pas variable per evitar degradació de la mescla",
+          "Vàlvula de buidatge inferior higiènica de tancament per diafragma"
+        ]
+      },
+      "8": {
+        "title": "Bateria d'Emmagatzematge Acoblada Ref. 2338",
+        "desc": "Tres tancs idèntics connectats mecànicament mitjançant passarel·les superiors per a dosificació paral·lela.",
+        "material": "Acer Inoxidable AISI 316L",
+        "sector": "Pintures / Recobriments Industrials",
+        "specs": [
+          "Capacitat combinada: 3 x 4.000 Litres",
+          "Passarel·la de pas superior amb baranes integrades segons norma de seguretat",
+          "Agitadors ràpids axials suspesos amb deflectors laterals ajustables",
+          "Colectors inferiors de descàrrega acoblats a bomba d'engranatges",
+          "Cèl·lules de càrrega d'alta sensibilitat sobre bancada estructural de suport"
+        ]
+      },
+      "9": {
+        "title": "Intercanviador Multitubular Compacte Ref. 2010-B",
+        "desc": "Intercanviador tubular soldat per a condensació de vapors orgànics i refrigeració de fluids corrosius.",
+        "material": "Acer Inoxidable AISI 316L / Al·leació de Níquel",
+        "sector": "Química Industrial / Petroli",
+        "specs": [
+          "Superfície d'intercanvi tèrmic: 16 m²",
+          "Dissenyat segons codi ASME Secció VIII Divisió 1",
+          "Feix de tubs de paret prim mandrinats tèrmicament",
+          "Carcassa exterior protegida amb imprimació d'alta resistència tèrmica",
+          "Control d'estanqueïtat mitjançant prova neumàtica per heli"
+        ]
+      },
+      "10": {
+        "title": "Intercanviador de Feix de Vapor Ref. 2084",
+        "desc": "Equip industrial multitubular d'alta resistència, idoni per a processos d'escalfament per vapor d'aigua saturat.",
+        "material": "Acer Inoxidable AISI 316 (Feixos) / Acer al Carboni (Carcassa)",
+        "sector": "Processos Tèrmics / Metal·lúrgia",
+        "specs": [
+          "Superfície d'intercanvi: 40 m²",
+          "Pressió màxima de servei de vapor: 12 bar",
+          "Tubs expandits i soldats a la placa tubular amb mecanitzat radial",
+          "Deflectors interns de disseny segmentat rígid per afavorir fluxos creuats",
+          "Suports soldats tipus bressol per a fixació fàcil en planta"
+        ]
+      },
+      "11": {
+        "title": "Pasteuritzador Multitubular Sanitari Ref. 2090-B",
+        "desc": "Intercanviador de doble placa tubular (DTS) que evita intercontaminacions accidentals en fluids alimentaris.",
+        "material": "Acer Inoxidable Polit Sanitari AISI 316L",
+        "sector": "Alimentari / Begudes Sanatàries",
+        "specs": [
+          "Superfície d'intercanvi: 25 m²",
+          "Exclusiu disseny DTS amb cambra de fuga visible de seguretat",
+          "Facilitat d'autodrenat complet segons directives higièniques de disseny",
+          "Acabat intern electropulit fi Ra < 0.4 µm",
+          "Accessoris clamp i juntes aptes per a cicles tèrmics intensos"
+        ]
+      },
+      "12": {
+        "title": "Condensador de Destil·lació Vertical Ref. 2157-C",
+        "desc": "Intercanviador multitubular sanitari de gran rendiment, destinat a la destil·lació al buit d'alcohols estèrils.",
+        "material": "Acer Inoxidable Sanitari AISI 316L ASME BPE",
+        "sector": "Farmacèutic / Síntesi Fina",
+        "specs": [
+          "Superfície d'intercanvi: 32 m²",
+          "Feixos tubulars interiors d'acabat mirall sense costures mecàniques",
+          "Carcassa dotada de visor acristallat d'expansió de condensat",
+          "Endoscòpia per videofibroscopi i certificat de rugositat en dossier tècnic",
+          "Llest per a acoblament de sistemes de validació FDA IQ/OQ"
+        ]
+      },
+      "13": {
+        "title": "Intercanviador de Planxa i Tubs Especial Ref. 2157-D",
+        "desc": "Intercanviador de feix tubular per a intercanvi de calor d'alta responsabilitat amb fluids orgànics volàtils.",
+        "material": "Acer Inoxidable AISI 316L",
+        "sector": "Química Industrial / Refineria",
+        "specs": [
+          "Superfície d'intercanvi: 20 m²",
+          "Dissenyat i calculat sota codi normatiu EN-13445",
+          "Junta d'expansió elàstica soldada a la carcassa per absorbir xocs tèrmics",
+          "Brides planes normalitzades d'alta rigidesa EN 1092-1",
+          "Soldadures pasivades i decapades selectivament"
+        ]
+      },
+      "14": {
+        "title": "Intercanviador per a Fluids Densos Ref. 2317",
+        "desc": "Equip multitubular amb tubs corrugats interiors per a fluids amb llims o càrrega de sòlids en suspensió.",
+        "material": "Acer Inoxidable AISI 316 de gruix abrasiu",
+        "sector": "Tractament d'Aigües / EDAR",
+        "specs": [
+          "Superfície d'intercanvi: 50 m²",
+          "Manguitos interiors corrugats per induir flux de mescla turbulenta",
+          "Capçal embridat basculable desmontable per a ràpid accés de neteja",
+          "Resistència superior davant la incrustació biològica i industrial",
+          "Pressió i temperatura de disseny: 10 bar a +120°C"
+        ]
+      },
+      "15": {
+        "title": "Condensador Multitubular de Gran Secció Ref. 1834",
+        "desc": "Unitat de condensació de gran diàmetre dissenyada per manejar alts volums gasosos corrosius.",
+        "material": "Acer Inoxidable AISI 316L",
+        "sector": "Química Fina / Solvents",
+        "specs": [
+          "Superfície d'intercanvi: 36 m²",
+          "Carcassa exterior sobredimensionada per suportar expansió ràpida de volum",
+          "Certificats de radiografies de soldadures i dossier constructiu",
+          "Polit decapat exterior mat estètic de gran uniformitat",
+          "Argolles superiors integrades provades a tracció per a hissat"
+        ]
+      },
+      "16": {
+        "title": "Reactor Pilot de Laboratori Labi-1433",
+        "desc": "Reactor pilot compacte, amb camisa tèrmica i tapa desmontable polida per a petites dosificacions i proves químiques.",
+        "material": "Acer Inoxidable AISI 316L Electropulit",
+        "sector": "Farmàcia / Síntesi en Miniatura",
+        "specs": [
+          "Capacitat nominal: 50 Litres",
+          "Camisa de calefacció per circulació d'oli tèrmic a +180°C",
+          "Sistema d'agitació d'àncora especial amb rascadors modulars de tefló",
+          "Segell mecànic coaxial amb dipòsit de lubricació fluid estèril",
+          "Acabat ultra-fi intern mirall Ra < 0.3 µm sanitàriament òptim"
+        ]
+      },
+      "17": {
+        "title": "Reactor de Procés Químic Complet Ref. 1564",
+        "desc": "Reactor de reacció i hidròlisi dotat de serpentí exterior tipus mitja canya soldada per a transferència tèrmica severa.",
+        "material": "Acer Inoxidable AISI 316L",
+        "sector": "Química Fina / Resines",
+        "specs": [
+          "Capacitat nominal: 3.500 Litres",
+          "Mitja canya d'acer inoxidable d'escalfament dividida en 3 zones independents",
+          "Aïllament de llana de roca d'alta protecció calorifugada mitjançant xapa soldada",
+          "Agitació principal per turbina de pales inclinades d'alt parell motriu",
+          "Segell mecànic doble equilibrat que admet pressions de buit a +6 bar"
+        ]
+      },
+      "18": {
+        "title": "Reactor Mesclador Cosmètic amb Camisa Ref. 1709-D",
+        "desc": "Reactor d'homogeneïtzació ràpida per a elaboració de bases cosmètiques, pomades i cremes d'alta viscositat.",
+        "material": "Acer Inoxidable Sanitari AISI 316L / AISI 304",
+        "sector": "Cosmètica i Higiene de Procés",
+        "specs": [
+          "Capacitat nominal: 2.200 Litres",
+          "Escalfament camisa per injecció directa de vapor saturat a 3 bar",
+          "Agitació coaxial sincronitzada: àncora perifèrica i dispersor superior ultra-ràpid",
+          "Rociadors CIP en tapa superior i vàlvula de fons de bola de buidatge higiènic",
+          "Acabats Ra < 0.4 µm amb pasivació química i videofibroscòpia interna"
+        ]
+      },
+      "19": {
+        "title": "Reactor de Buit i Destil·lació Ref. 1741-B",
+        "desc": "Equip especialitzat per a destil·lació química a baixa pressió amb camisa de refrigeració i condensació directa.",
+        "material": "Acer Inoxidable AISI 316L",
+        "sector": "Química Industrial / Farmàcia",
+        "specs": [
+          "Capacitat nominal: 1.800 Litres",
+          "Pressió de disseny: Buit total (-1 bar) a +4 bar de pressió",
+          "Feix de condensador de reflux integrat en acoblament superior",
+          "Agitador de tipus hèlix doble flux i motorreductor ATEX de seguretat",
+          "Traçabilitat total de xapes sota assajos destructius i inoxidabilitat"
+        ]
+      },
+      "20": {
+        "title": "Reactor de Polimerització i Alta Viscosidad Ref. 1918",
+        "desc": "Reactor de mescla robust proveït de motorreductor sobredimensionat i agitador d'àncora cizallant.",
+        "material": "Al·leació de Níquel / Hastelloy C22",
+        "sector": "Química Àcida / Polímers",
+        "specs": [
+          "Capacitat nominal: 4.500 Litres",
+          "Fabricat íntegrament en Hastelloy per protecció contra reactius altament àcids",
+          "Agitador d'àncora reforçat amb barres de tracció massisses",
+          "Camisa tèrmica de refredament ràpid accionada per aigua glicolada",
+          "Cartutx d'estanqueïtat de segell mecànic pressuritzat mitjançant nitrogen barrier"
+        ]
+      },
+      "21": {
+        "title": "Reactor Hidrogenador de Pressió Ref. 1961",
+        "desc": "Equip hermètic reforçat per a reaccions químiques catalitzades que operan a pressions extremadament elevades.",
+        "material": "Acer Inoxidable AISI 316L de gruix especial superior",
+        "sector": "Química Fina / Catalitzadors",
+        "specs": [
+          "Capacitat nominal: 1.200 Litres",
+          "Pressió màxima de servei de cos intern: 16 bar",
+          "Temperatura admissible d'operació: +220°C",
+          "Agitador tipus Hollow-Shaft amb eix buit inductor de gas d'alta dissolució",
+          "Dossier oficial visat d'assajos no destructius per OCA de control tècnic"
+        ]
+      },
+      "22": {
+        "title": "Reactor Farmacèutic Sanitari Ref. 2243",
+        "desc": "Recipient de síntesi estèril biotecnològica, polit mirall electrolític optimitzat conforme a pautes ASME BPE.",
+        "material": "Acer Inoxidable Súper Sanitari AISI 316L ASME BPE",
+        "sector": "Medicina Biotecnològica / Injectables",
+        "specs": [
+          "Capacitat nominal: 2.500 Litres",
+          "Acabat d'electropulit intern Ra d'alta puresa estèril < 0.3 µm",
+          "Camisa serpentí exterior soldada per feix de plasma per computador",
+          "Mirilla de gran secció dotada de llum led IP67 refrigerada estanca",
+          "Sistema de mostreig en continuo de baixa retenció de gota higiènica"
+        ]
+      },
+      "23": {
+        "title": "Col·lector Sanitari Ref. 1680-F",
+        "desc": "Col·lector de distribució de canonades sanitàries fines amb soldadures orbitals amb purga d'argó en llaç tancat.",
+        "material": "Acer Inoxidable AISI 316L ASME BPE",
+        "sector": "Laboratori de Fluids / Sanitari",
+        "specs": [
+          "Unió soldada per robot orbital amb control de gas formier inert intern",
+          "Traçabilitat total de manguitos per colades d'acer gravades amb làser",
+          "Inspecció al 100% per videofibroscòpia endoscòpica gravada en suport físic",
+          "Pendents autodrenants que garanteixen la nul·la formació de biofilms en llaç",
+          "Connexions tipus racor clamp higiènic de gran tolerància"
+        ]
+      },
+      "24": {
+        "title": "Tremuja d'Alimentació de Pols Ref. 1743",
+        "desc": "Tremuja asimètrica de càrrega amb vibrador per a alimentació dosificada de pigments i aditius a dipòsits de mescla.",
+        "material": "Acer Inoxidable AISI 304 / AISI 316",
+        "sector": "Alimentació / Fabricació de Pintura",
+        "specs": [
+          "Capacitat volumètrica: 2.200 Litres",
+          "Disseny geomètric asimètric que prevé la formació d'arcs de pols",
+          "Bancada amb pletina angular estructural sobredimensionada per a vibració",
+          "Vàlvula de mariposa amb actuador neumàtic d'ajust ràpid",
+          "Acabat exterior granallat amb microesferes de vidre"
+        ]
+      },
+      "25": {
+        "title": "Col·lector Integral de Vàlvules Neumàtiques Ref. 1749",
+        "desc": "Bateria de conducció muntada sobre skid per a la commutació i direccionament de fluxos de procés i CIP.",
+        "material": "Acer Inoxidable AISI 316L (Canonada) / AISI 304 (Chassis)",
+        "sector": "Farmàcia / Automatització de Planta",
+        "specs": [
+          "Bancada suport antivibratòria soldada per TIG",
+          "Seccions de canonades de pas mecanitzades i acoblades mitjançant clapetes",
+          "Prova hidrostàtica d'estanqueïtat a 10 bar de pressió",
+          "Traçabilitat de soldadures en llibre amb especificació de soldador WPS",
+          "Col·lectors higiènics exempts de racons sanitaris"
+        ]
+      },
+      "26": {
+        "title": "Filtre Silenciador d'Aspiració Ref. 1937",
+        "desc": "Carcassa de filtre industrial dissenyada per albergar filtres de mànegues estancs de retención en sec amb tapa manual abatible.",
+        "material": "Acer Inoxidable AISI 304",
+        "sector": "Filtració i Ventilació Industrial",
+        "specs": [
+          "Diàmetre del dipòsit: 1.050 mm",
+          "Obertura superior ràpida tipus frontissa equilibrada per contrapès",
+          "Estanqueïtat interna de pas assajada per pressió positiva d'aire",
+          "Abraçadores de serratge manual basculants tipus swing-bolts",
+          "Granallat de sorra mat exterior resistent i raspallat integral"
+        ]
+      },
+      "27": {
+        "title": "Conducte de Gasos Àcids Clorats Ref. 2149",
+        "desc": "Conducte d'evacuació de gran format per a vapors molt corrosius, soldat hermèticament amb al·leació d'alta puresa.",
+        "material": "Acer Inoxidable Súper Austenític AISI 904L",
+        "sector": "Química Hidrometal·lúrgica / Residus",
+        "specs": [
+          "Diàmetre nominal de conducció: 550 mm amb brides en extrems",
+          "Alta concentració en Níquel i Molibdè contra l'atac per clor",
+          "Bridats tornejats per a seient pla perfecte de juntes de tefló",
+          "Assajos no destructius per líquids penetrants acolorits en cordons",
+          "Puntals de suport soldats de fixació ràpida"
+        ]
+      },
+      "28": {
+        "title": "Bancada Estructural Autoportant Ref. 2195",
+        "desc": "Estructura robusta de xassís inoxidable raspallada que serveix de suport rígid a reactors i bombes motoritzades.",
+        "material": "Acer Inoxidable de Gruixos Perfilats AISI 304",
+        "sector": "Estructures de Planta / Enginyeria",
+        "specs": [
+          "Estructura calculada contra càrregues mecàniques intenses i torsió de motor",
+          "Raspallat final satinat amb gra abrasiu 240 fi uniforme de perfils",
+          "Suports roscats de nivellació telescòpics amb goma d'amortiment",
+          "Punts i orelles reforçats per a agafada còmoda de grua pont d'hissat",
+          "Tota soldadura decantada per àcid d'immersió total"
+        ]
+      },
+      "29": {
+        "title": "Cúpula Torisfèrica Embutida Ref. 2198",
+        "desc": "Casquet embutit de caldera de gran precisió per a tancament superior de silos agroalimentaris higiènics.",
+        "material": "Acer Inoxidable AISI 316",
+        "sector": "Silos / Alimentària Pesant",
+        "specs": [
+          "Diàmetre del fons: 2.100 mm embutit mitjançant premsa hidràulica",
+          "Gruix calibrat de làmina i corona tornejada d'alta repetibilitat",
+          "Soldadura en atmosfera protegida per robot de cordó rectilini",
+          "Polit exterior raspallat estètic uniforme en virola circumferencial",
+          "Lliure de rebabes metàl·liques amb pasivació electroquímica estèril"
+        ]
+      },
+      "30": {
+        "title": "Sifó d'Alta Secció i Descàrrega Corrosiva Ref. 2228",
+        "desc": "Dispositius sifònics de purga d'aigües i efluents industrials carregats de solvents calents.",
+        "material": "Acer Inoxidable Reforçat AISI 316L",
+        "sector": "Tractament Químic / Efluents",
+        "specs": [
+          "Manguitos corbats sense arrugues amb soldadura de cordó pla interna",
+          "Mirilla circular amb vidre borosilicat empiulat contra fugues directes",
+          "Juntes de fluoroelastòmer Viton resistents a dissolvents orgànics",
+          "Apte per a cicles tèrmics de fluids des de +10°C a +130°C constants",
+          "Granallat estètic d'acabat industrial d'alta durabilitat química"
+        ]
       }
     }
   }

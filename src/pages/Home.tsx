@@ -121,10 +121,10 @@ export function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {[
-              { val: '25+', label: 'Años de Experiencia' },
-              { val: '500+', label: 'Proyectos Realizados' },
-              { val: '100%', label: 'Calidad Certificada' },
-              { val: '4', label: 'Sectores Estratégicos' }
+              { val: '25+', label: t('home.stats.years') },
+              { val: '500+', label: t('home.stats.projects') },
+              { val: '100%', label: t('home.stats.quality') },
+              { val: '4', label: t('home.stats.sectors') }
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center md:items-start">
                 <span className="text-4xl md:text-5xl font-display font-black text-brand-dark mb-2">{stat.val}</span>
@@ -173,9 +173,9 @@ export function Home() {
                   num: '03'
                 },
                 { 
-                  name: 'Cosmética', 
+                  name: t('home.sectores.cosm.name'), 
                   icon: <Settings size={40} />, 
-                  desc: 'Soluciones especializadas para la industria de la belleza y cuidado personal.',
+                  desc: t('home.sectores.cosm.desc'),
                   num: '04'
                 }
               ].map((sector, i) => (
@@ -221,7 +221,7 @@ export function Home() {
                 </div>
                 <div className="mt-auto pt-8 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-brand-dark/30">
                   <span className="w-8 h-[1px] bg-gray-200"></span>
-                  Quality Assurance
+                  {t('home.features.qa')}
                 </div>
               </div>
             ))}
@@ -248,32 +248,24 @@ export function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: t('home.serviciosList.dep.title'),
-                desc: t('home.serviciosList.dep.desc'),
+                id: 'dep',
                 icon: <FlaskConical size={32} />,
-                num: '01',
-                bullets: ['Recipientes a presión (ASME/EN)', 'Almacenamiento sanitario', 'Acabados pulido espejo']
+                num: '01'
               },
               {
-                title: t('home.serviciosList.skid.title'),
-                desc: t('home.serviciosList.skid.desc'),
+                id: 'skid',
                 icon: <Settings size={32} />,
-                num: '02',
-                bullets: ['Diseño modular Plug & Play', 'Integración de instrumentación', 'Pruebas de funcionamiento FAT']
+                num: '02'
               },
               {
-                title: t('home.serviciosList.sold.title'),
-                desc: t('home.serviciosList.sold.desc'),
+                id: 'sold',
                 icon: <Zap size={32} />,
-                num: '03',
-                bullets: ['Soldadores homologados', 'TIG / MIG-MAG / SMAW', 'Control de calidad por RX/Líquidos']
+                num: '03'
               },
               {
-                title: t('home.serviciosList.mont.title'),
-                desc: t('home.serviciosList.mont.desc'),
+                id: 'mont',
                 icon: <ShieldCheck size={32} />,
-                num: '04',
-                bullets: ['Instalación directa en planta', 'Mantenimiento preventivo', 'Legalización de equipos']
+                num: '04'
               }
             ].map((service, idx) => (
               <motion.div 
@@ -291,13 +283,14 @@ export function Home() {
                   <span className="text-brand-dark/10 font-display font-black text-5xl">{service.num}</span>
                 </div>
                 
-                <h4 className="text-2xl font-bold text-brand-dark mb-6 uppercase tracking-tight">{service.title}</h4>
+                <h4 className="text-2xl font-bold text-brand-dark mb-6 uppercase tracking-tight">{t(`home.serviciosList.${service.id}.title`)}</h4>
                 <p className="text-brand-steel mb-8 leading-relaxed">
-                  {service.desc}
+                  {t(`home.serviciosList.${service.id}.desc`)}
                 </p>
                 
                 <ul className="space-y-3 mb-10">
-                  {service.bullets.map((bullet, i) => (
+                  {Array.isArray(t(`home.serviciosList.${service.id}.bullets`, { returnObjects: true })) && 
+                    (t(`home.serviciosList.${service.id}.bullets`, { returnObjects: true }) as string[]).map((bullet, i) => (
                     <li key={i} className="flex items-center gap-3 text-sm text-brand-dark font-medium">
                       <div className="w-1.5 h-1.5 bg-brand-accent rounded-full"></div>
                       {bullet}
@@ -329,7 +322,7 @@ export function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <span className="text-brand-accent font-bold uppercase tracking-[0.4em] text-xs mb-8 block">Ready to start?</span>
+              <span className="text-brand-accent font-bold uppercase tracking-[0.4em] text-xs mb-8 block">{t('home.ctaPre')}</span>
               <h2 className="text-5xl md:text-8xl font-display font-extrabold text-white mb-12 uppercase leading-[0.9] tracking-tighter">
                 {t('home.ctaTitle')}
               </h2>

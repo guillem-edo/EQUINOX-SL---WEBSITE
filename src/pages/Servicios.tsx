@@ -136,39 +136,12 @@ export function Servicios() {
                 </p>
 
                 <div className="space-y-4 mb-8">
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-brand-accent border-b border-brand-accent/20 pb-2 mb-4">Capacidades Técnicas</div>
+                  <div className="text-[10px] font-bold uppercase tracking-widest text-brand-accent border-b border-brand-accent/20 pb-2 mb-4">
+                    {t('servicios.capacidades')}
+                  </div>
                   <ul className="space-y-3">
-                    {service.id === 'depositos' && ['Diseño ASME VIII Div.1 / EN-13445', 'Cálculo de espesores y soportes', 'Legalización y Marcado CE'].map((b, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
-                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
-                        {b}
-                      </li>
-                    ))}
-                    {service.id === 'medida' && ['Tolvas, Reactores y Ciclones', 'Aleaciones: Hastelloy, Duplex', 'Piezas especiales bajo plano'].map((b, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
-                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
-                        {b}
-                      </li>
-                    ))}
-                    {service.id === 'skids' && ['Sistemas modulares Plug & Play', 'Integración de bombas y válvulas', 'Pruebas FAT y SAT en taller'].map((b, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
-                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
-                        {b}
-                      </li>
-                    ))}
-                    {service.id === 'soldadura' && ['Homologaciones TIG / MIG-MAG', 'Ensayos No Destructivos (RX/LP)', 'Soldadura de alta responsabilidad'].map((b, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
-                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
-                        {b}
-                      </li>
-                    ))}
-                    {service.id === 'tuberia' && ['Soldadura orbital automática', 'Líneas de proceso higiénicas', 'Purga de gas inerte'].map((b, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
-                        <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
-                        {b}
-                      </li>
-                    ))}
-                    {service.id === 'montaje' && ['Montaje mecánico en planta', 'Mantenimiento preventivo/correctivo', 'Paradas técnicas programadas'].map((b, idx) => (
+                    {Array.isArray(t(`servicios.list.${service.id}.bullets`, { returnObjects: true })) && 
+                      (t(`servicios.list.${service.id}.bullets`, { returnObjects: true }) as string[]).map((b, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-sm text-brand-dark font-medium">
                         <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></div>
                         {b}
@@ -178,7 +151,7 @@ export function Servicios() {
                 </div>
 
                 <Link to="/contacto" className="mt-auto inline-flex items-center gap-3 text-brand-dark font-bold uppercase tracking-widest hover:text-brand-accent transition-colors group/link text-xs">
-                  Consultar Servicio
+                  {t('common.consultar')}
                   <ArrowRight size={16} className="group-hover/link:translate-x-2 transition-transform" />
                 </Link>
               </motion.div>

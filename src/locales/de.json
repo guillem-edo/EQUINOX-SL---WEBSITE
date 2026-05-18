@@ -15,7 +15,8 @@
     "hablarTecnico": "Mit einem Techniker sprechen",
     "scroll": "Scrollen",
     "verServicios": "Alle Dienstleistungen ansehen",
-    "consultanos": "Konsultieren Sie Ihr Projekt"
+    "consultanos": "Konsultieren Sie Ihr Projekt",
+    "consultar": "Service anfragen"
   },
   "home": {
     "heroLabel": "Präzisionskesselbau",
@@ -23,6 +24,12 @@
     "heroSubtitle": "Seit über 30 Jahren verwandeln wir Ideen in solide Lösungen. Experten für Edelstahl, Kohlenstoffstahl und Speziallegierungen für die anspruchsvollsten Sektoren.",
     "heroCta": "Angebot anfordern",
     "heroSecondary": "Sektoren ansehen",
+    "stats": {
+      "years": "Jahre Erfahrung",
+      "projects": "Abgeschlossene Projekte",
+      "quality": "Zertifizierte Qualität",
+      "sectors": "Strategische Sektoren"
+    },
     "sectoresLabel": "Sektoren",
     "sectoresTitle": "Anwendungssektoren",
     "sectoresDesc": "Unsere technische Expertise ermöglicht es uns, uns an die Vorschriften und Anforderungen der strengsten Industrien anzupassen.",
@@ -30,9 +37,11 @@
     "sectores": {
       "farma": { "name": "Pharma & Kosmetik", "desc": "Sanitäre Oberflächen und Spiegelpolitur nach FDA- und GMP-Vorschriften." },
       "alim": { "name": "Lebensmittel", "desc": "Hygienisches Design zur Vermeidung von Kreuzkontaminationen und zur Erleichterung der CIP-Reinigung." },
-      "quim": { "name": "Chemie & Petrochemie", "desc": "Ausrüstung aus Speziallegierungen für korrosive Prozesse und Hochdruck." }
+      "quim": { "name": "Chemie & Petrochemie", "desc": "Ausrüstung aus Speziallegierungen für korrosive Prozesse und Hochdruck." },
+      "cosm": { "name": "Kosmetik", "desc": "Spezialisierte Lösungen für die Beauty- und Körperpflegeindustrie." }
     },
     "features": {
+      "qa": "Qualitätssicherung",
       "diseno": { "title": "Design und Berechnung", "desc": "Detail-Engineering und Ausrüstungsberechnung nach internationalen Standards (ASME, EN-13445, TEMA, AD-Merkblätter)." },
       "servicio": { "title": "Umfassender Service", "desc": "Von der Fertigung bis zur Installation, Wartung und Legalisierung der Ausrüstung in Ihrem Werk." },
       "materiales": { "title": "Fortschrittliche Materialien", "desc": "Experten für Edelstahl, Kohlenstoffstahl und Speziallegierungen wie Hastelloy und Duplex." }
@@ -94,6 +103,7 @@
   "servicios": {
     "heroTitle": "Unsere Dienstleistungen",
     "heroDesc": "Umfassende Lösungen im Edelstahl-Kesselbau: vom Detail-Engineering bis zur Endmontage in Ihren Einrichtungen.",
+    "capacidades": "Technische Kapazitäten",
     "list": {
       "dep": { "title": "Druckbehälter und Ausrüstung", "desc": "Konstruktion, Berechnung (ASME, EN-13445, TEMA) und Bau von Prozessausrüstung und Druckbehältern mit entsprechender Legalisierung." },
       "medida": { "title": "Industrieller Kesselbau", "desc": "Herstellung von Trichtern, Reaktoren, Zyklonen und Spezialteilen. Wir verarbeiten Edelstahl, Kohlenstoffstahl und Speziallegierungen (Hastelloy, Duplex)." },
@@ -118,6 +128,8 @@
   "sectores": {
     "heroTitle": "Anwendungssektoren und Projekte",
     "heroDesc": "Unsere technische Expertise und Anpassungsfähigkeit ermöglichen es uns, die Vorschriften und Anforderungen der strengsten Industriesektoren zu erfüllen.",
+    "aplicaciones": "Anwendungen",
+    "medida": "Maßgeschneiderte Prozessausrüstung",
     "list": {
       "farma": { "title": "Pharmazeutische Labore", "desc": "Ausrüstung mit sanitären Oberflächen, Spiegelpolitur und Orbitalschweißungen, die die strengsten Vorschriften (FDA, GMP) erfüllen, um maximale Sterilität und Rückverfolgbarkeit zu gewährleisten." },
       "alim": { "title": "Lebensmittel", "desc": "Edelstahllösungen, die entwickelt wurden, um Kreuzkontaminationen zu vermeiden und die CIP/SIP-Reinigung in der Milch-, Getränke- und Lebensmittelverarbeitung zu erleichtern." },
@@ -243,6 +255,469 @@
         "accept": "Alle akzeptieren",
         "settings": "Einstellungen",
         "decline": "Ablehnen"
+      }
+    }
+  },
+  "proyectos": {
+    "heroLabel": "REALE GALERIE FÜR INDUSTRIELLEN KESSELBAU",
+    "heroTitle": "Unsere Ausrüstung",
+    "heroDesc": "Direkter Katalog unserer realen Industrieprojekte. Sehen Sie sich die mit jedem Werkstattbereich verbundenen Fertigungen mit CAD-Plänen oder echten Fotos an.",
+    "filterLabel": "Schnellsuche",
+    "filterPlaceholder": "Referenz, Material (316, 304) eingeben...",
+    "photoFilterLabel": "Dokumente nach Fotografie filtern",
+    "filterAll": "Alle",
+    "filterReal": "Mit Foto",
+    "filterCad": "CAD-Plan",
+    "showing": "Anzeigen von",
+    "of": "von",
+    "industrialFabrications": "industriellen Fertigungen",
+    "noResults": "Keine Ergebnisse",
+    "noResultsDesc": "In unserem Dossier wurden keine Datensätze gefunden, die den derzeit angewendeten Filtern entsprechen.",
+    "resetFilters": "Suche zurücksetzen",
+    "clearSearch": "Suche löschen",
+    "viewFile": "Datei",
+    "refLabel": "REF",
+    "ref": "Ref.",
+    "material": "Material",
+    "alloy": "LEGIERUNG",
+    "application": "ANWENDUNG",
+    "additionalSpecs": "Zusätzliche Spezifikationen",
+    "workshopPhoto": "Werkstattfoto",
+    "cadBlueprint": "Technischer CAD-Plan",
+    "cadNote": "Ref. im formalen Angebotsdossier verfügbar.",
+    "blueprintCode": "Plan-Code:",
+    "modalTitle": "Technische Homologationsdatei",
+    "close": "Schließen",
+    "requestQuote": "Angebot anfordern",
+    "footerTitle": "Suchen Sie eine maßgeschneiderte Fertigung?",
+    "footerDesc": "Wir bieten eine vollständige Rückverfolgbarkeit der Materialien mit 3.1 Gusszertifikaten, Zulassung der Schweißverfahren nach EN oder ASME und offiziellem Qualitätsdossier.",
+    "footerCta1": "Angebote und technische Pläne",
+    "footerCta2": "Schweißakkreditierungen",
+    "folders": {
+      "reactores": {
+        "title": "Prozessreaktoren für Chemie und Pharmazie",
+        "shortTitle": "REAKTOREN",
+        "desc": "Reaktoren und Hydrolysatoren für hohe Drücke und Vakuum, ausgestattet mit Wärmemänten, Halbrohrschlangen und fortschrittlichen koaxialen Rührsystemen.",
+        "features": ["Bis zu 5.000 Liter Kapazität", "Zertifizierte Vakuum- und Druckzulassung", "Maßgeschneiderte koaxiale / Anker-Rührsysteme", "Feine sanitäre Oberflächen mit ASME BPE Elektropolieren"]
+      },
+      "depositos": {
+        "title": "Lagerbehälter und Tanks",
+        "shortTitle": "TANKS",
+        "desc": "Atmosphärische oder unter Druck stehende Lager-, Misch-, Dosier- und Klassifizierungstanks. Isolierte und luftdichte isotherme Modelle, geschweißt im TIG-Verfahren.",
+        "features": ["Einwandige oder Ummantelte Strukturen", "Steinwollisolierung mit geschweißter Verkleidung", "Integrierte multidirektionale CIP-Reinigungskugeln", "Hochempfindliche Wiegezellen für die Dosierung"]
+      },
+      "intercambiadores": {
+        "title": "Multitubular-Wärmetauscher",
+        "shortTitle": "TAUSCHER",
+        "desc": "Rohrbündel- oder Doppelrohrplatten-Wärmetauscher (DTS), um Kreuzkontaminationen beim Erhitzen oder Kondensieren zu vermeiden.",
+        "features": ["Gebohrte und geschweißte Rohrbündel", "Entworfen nach ASME Sec VIII und EN-13445 Codes", "Sichtbare Leckagekammern für maximale Sicherheit", "Wellrohr-Option für schwere Flüssigkeiten"]
+      },
+      "caldereria": {
+        "title": "Technische Kesselschmiede und Verschiedenes Ingenieurwesen",
+        "shortTitle": "METALLBAU",
+        "desc": "Maßgeschneiderte hochpräzise Hilfselemente: Verteiler, asymmetrische Trichter, Evakuierungsleitungen für korrosive Dämpfe und selbsttragende Strukturrahmen.",
+        "features": ["Sanitäre Verteiler mit Orbitalschweißung", "Asymmetrische Anti-Brücken-Trichter für Pulver", "Durch Hydraulikpresse geformte Klöpperböden", "Robuste Strukturen aus gebürstetem Edelstahlblech"]
+      }
+    },
+    "cad": {
+      "diameter": "Ø",
+      "pipingCode": "PIPING EN-13480",
+      "anchor": "ANKER / 45 U/MIN",
+      "thermal": "THERMISCHES HALBROHR",
+      "inletOutlet": "EINLASS / AUSLASS",
+      "tubeBundle": "ROHRBÜNDEL",
+      "asymmetricPart": "ASYMMETRISCHES TEIL"
+    },
+    "items": {
+      "1": {
+        "title": "Texapel Chemischer Prozesstank",
+        "desc": "Dosier- und gesteuerter Mischpuffertank für komplexe chemische Formulierungen und Harze.",
+        "material": "Edelstahl AISI 316L",
+        "sector": "Industrielle Chemie / Versorgungsstoffe",
+        "specs": [
+          "Nutzinhalt: 8.500 Liter",
+          "Selbstentleerender geneigter konischer Boden für vollständige Harzentleerung",
+          "Oben montiertes Schiffspropeller-Rührwerk mit Doppel-Drehmomentmotor",
+          "Internes mechanisches Polieren Ra < 0,6 µm und vollständiges Beizen",
+          "Sicherheits-Schauglas zur direkten visuellen Kontrolle"
+        ]
+      },
+      "2": {
+        "title": "Phasentrennungstank Ref. 1593",
+        "desc": "Akkumulatorausrüstung mit internem wasserdichtem Abscheider für kontinuierliches Gießen und Klassifizieren von biphasischen Mischungen.",
+        "material": "Edelstahl AISI 304L / AISI 316",
+        "sector": "Umwelt / Konservierung",
+        "specs": [
+          "Nutzinhalt: 6.000 Liter",
+          "Passivierte interne Leitbleche für statische laminare Trennung",
+          "Höhenverstellbares oberes Spülrohrsystem",
+          "Zulässiger Druck: Atmosphärendruck",
+          "Verstärkte, am Fahrgestell gekoppelte Stützen gegen Erdbeben"
+        ]
+      },
+      "3": {
+        "title": "Isolierter sanitärer Puffertank Ref. 1737",
+        "desc": "Thermospeicher für feine oder sterile Lebensmittelflüssigkeiten mit Warmwassermantel und Mineralwolle.",
+        "material": "Sanitär-Edelstahl AISI 316L (Kontakt)",
+        "sector": "Kosmetik und Hygiene / Molkerei",
+        "specs": [
+          "Nutzinhalt: 11.000 Liter",
+          "80 mm dicke Steinwollisolierung, auf das Außenblech geschweißt",
+          "Innenliegender Schlangenmantel für schnelle Wasserzirkulation bei 85°C",
+          "Integrierte multidirektionale CIP-Reinigungskugeln",
+          "Behandlung von Sanitärdichtungen nach FDA-Vorschriften"
+        ]
+      },
+      "4": {
+        "title": "Isothermischer Außentank Ref. 1952",
+        "desc": "Isolierter Außentank mit wasserdichter Verkleidung, geschweißt im TIG-Verfahren, immun gegen Feuchtigkeitskondensation.",
+        "material": "AISI 316 Edelstahl und AISI 304 Außenschutzblech",
+        "sector": "Allgemeine und Hilfschemie",
+        "specs": [
+          "Nutzinhalt: 15.000 Liter",
+          "Dimple-Jacket-Außenmantel für gleichmäßige thermische Wartung",
+          "Vollständiges chemisches Strahlen und Passivieren nach der Schweißnaht",
+          "Elliptisches Mannloch im Mantel mit seitlichem Flansch und elastischer Dichtung",
+          "Installation mit schweren Profil-Verankerungswinkeln"
+        ]
+      },
+      "5": {
+        "title": "Druckspeicherbehälter Ref. 2153",
+        "desc": "Zertifizierter verstärkter luftdichter Tank gemäß der europäischen Druckgeräterichtlinie 2014/68/EU.",
+        "material": "AISI 316L superaustenitischer Edelstahl",
+        "sector": "Hydraulische Chemie / Petrochemie",
+        "specs": [
+          "Nutzinhalt: 3.200 Liter",
+          "Auslegungsdruck: +8,5 bar bei +100°C",
+          "Klöpperböden mit durch FEA-Software angepassten Wandstärken",
+          "100 % industrielle Röntgenprüfung der Längsnähte",
+          "CE-Zertifizierung und offizielle hydrostatische Testberichte"
+        ]
+      },
+      "6": {
+        "title": "Pharmazeutischer Dosiertank Ref. 2157 B-1",
+        "desc": "Hochreiner Zwischentank, mechanisch spiegelpoliert für korrekte Mischungssterilität.",
+        "material": "AISI 316L elektropolierter Edelstahl ASME BPE",
+        "sector": "Pharmazie / Biotechnologie",
+        "specs": [
+          "Nutzinhalt: 900 Liter",
+          "Hochwertiges Innenpolieren mit zertifizierter Rauheit Ra < 0,38 µm",
+          "Vollständiges Fehlen von Toträumen und Innengewinden",
+          "Sanitäre Clamp-Schnellverbindungen",
+          "Installation auf Bett mit verstellbaren Antivibrationsfüßen"
+        ]
+      },
+      "7": {
+        "title": "Glykol-Kühltank Ref. 2178-D",
+        "desc": "Steriler Behälter mit unteren Mänteln, vorbereitet für die schnelle Kühlung von Lebensmittelbasen.",
+        "material": "Edelstahl AISI 316L / AISI 304",
+        "sector": "Lebensmittel / Prozessgetränke",
+        "specs": [
+          "Nutzinhalt: 10.000 Liter",
+          "Pillow-Plate-Kreislauf für die Zirkulation von Glykolwasser bei -5°C",
+          "Injizierte Polyurethan-Isolierung mit hoher Lebensdauer",
+          "Rührwerk mit niedriger Drehzahl und variabler Steigung zur Vermeidung von Mischungsabbau",
+          "Hygienisches Diaphragma-Bodenablassventil"
+        ]
+      },
+      "8": {
+        "title": "Gekoppelte Speicherbatterie Ref. 2338",
+        "desc": "Drei identische Tanks, mechanisch über obere Laufstege verbunden, für parallele Dosierung.",
+        "material": "Edelstahl AISI 316L",
+        "sector": "Farben / Industriebeschichtungen",
+        "specs": [
+          "Kombinierte Kapazität: 3 x 4.000 Liter",
+          "Oberer Laufsteg mit integrierten Handläufen gemäß Sicherheitsstandards",
+          "Aufgehängte schnelle Axialrührwerke mit verstellbaren seitlichen Leitblechen",
+          "Untere Ablassverteiler, gekoppelt an Zahnradpumpe",
+          "Hochempfindliche Wägezellen auf strukturellem Stützbett"
+        ]
+      },
+      "9": {
+        "title": "Kompakter Multitubular-Wärmetauscher Ref. 2010-B",
+        "desc": "Geschweißter Rohrtauscher für organische Dampfkondensation und Kühlung korrosiver Flüssigkeiten.",
+        "material": "Edelstahl AISI 316L / Nickellegierung",
+        "sector": "Industrielle Chemie / Öl",
+        "specs": [
+          "Thermische Austauschfläche: 16 m²",
+          "Entworfen nach ASME Section VIII Division 1 Code",
+          "Thermisch expandiertes dünnwandiges Rohrbündel",
+          "Außenmantel mit hochhitzebeständiger Grundierung geschützt",
+          "Dichtheitsprüfung mittels pneumatischem Heliumtest"
+        ]
+      },
+      "10": {
+        "title": "Dampfbündeltauscher Ref. 2084",
+        "desc": "Hochresistente industrielle Multitubular-Ausrüstung, ideal für Heizprozesse mit Sattdampf.",
+        "material": "Edelstahl AISI 316 (Bündel) / Kohlenstoffstahl (Mantel)",
+        "sector": "Thermische Prozesse / Metallurgie",
+        "specs": [
+          "Austauschfläche: 40 m²",
+          "Maximaler Dampfbetriebsdruck: 12 bar",
+          "Expandierte und auf die Rohrplatte geschweißte Rohre mit radialer Bearbeitung",
+          "Steife segmentierte interne Leitbleche zur Förderung von Querströmen",
+          "Geschweißte wiegenartige Stützen für einfache Anlagenbefestigung"
+        ]
+      },
+      "11": {
+        "title": "Sanitärer Multitubular-Pasteur Ref. 2090-B",
+        "desc": "Doppelrohrplatten-Wärmetauscher (DTS), der versehentliche Kreuzkontaminationen in Lebensmittelflüssigkeiten verhindert.",
+        "material": "AISI 316L sanitär polierter Edelstahl",
+        "sector": "Lebensmittel / Sanitärgetränke",
+        "specs": [
+          "Austauschfläche: 25 m²",
+          "Exklusives DTS-Design mit sichtbarer Sicherheitsleckkammer",
+          "Vollständige Selbstentleerungsfähigkeit gemäß hygienischen Designrichtlinien",
+          "Feine elektropolierte Innenoberfläche Ra < 0,4 µm",
+          "Clamp-Zubehör und Dichtungen für intensive thermische Zyklen geeignet"
+        ]
+      },
+      "12": {
+        "title": "Vertikaler Destillationskondensator Ref. 2157-C",
+        "desc": "Hochleistungsfähiger sanitärer Multitubular-Wärmetauscher, bestimmt für die Vakuumdestillation von sterilen Alkoholen.",
+        "material": "Sanitär-Edelstahl AISI 316L ASME BPE",
+        "sector": "Pharmazie / Feinsynthese",
+        "specs": [
+          "Austauschfläche: 32 m²",
+          "Interne spiegelglatte nahtlose Rohrbündel",
+          "Außenmantel ausgestattet mit Schauglas für Kondensatexpansion",
+          "Videofibroskop-Endoskopie und Rauheitszertifikat im technischen Dossier",
+          "Bereit für den Anschluss an das FDA IQ/OQ-Validierungssystem"
+        ]
+      },
+      "13": {
+        "title": "Spezieller Platten- und Rohrtauscher Ref. 2157-D",
+        "desc": "Rohrbündeltauscher für hochverantwortlichen Wärmeaustausch mit flüchtigen organischen Flüssigkeiten.",
+        "material": "Edelstahl AISI 316L",
+        "sector": "Industrielle Chemie / Raffinerie",
+        "specs": [
+          "Austauschfläche: 20 m²",
+          "Entworfen und berechnet nach EN-13445 Standardcode",
+          "Elastische Dehnungsfuge, an den Mantel geschweißt, um thermische Stöße zu absorbieren",
+          "Genormte hochsteife Flanschflansche EN 1092-1",
+          "Selektiv passivierte und gebeizte Schweißnähte"
+        ]
+      },
+      "14": {
+        "title": "Wärmetauscher für dichte Flüssigkeiten Ref. 2317",
+        "desc": "Multitubular-Ausrüstung mit internen Wellrohren für Flüssigkeiten mit Schlamm oder suspendierten Feststoffen.",
+        "material": "AISI 316 Edelstahl mit abrasiver Dicke",
+        "sector": "Wasseraufbereitung / Kläranlage",
+        "specs": [
+          "Austauschfläche: 50 m²",
+          "Interne Wellmuffen zur Induzierung turbulenter Mischungsströmung",
+          "Abnehmbarer schwenkbarer Flanschkopf für schnellen Reinigungszugang",
+          "Überlegene Beständigkeit gegen biologische und industrielle Verschmutzung",
+          "Auslegungsdruck und -temperatur: 10 bar bei +120°C"
+        ]
+      },
+      "15": {
+        "title": "Multitubular-Kondensator mit großem Querschnitt Ref. 1834",
+        "desc": "Kondensatoreinheit mit großem Durchmesser, ausgelegt auf die Handhabung hoher Volumina korrosiver Gase.",
+        "material": "Edelstahl AISI 316L",
+        "sector": "Feinchemie / Lösungsmittel",
+        "specs": [
+          "Austauschfläche: 36 m²",
+          "Überdimensionierter Außenmantel, um schneller Volumenausdehnung standzuhalten",
+          "Zertifikate für Schweißnaht-Röntgenaufnahmen und Konstruktionsdossier",
+          "Ästhetisches mattgebeiztes Außenfinish von großer Gleichmäßigkeit",
+          "Integrierte obere Hebelsösen, zuggeprüft für das Hissen"
+        ]
+      },
+      "16": {
+        "title": "Labi-1433 Labor-Pilotreaktor",
+        "desc": "Kompakter Pilotreaktor mit Wärmemantel und gebürstetem abnehmbarem Deckel für kleine Dosierungen und chemische Tests.",
+        "material": "Elektropolierter Edelstahl AISI 316L",
+        "sector": "Pharmazie / Miniatursynthese",
+        "specs": [
+          "Nennkapazität: 50 Liter",
+          "Heizmantel durch Thermalölzirkulation bei +180°C",
+          "Spezielles Anker-Rührsystem mit modularen Teflon-Abstreifern",
+          "Koaxiale Gleitringdichtung mit Sterilflüssigkeits-Schmierbehälter",
+          "Sanitär optimale interne Spiegel-Feinstoberfläche Ra < 0,3 µm"
+        ]
+      },
+      "17": {
+        "title": "Kompletter chemischer Prozessreaktor Ref. 1564",
+        "desc": "Reaktions- und Hydrolysereaktor, ausgestattet mit einer geschweißten Halbrohr-Außenschlange für schweren thermischen Transfer.",
+        "material": "Edelstahl AISI 316L",
+        "sector": "Feinchemie / Harze",
+        "specs": [
+          "Nennkapazität: 3.500 Liter",
+          "Edelstahl-Halbrohr für Heizung, unterteilt in 3 unabhängige Zonen",
+          "Hochschutz-Steinwollisolierung mit geschweißter Blechverkleidung",
+          "Hauptbewegung durch Schrägblattturbine mit hohem Antriebsdrehmoment",
+          "Ausbalancierte doppelte Gleitringdichtung, die Vakuumdrücke bis +6 bar unterstützt"
+        ]
+      },
+      "18": {
+        "title": "Kosmetischer Mischreaktor mit Mantel Ref. 1709-D",
+        "desc": "Schneller Homogenisierungsreaktor für die Herstellung von kosmetischen Basen, Salben und hochviskosen Cremes.",
+        "material": "Sanitär-Edelstahl AISI 316L / AISI 304",
+        "sector": "Kosmetik- und Hygieneprozess",
+        "specs": [
+          "Nennkapazität: 2.200 Liter",
+          "Mantelheizung durch Direkteinspritzung von Sattdampf bei 3 bar",
+          "Synchronisierte koaxiale Rührung: peripherer Anker und ultraschneller Top-Dispergator",
+          "CIP-Sprüher im oberen Deckel und hygienisches Bodenablass-Kugelventil",
+          "Oberflächen Ra < 0,4 µm mit chemischer Passivierung und interner Videofibroskopie"
+        ]
+      },
+      "19": {
+        "title": "Vakuum- und Destillationsreaktor Ref. 1741-B",
+        "desc": "Spezialisierte Ausrüstung für die chemische Niederdruckdestillation mit Kühlmantel und Direktkondensation.",
+        "material": "Edelstahl AISI 316L",
+        "sector": "Industrielle Chemie / Pharmazie",
+        "specs": [
+          "Nennkapazität: 1.800 Liter",
+          "Auslegungsdruck: Totalvakuum (-1 bar) bis +4 bar Druck",
+          "Rückflusskondensatorbündel integriert in die obere Kupplung",
+          "Doppelstrompropeller-Rührwerk und Sicherheits-ATEX-Getriebemotor",
+          "Vollständige Blechrückverfolgbarkeit unter zerstörungsfreien und rostfreien Tests"
+        ]
+      },
+      "20": {
+        "title": "Polymerisations- und Hochviskositätsreaktor Ref. 1918",
+        "desc": "Robuster Mischreaktor mit überdimensioniertem Getriebemotor und Scheranker-Rührwerk.",
+        "material": "Nickellegierung / Hastelloy C22",
+        "sector": "Säurechemie / Polymere",
+        "specs": [
+          "Nennkapazität: 4.500 Liter",
+          "Vollständig aus Hastelloy gefertigt zum Schutz gegen hochsaure Reagenzien",
+          "Verstärktes Ankerrührwerk mit massiven Zugstangen",
+          "Schnellkühlmantel, angetrieben durch Glykolwasser",
+          "Druckbeaufschlagte Gleitringdichtungspatrone mit Stickstoffbarriere"
+        ]
+      },
+      "21": {
+        "title": "Druckhydrierreaktor Ref. 1961",
+        "desc": "Verstärkte luftdichte Ausrüstung für katalysierte chemische Reaktionen bei extrem hohen Drücken.",
+        "material": "Edelstahl AISI 316L von überlegener Spezialdicke",
+        "sector": "Feinchemie / Katalysatoren",
+        "specs": [
+          "Nennkapazität: 1.200 Liter",
+          "Maximaler Betriebsdruck des Innenkörpers: 16 bar",
+          "Zulässige Betriebstemperatur: +220°C",
+          "Hollow-Shaft-Rührwerk mit hohler Welle, die Gas mit hoher Auflösung induziert",
+          "Offizielles Dossier über zerstörungsfreie Prüfungen, bestätigt durch technische Kontrolle OCA"
+        ]
+      },
+      "22": {
+        "title": "Sanitärer pharmazeutischer Reaktor Ref. 2243",
+        "desc": "Steriler biotechnologischer Synthesebehälter, elektrolytische Spiegelpolierung optimiert nach ASME BPE.",
+        "material": "Supersanitärer Edelstahl AISI 316L ASME BPE",
+        "sector": "Biotechnologische Medizin / Injektionspräparate",
+        "specs": [
+          "Nennkapazität: 2.500 Liter",
+          "Interne Elektropolitur Ra von hoher steriler Reinheit < 0,3 µm",
+          "Mantelaußenschlange, geschweißt durch computergestützten Plasmastrahl",
+          "Schauglas mit großem Querschnitt, ausgestattet mit wasserdichtem IP67-gekühlten LED-Licht",
+          "Kontinuierliches Probenahmesystem mit geringer hygienischer Tropfenretention"
+        ]
+      },
+      "23": {
+        "title": "Sanitärer Verteiler Ref. 1680-F",
+        "desc": "Feiner Sanitärrohr-Verteilermantel mit Orbitalschweißungen und Argonspülung im geschlossenen Kreislauf.",
+        "material": "Edelstahl AISI 316L ASME BPE",
+        "sector": "Flüssigkeitslabor / Sanitär",
+        "specs": [
+          "Geshweißte Verbindung durch Orbitalroboter mit interner inerter Formiergassteuerung",
+          "Vollständige Rückverfolgbarkeit der Muffen durch lasergravierte Stahlgüsse",
+          "100% Inspektion durch endoskopische Videofibroskopie, aufgezeichnet auf physischen Medien",
+          "Selbstentleerende Neigungen, die eine Null-Biofilmbildung im Kreislauf garantieren",
+          "Hochtolerante sanitäre Clamp-Anschlussverbindungen"
+        ]
+      },
+      "24": {
+        "title": "Pulverzufuhrtrichter Ref. 1743",
+        "desc": "Asymmetrischer Ladetrichter mit Vibrator zur dosierten Zuführung von Pigmenten und Additiven zu Mischbehältern.",
+        "material": "Edelstahl AISI 304 / AISI 316",
+        "sector": "Lebensmittel / Farbenherstellung",
+        "specs": [
+          "Volumenkapazität: 2.200 Liter",
+          "Asymmetrisches geometrisches Design, das die Bildung von Pulverbögen verhindert",
+          "Bett mit überdimensionierter struktureller Winkelplatte für Vibration",
+          "Absperrklappe mit schnell verstellbarem pneumatischem Antrieb",
+          "Außen perlgestrahltes Finish mit Glasmikrokugeln"
+        ]
+      },
+      "25": {
+        "title": "Integraler pneumatischer Ventilsatz Ref. 1749",
+        "desc": "Skid-montierte Antriebsbatterie zum Schalten und Lenken von Prozess- und CIP-Strömen.",
+        "material": "Edelstahl AISI 316L (Rohrleitungen) / AISI 304 (Fahrgestell)",
+        "sector": "Pharmazie / Anlagenautomatisierung",
+        "specs": [
+          "WIG-geschweißtes Antivibrations-Stützbett",
+          "Rohrdurchgangsabschnitte bearbeitet und durch Klappen gekoppelt",
+          "Hydrostatischer Dichtheitstest bei 10 bar Druck",
+          "Rückverfolgbarkeit von Schweißnähten im Buch mit WPS-Schweißer-Spezifikation",
+          "Hygienische Verteiler frei von sanitären Ecken"
+        ]
+      },
+      "26": {
+        "title": "Ansaugschalldämpferfilter Ref. 1937",
+        "desc": "Industrielles Filtergehäuse zur Aufnahme luftdichter Trockenrückhaltebeutelfilter mit aufklappbarem manuellem Deckel.",
+        "material": "Edelstahl AISI 304",
+        "sector": "Industrielle Filtration und Belüftung",
+        "specs": [
+          "Behälterdurchmesser: 1.050 mm",
+          "Schnelle obere Öffnung durch Scharnier, ausbalanciert durch Gegengewicht",
+          "Interne Durchgangsdichtheit durch Überdruckluft geprüft",
+          "Manuelle Spannschellen vom Typ Swing-Bolts",
+          "Mattes Außen-Sandstrahl-Finish beständig und integriertes Bürsten"
+        ]
+      },
+      "27": {
+        "title": "Kanal für chlorierte saure Gase Ref. 2149",
+        "desc": "Großformatiger Evakuierungskanal für hochkorrosive Dämpfe, hermetisch verschweißt mit hochreiner Legierung.",
+        "material": "Supaustenitischer Edelstahl AISI 904L",
+        "sector": "Hydrometallurgische Chemie / Abfall",
+        "specs": [
+          "Kanalnennweite: 550 mm mit Flanschen an den Enden",
+          "Hohe Konzentration an Nickel und Molybdän gegen Chlorangriff",
+          "Gedrehte Flansche für perfekten flachen Sitz von Teflon-Dichtungen",
+          "Zerstörungsfreie Prüfung durch gefärbte Eindringflüssigkeiten in den Wülsten",
+          "Geschweißte Stützen für schnelle Fixierung"
+        ]
+      },
+      "28": {
+        "title": "Selbsttragendes strukturelles Bett Ref. 2195",
+        "desc": "Robuste gebürstete Edelstahl-Chassis-Struktur, die als steife Stütze für Reaktoren und Motorpumpen dient.",
+        "material": "Edelstahl-Profilstärken AISI 304",
+        "sector": "Anlagenstrukturen / Engineering",
+        "specs": [
+          "Struktur berechnet gegen intensive mechanische Belastungen und Motortorsion",
+          "Abschließendes Satin-Bürsten mit gleichmäßiger feiner 240er Körnung der Profile",
+          "Teleskopische Nivellierstützen mit Dämpfungsgummi",
+          "Verstärkte Punkte und Laschen für bequemes Hissen des Brückenkrans",
+          "Beizen aller Schweißnähte durch vollständiges Eintauchen in Säure"
+        ]
+      },
+      "29": {
+        "title": "Gewölbte torisphärische Kuppel Ref. 2198",
+        "desc": "Hochpräzise gewölbte Kesselkappe für den oberen Abschluss hygienischer landwirtschaftlicher Silos.",
+        "material": "Edelstahl AISI 316",
+        "sector": "Silos / Schwere Lebensmittelindustrie",
+        "specs": [
+          "Bodendurchmesser: 2.100 mm gewölbt mittels Hydraulikpresse",
+          "Kalibrierte Blechdicke und gedrehte Krone von hoher Wiederholgenauigkeit",
+          "Computergestütztes Plasmastrahlschweißen in Schutzatmosphäre",
+          "Ästhetisches gebürstetes Außenfinish in Umfangsrichtung",
+          "Frei von metallischen Graten mit steriler elektrochemischer Passivierung"
+        ]
+      },
+      "30": {
+        "title": "Siphon mit hohem Querschnitt und korrosivem Ablass Ref. 2228",
+        "desc": "Siphon-Spülvorrichtungen für Wasser und Industrieabwässer, die mit heißen Lösungsmitteln beladen sind.",
+        "material": "Verstärkter Edelstahl AISI 316L",
+        "sector": "Chemische Behandlung / Abwässer",
+        "specs": [
+          "Faltenfreie gebogene Muffen mit interner Flachwulstschweißung",
+          "Rundschauglas mit Borosilikatglas, verschraubt gegen direkte Leckage",
+          "Viton-Fluorelastomer-Dichtungen beständig gegen organische Lösungsmittel",
+          "Geeignet für thermische Flüssigkeitszyklen von +10°C bis +130°C konstant",
+          "Ästhetisches perlgestrahltes industrielles Finish mit hoher chemischer Beständigkeit"
+        ]
       }
     }
   }

@@ -15,7 +15,8 @@
     "hablarTecnico": "Talk to a technician",
     "scroll": "Scroll",
     "verServicios": "View all services",
-    "consultanos": "Consult your project"
+    "consultanos": "Consult your project",
+    "consultar": "Consult Service"
   },
   "home": {
     "heroLabel": "Precision Boilermaking",
@@ -23,6 +24,12 @@
     "heroSubtitle": "Over 30 years transforming ideas into solid solutions. Experts in stainless steel, carbon steel, and special alloys for the most demanding sectors.",
     "heroCta": "Request a Quote",
     "heroSecondary": "View Sectors",
+    "stats": {
+      "years": "Years of Experience",
+      "projects": "Projects Completed",
+      "quality": "Certified Quality",
+      "sectors": "Strategic Sectors"
+    },
     "sectoresLabel": "Sectors",
     "sectoresTitle": "Application Sectors",
     "sectoresDesc": "Our technical expertise allows us to adapt to the regulations and demands of the most rigorous industries.",
@@ -30,9 +37,11 @@
     "sectores": {
       "farma": { "name": "Pharma & Cosmetics", "desc": "Sanitary finishes and mirror polishing under FDA and GMP regulations." },
       "alim": { "name": "Food & Beverage", "desc": "Hygienic designs to prevent cross-contamination and facilitate CIP cleaning." },
-      "quim": { "name": "Chemical & Petrochemical", "desc": "Equipment in special alloys for corrosive processes and high pressure." }
+      "quim": { "name": "Chemical & Petrochemical", "desc": "Equipment in special alloys for corrosive processes and high pressure." },
+      "cosm": { "name": "Cosmetics", "desc": "Specialized solutions for the beauty and personal care industry." }
     },
     "features": {
+      "qa": "Quality Assurance",
       "diseno": { "title": "Design and Calculation", "desc": "Detail engineering and equipment calculation according to international standards (ASME, EN-13445, TEMA, AD-Merkblätter)." },
       "servicio": { "title": "Comprehensive Service", "desc": "From manufacturing to installation, maintenance, and equipment legalization in your plant." },
       "materiales": { "title": "Advanced Materials", "desc": "Experts in stainless steel, carbon steel, and special alloys like Hastelloy and Duplex." }
@@ -41,12 +50,29 @@
     "serviciosTitle": "Boilermaking Solutions for Modern Industry",
     "serviciosLink": "View all services",
     "serviciosList": {
-      "dep": { "title": "Tanks and Vessels", "desc": "Manufacturing of pressure vessels and storage tanks with sanitary finishes." },
-      "skid": { "title": "Industrial Skids", "desc": "Modular assemblies ready to connect and operate in your process line." },
-      "sold": { "title": "TIG/MIG Welding", "desc": "Specialists in high-precision welding for stainless steel and alloys." },
-      "mont": { "title": "Plant Assembly", "desc": "Direct installation and preventive maintenance at your facilities." }
+      "dep": { 
+        "title": "Tanks and Vessels", 
+        "desc": "Manufacturing of pressure vessels and storage tanks with sanitary finishes.",
+        "bullets": ["Pressure vessels (ASME/EN)", "Sanitary storage", "Mirror polishing finishes"]
+      },
+      "skid": { 
+        "title": "Industrial Skids", 
+        "desc": "Modular assemblies ready to connect and operate in your process line.",
+        "bullets": ["Plug & Play modular design", "Instrumentation integration", "FAT performance testing"]
+      },
+      "sold": { 
+        "title": "TIG/MIG Welding", 
+        "desc": "Specialists in high-precision welding for stainless steel and alloys.",
+        "bullets": ["Certified welders", "TIG / MIG-MAG / SMAW", "RX/Liquid quality control"]
+      },
+      "mont": { 
+        "title": "Plant Assembly", 
+        "desc": "Direct installation and preventive maintenance at your facilities.",
+        "bullets": ["Direct plant installation", "Preventive maintenance", "Equipment legalization"]
+      }
     },
     "saberMas": "Learn more",
+    "ctaPre": "Ready to start?",
     "ctaTitle": "Do you have a technical boilermaking project?",
     "ctaDesc": "Our engineering team will analyze your plans and offer you the most efficient stainless steel solution.",
     "ctaPrimary": "Request a Quote",
@@ -94,13 +120,38 @@
   "servicios": {
     "heroTitle": "Our Services",
     "heroDesc": "Comprehensive stainless steel boilermaking solutions: from detail engineering to final assembly at your facilities.",
+    "capacidades": "Technical Capabilities",
     "list": {
-      "dep": { "title": "Pressure Vessels and Equipment", "desc": "Design, calculation (ASME, EN-13445, TEMA), and construction of process equipment and pressure vessels with their corresponding legalization." },
-      "medida": { "title": "Industrial Boilermaking", "desc": "Manufacturing of hoppers, reactors, cyclones, and special parts. We work with stainless steel, carbon steel, and special alloys (Hastelloy, Duplex)." },
-      "skids": { "title": "Skids and Industrial Assemblies", "desc": "\"Plug & Play\" modular structures integrating pumps, valves, heat exchangers, and piping, ready to connect in your process line." },
-      "sold": { "title": "Certified Welding", "desc": "Specialists in TIG, MIG-MAG, and SMAW welding. Certified welders for high-responsibility joints and exhaustive quality control." },
-      "tub": { "title": "Piping and Industrial Tubing", "desc": "Installation of process lines. Orbital and manual welding with gas purging to ensure maximum hygiene in pharma and food sectors." },
-      "mont": { "title": "Installation and Maintenance", "desc": "Comprehensive plant service: installation of new equipment, legalization, maintenance shutdowns, and retrofitting of existing lines." }
+      "dep": { 
+        "title": "Pressure Vessels and Equipment", 
+        "desc": "Design, calculation (ASME, EN-13445, TEMA), and construction of process equipment and pressure vessels with their corresponding legalization.",
+        "bullets": ["ASME VIII Div.1 / EN-13445 design", "Thickness and support calculation", "Legalization and CE Marking"]
+      },
+      "medida": { 
+        "title": "Industrial Boilermaking", 
+        "desc": "Manufacturing of hoppers, reactors, cyclones, and special parts. We work with stainless steel, carbon steel, and special alloys (Hastelloy, Duplex).",
+        "bullets": ["Hoppers, Reactors and Cyclones", "Alloys: Hastelloy, Duplex", "Special parts under drawing"]
+      },
+      "skids": { 
+        "title": "Skids and Industrial Assemblies", 
+        "desc": "\"Plug & Play\" modular structures integrating pumps, valves, heat exchangers, and piping, ready to connect in your process line.",
+        "bullets": ["Plug & Play modular systems", "Pump and valve integration", "FAT and SAT workshop tests"]
+      },
+      "sold": { 
+        "title": "Certified Welding", 
+        "desc": "Specialists in TIG, MIG-MAG, and SMAW welding. Certified welders for high-responsibility joints and exhaustive quality control.",
+        "bullets": ["TIG / MIG-MAG certifications", "Non-Destructive Testing (RX/LP)", "High-responsibility welding"]
+      },
+      "tub": { 
+        "title": "Piping and Industrial Tubing", 
+        "desc": "Installation of process lines. Orbital and manual welding with gas purging to ensure maximum hygiene in pharma and food sectors.",
+        "bullets": ["Automatic orbital welding", "Hygienic process lines", "Inert gas purging"]
+      },
+      "mont": { 
+        "title": "Installation and Maintenance", 
+        "desc": "Comprehensive plant service: installation of new equipment, legalization, maintenance shutdowns, and retrofitting of existing lines.",
+        "bullets": ["Mechanical plant assembly", "Preventive/corrective maintenance", "Scheduled technical shutdowns"]
+      }
     },
     "catalogTitle": "Manufacturing and Services Catalog",
     "catalogDesc": "Exhaustive detail of our manufacturing capabilities, process equipment, and specialized services for the industry.",
@@ -118,6 +169,8 @@
   "sectores": {
     "heroTitle": "Application Sectors and Projects",
     "heroDesc": "Our technical expertise and adaptability allow us to comply with the regulations and demands of the most rigorous industrial sectors.",
+    "aplicaciones": "Applications",
+    "medida": "Custom process equipment",
     "list": {
       "farma": { "title": "Pharmaceutical Laboratories", "desc": "Equipment with sanitary finishes, mirror polishing, and orbital welds that comply with the strictest regulations (FDA, GMP) to ensure maximum sterility and traceability." },
       "alim": { "title": "Food & Beverage", "desc": "Stainless steel solutions designed to prevent cross-contamination and facilitate CIP/SIP cleaning in dairy, beverage, and food processing." },
@@ -243,6 +296,469 @@
         "accept": "Accept all",
         "settings": "Settings",
         "decline": "Decline"
+      }
+    }
+  },
+  "proyectos": {
+    "heroLabel": "INDUSTRIAL BOILERMAKING REAL GALLERY",
+    "heroTitle": "Our Equipment",
+    "heroDesc": "Direct catalog of our real industrial projects. View the fabrications associated with each workshop section with CAD plans or real photos.",
+    "filterLabel": "Quick Search",
+    "filterPlaceholder": "Type reference, material (316, 304)...",
+    "photoFilterLabel": "Filter Documents by Photography",
+    "filterAll": "All",
+    "filterReal": "With Photo",
+    "filterCad": "CAD Plan",
+    "showing": "Showing",
+    "of": "of",
+    "industrialFabrications": "industrial fabrications",
+    "noResults": "No Results",
+    "noResultsDesc": "No records have been found in our dossier that match the filters applied at this time.",
+    "resetFilters": "Reset Search",
+    "clearSearch": "Clear search",
+    "viewFile": "File",
+    "refLabel": "REF",
+    "ref": "Ref.",
+    "material": "Material",
+    "alloy": "ALLOY",
+    "application": "APPLICATION",
+    "additionalSpecs": "Additional Specifications",
+    "workshopPhoto": "Workshop Photo",
+    "cadBlueprint": "Technical CAD Plan",
+    "cadNote": "Ref. available in formal quotation dossier.",
+    "blueprintCode": "Blueprint Code:",
+    "modalTitle": "Technical Homologation File",
+    "close": "Close",
+    "requestQuote": "Request a Quote",
+    "footerTitle": "Looking for a custom fabrication?",
+    "footerDesc": "We offer full traceability of materials with 3.1 cast certificates, welding process approval by EN or ASME, and official quality dossier.",
+    "footerCta1": "Quotes and Technical Plans",
+    "footerCta2": "Welding Accreditations",
+    "folders": {
+      "reactores": {
+        "title": "Process Reactors for Chemistry and Pharmacy",
+        "shortTitle": "REACTORS",
+        "desc": "Reactors and hydrolyzers designed for high pressures and vacuum, equipped with thermal jackets, half-pipe coils, and advanced coaxial stirring systems.",
+        "features": ["Up to 5,000 Liters capacity", "Certified vacuum and pressure approval", "Custom coaxial / anchor stirring systems", "Fine sanitary finishes with ASME BPE electropolishing"]
+      },
+      "depositos": {
+        "title": "Storage Deposits and Tanks",
+        "shortTitle": "TANKS",
+        "desc": "Atmospheric or pressurized storage, mixing, dosing, and classification tanks. Insulated and airtight isothermal models welded under TIG process.",
+        "features": ["Single-wall or jacketed structures", "Rock wool insulation with welded cladding", "Integrated multidirectional CIP cleaning balls", "High-sensitivity load cells for dosing"]
+      },
+      "intercambiadores": {
+        "title": "Multitubular Heat Exchangers",
+        "shortTitle": "EXCHANGERS",
+        "desc": "Tubular bundle or double tube plate (DTS) heat exchangers designed to prevent cross-contamination in heating or condensation.",
+        "features": ["Drilled and welded tube bundles", "Designed according to ASME Sec VIII and EN-13445 codes", "Visible leakage chambers for maximum safety", "Corrugated tube option for heavy fluids"]
+      },
+      "caldereria": {
+        "title": "Technical Boilermaking and Various Engineering",
+        "shortTitle": "METALWORK",
+        "desc": "Custom high-precision auxiliary elements: manifolds, asymmetric hoppers, corrosive vapor evacuation ducts, and self-supporting structural beds.",
+        "features": ["Sanitary manifolds with orbital welding", "Anti-bridging asymmetric hoppers for powders", "Dished heads formed by hydraulic press", "Robust brushed stainless steel sheet structures"]
+      }
+    },
+    "cad": {
+      "diameter": "Ø",
+      "pipingCode": "PIPING EN-13480",
+      "anchor": "ANCHOR / 45 RPM",
+      "thermal": "THERMAL HALF-PIPE",
+      "inletOutlet": "INLET / OUTLET",
+      "tubeBundle": "TUBULAR BUNDLE",
+      "asymmetricPart": "ASYMMETRIC PART"
+    },
+    "items": {
+      "1": {
+        "title": "Texapel Chemical Process Tank",
+        "desc": "Dosing and controlled mixing buffer tank for complex chemical formulations and resins.",
+        "material": "Stainless Steel AISI 316L",
+        "sector": "Industrial Chemistry / Supplies",
+        "specs": [
+          "Useful capacity: 8,500 Liters",
+          "Self-draining sloped conical bottom for complete resin purge",
+          "Top-mounted marine propeller agitator with dual torque motor",
+          "Internal mechanical polishing Ra < 0.6 µm and full pickling",
+          "Safety glass sight glass for direct visual inspection"
+        ]
+      },
+      "2": {
+        "title": "Phase Settling Tank Ref. 1593",
+        "desc": "Accumulator equipment with internal watertight separator for continuous pouring and classification of biphasic mixtures.",
+        "material": "Stainless Steel AISI 304L / AISI 316",
+        "sector": "Environment / Conservation",
+        "specs": [
+          "Useful capacity: 6,000 Liters",
+          "Passivated internal baffles for static laminar separation",
+          "Height-adjustable upper purge piping system",
+          "Admissible pressure: Atmospheric pressure",
+          "Reinforced chassis-coupled supports against earthquakes"
+        ]
+      },
+      "3": {
+        "title": "Insulated Sanitary Buffer Tank Ref. 1737",
+        "desc": "Thermal storage for fine or sterile food fluids with hot water jacket and mineral wool.",
+        "material": "Sanitary Stainless Steel AISI 316L (contact)",
+        "sector": "Cosmetics and Hygiene / Dairy",
+        "specs": [
+          "Useful capacity: 11,000 Liters",
+          "80 mm thick rock wool insulation welded to the outer sheet",
+          "Inner coil jacket for rapid water circulation at 85°C",
+          "Integrated multidirectional CIP cleaning balls",
+          "Sanitary joint treatment according to FDA regulations"
+        ]
+      },
+      "4": {
+        "title": "Outdoor Isothermal Tank Ref. 1952",
+        "desc": "Outdoor insulated tank with watertight cladding welded by TIG process, immune to moisture condensation.",
+        "material": "AISI 316 Stainless Steel and AISI 304 Outer Protection Sheet",
+        "sector": "General and Auxiliary Chemistry",
+        "specs": [
+          "Useful capacity: 15,000 Liters",
+          "Dimple-jacket type outer jacket for uniform thermal maintenance",
+          "Full chemical blasting and passivation after welding bead",
+          "Elliptical manhole in shell with lateral flange and elastic joint",
+          "Installation with heavy profile anchoring brackets"
+        ]
+      },
+      "5": {
+        "title": "Pressure Accumulator Vessel Ref. 2153",
+        "desc": "Certified reinforced airtight tank under European Pressure Equipment Directive 2014/68/EU.",
+        "material": "AISI 316L Super Austenitic Stainless Steel",
+        "sector": "Hydraulic Chemistry / Petrochemicals",
+        "specs": [
+          "Useful capacity: 3,200 Liters",
+          "Design pressure: +8.5 bar at +100°C",
+          "Klopper type dished heads with thicknesses adjusted by FEA software",
+          "100% industrial radiography inspection of longitudinal welds",
+          "CE certification and official hydrostatic test reports"
+        ]
+      },
+      "6": {
+        "title": "Pharmaceutical Dosing Tank Ref. 2157 B-1",
+        "desc": "Ultra-pure intermediate tank, mechanical mirror polished for correct mixture sterility.",
+        "material": "AISI 316L Electropolished Stainless Steel ASME BPE",
+        "sector": "Pharmaceutical / Biotechnology",
+        "specs": [
+          "Useful capacity: 900 Liters",
+          "High-quality internal polishing with certified roughness Ra < 0.38 µm",
+          "Total absence of dead zones and internal threads",
+          "Sanitary Clamp type quick connections",
+          "Installation on bed with adjustable anti-vibration feet"
+        ]
+      },
+      "7": {
+        "title": "Glycol Cooling Tank Ref. 2178-D",
+        "desc": "Sterile vessel with lower jackets prepared for rapid cooling of food bases.",
+        "material": "Stainless Steel AISI 316L / AISI 304",
+        "sector": "Food / Process Beverages",
+        "specs": [
+          "Useful capacity: 10,000 Liters",
+          "Pillow-Plate circuit for circulation of glycol water at -5°C",
+          "High-durability injected polyurethane insulation",
+          "Low RPM variable pitch agitator to prevent mixture degradation",
+          "Hygienic diaphragm bottom discharge valve"
+        ]
+      },
+      "8": {
+        "title": "Coupled Storage Battery Ref. 2338",
+        "desc": "Three identical tanks mechanically connected by upper walkways for parallel dosing.",
+        "material": "Stainless Steel AISI 316L",
+        "sector": "Paints / Industrial Coatings",
+        "specs": [
+          "Combined capacity: 3 x 4,000 Liters",
+          "Upper passage walkway with integrated railings according to safety standards",
+          "Suspended fast axial agitators with adjustable side baffles",
+          "Lower discharge manifolds coupled to gear pump",
+          "High-sensitivity load cells on structural support bed"
+        ]
+      },
+      "9": {
+        "title": "Compact Multitubular Heat Exchanger Ref. 2010-B",
+        "desc": "Welded tubular exchanger for organic vapor condensation and corrosive fluid cooling.",
+        "material": "Stainless Steel AISI 316L / Nickel Alloy",
+        "sector": "Industrial Chemistry / Oil",
+        "specs": [
+          "Thermal exchange surface: 16 m²",
+          "Designed according to ASME Section VIII Division 1 code",
+          "Thermally expanded thin-walled tube bundle",
+          "Outer shell protected with high thermal resistance primer",
+          "Leak testing using pneumatic helium test"
+        ]
+      },
+      "10": {
+        "title": "Steam Bundle Exchanger Ref. 2084",
+        "desc": "High-resistance industrial multitubular equipment, ideal for heating processes using saturated steam.",
+        "material": "Stainless Steel AISI 316 (Bundles) / Carbon Steel (Shell)",
+        "sector": "Thermal Processes / Metallurgy",
+        "specs": [
+          "Exchange surface: 40 m²",
+          "Maximum steam service pressure: 12 bar",
+          "Expanded and welded tubes to the tube plate with radial machining",
+          "Rigid segmented design internal baffles to favor cross flows",
+          "Welded cradle-type supports for easy plant fixation"
+        ]
+      },
+      "11": {
+        "title": "Sanitary Multitubular Pasteurizer Ref. 2090-B",
+        "desc": "Double Tube Sheet (DTS) exchanger that prevents accidental cross-contamination in food fluids.",
+        "material": "AISI 316L Sanitary Polished Stainless Steel",
+        "sector": "Food / Sanitary Drinks",
+        "specs": [
+          "Exchange surface: 25 m²",
+          "Exclusive DTS design with visible security leakage chamber",
+          "Full self-draining capability according to design hygienic directives",
+          "Fine electropolished internal finish Ra < 0.4 µm",
+          "Clamp accessories and gaskets suitable for intense thermal cycles"
+        ]
+      },
+      "12": {
+        "title": "Vertical Distillation Condenser Ref. 2157-C",
+        "desc": "High-performance sanitary multitubular exchanger, intended for vacuum distillation of sterile alcohols.",
+        "material": "Sanitary Stainless Steel AISI 316L ASME BPE",
+        "sector": "Pharmaceutical / Fine Synthesis",
+        "specs": [
+          "Exchange surface: 32 m²",
+          "Internal mirror-finish seamless tube bundles",
+          "Outer shell equipped with sight glass for condensate expansion",
+          "Videofibroscope endoscopy and roughness certificate in technical dossier",
+          "Ready for FDA IQ/OQ validation system coupling"
+        ]
+      },
+      "13": {
+        "title": "Special Plate and Tube Exchanger Ref. 2157-D",
+        "desc": "Tubular bundle exchanger for high-responsibility heat exchange with volatile organic fluids.",
+        "material": "Stainless Steel AISI 316L",
+        "sector": "Industrial Chemistry / Refinery",
+        "specs": [
+          "Exchange surface: 20 m²",
+          "Designed and calculated under EN-13445 standard code",
+          "Elastic expansion joint welded to the shell to absorb thermal shocks",
+          "Standardized high-rigidity flat flanges EN 1092-1",
+          "Selectively passivated and pickled welds"
+        ]
+      },
+      "14": {
+        "title": "Exchanger for Dense Fluids Ref. 2317",
+        "desc": "Multitubular equipment with internal corrugated tubes for fluids with sludge or suspended solids.",
+        "material": "AISI 316 Stainless Steel of abrasive thickness",
+        "sector": "Water Treatment / WWTP",
+        "specs": [
+          "Exchange surface: 50 m²",
+          "Corrugated inner sleeves to induce turbulent mixture flow",
+          "Detachable swinging flanged head for quick cleaning access",
+          "Superior resistance to biological and industrial fouling",
+          "Design pressure and temperature: 10 bar at +120°C"
+        ]
+      },
+      "15": {
+        "title": "Large Section Multitubular Condenser Ref. 1834",
+        "desc": "Large diameter condensing unit designed to handle high volumes of corrosive gases.",
+        "material": "Stainless Steel AISI 316L",
+        "sector": "Fine Chemistry / Solvents",
+        "specs": [
+          "Exchange surface: 36 m²",
+          "Oversized outer shell to withstand rapid volume expansion",
+          "Welding radiography certificates and construction dossier",
+          "Aesthetic matte pickled exterior finish of great uniformity",
+          "Integrated top lifting lugs tension-tested for hoisting"
+        ]
+      },
+      "16": {
+        "title": "Labi-1433 Laboratory Pilot Reactor",
+        "desc": "Compact pilot reactor with thermal jacket and brushed removable lid for small dosing and chemical tests.",
+        "material": "Electropolished Stainless Steel AISI 316L",
+        "sector": "Pharmacy / Miniature Synthesis",
+        "specs": [
+          "Nominal capacity: 50 Liters",
+          "Heating jacket by thermal oil circulation at +180°C",
+          "Special anchor agitation system with modular Teflon scrapers",
+          "Coaxial mechanical seal with sterile fluid lubrication tank",
+          "Sanitarily optimal internal mirror ultra-fine finish Ra < 0.3 µm"
+        ]
+      },
+      "17": {
+        "title": "Complete Chemical Process Reactor Ref. 1564",
+        "desc": "Reaction and hydrolysis reactor equipped with a welded half-pipe type external coil for severe thermal transfer.",
+        "material": "Stainless Steel AISI 316L",
+        "sector": "Fine Chemistry / Resins",
+        "specs": [
+          "Nominal capacity: 3,500 Liters",
+          "Stainless steel half-pipe for heating divided into 3 independent zones",
+          "High protection rock wool insulation with welded sheet cladding",
+          "Main agitation by inclined blade turbine with high driving torque",
+          "Balanced double mechanical seal that supports vacuum pressures to +6 bar"
+        ]
+      },
+      "18": {
+        "title": "Cosmetic Mixing Reactor with Jacket Ref. 1709-D",
+        "desc": "Fast homogenization reactor for the production of cosmetic bases, ointments, and high-viscosity creams.",
+        "material": "Sanitary Stainless Steel AISI 316L / AISI 304",
+        "sector": "Cosmetics and Hygiene Process",
+        "specs": [
+          "Nominal capacity: 2,200 Liters",
+          "Jacket heating by direct injection of saturated steam at 3 bar",
+          "Synchronized coaxial agitation: peripheral anchor and ultra-fast top disperser",
+          "CIP sprayers on top lid and hygienic bottom discharge ball valve",
+          "Ra < 0.4 µm finishes with chemical passivation and internal videofibroscopy"
+        ]
+      },
+      "19": {
+        "title": "Vacuum and Distillation Reactor Ref. 1741-B",
+        "desc": "Specialized equipment for low-pressure chemical distillation with cooling jacket and direct condensation.",
+        "material": "Stainless Steel AISI 316L",
+        "sector": "Industrial Chemistry / Pharmacy",
+        "specs": [
+          "Nominal capacity: 1,800 Liters",
+          "Design pressure: Total vacuum (-1 bar) to +4 bar pressure",
+          "Reflux condenser bundle integrated in upper coupling",
+          "Double flow propeller type agitator and safety ATEX geared motor",
+          "Total sheet traceability under destructive and stainless tests"
+        ]
+      },
+      "20": {
+        "title": "Polymerization and High Viscosity Reactor Ref. 1918",
+        "desc": "Robust mixing reactor provided with oversized geared motor and shearing anchor agitator.",
+        "material": "Nickel Alloy / Hastelloy C22",
+        "sector": "Acid Chemistry / Polymers",
+        "specs": [
+          "Nominal capacity: 4,500 Liters",
+          "Manufactured entirely in Hastelloy for protection against highly acidic reagents",
+          "Reinforced anchor agitator with solid pull bars",
+          "Rapid cooling thermal jacket driven by glycol water",
+          "Pressurized mechanical seal cartridge with nitrogen barrier"
+        ]
+      },
+      "21": {
+        "title": "Pressure Hydrogenator Reactor Ref. 1961",
+        "desc": "Reinforced airtight equipment for catalyzed chemical reactions operating at extremely high pressures.",
+        "material": "Stainless Steel AISI 316L of superior special thickness",
+        "sector": "Fine Chemistry / Catalysts",
+        "specs": [
+          "Nominal capacity: 1,200 Liters",
+          "Maximum internal body service pressure: 16 bar",
+          "Admissible operating temperature: +220°C",
+          "Hollow-Shaft type agitator with gas-inducing hollow shaft of high dissolution",
+          "Official non-destructive testing dossier endorsed by technical control OCA"
+        ]
+      },
+      "22": {
+        "title": "Sanitary Pharmaceutical Reactor Ref. 2243",
+        "desc": "Sterile biotechnological synthesis vessel, electrolytic mirror polishing optimized according to ASME BPE.",
+        "material": "Super Sanitary Stainless Steel AISI 316L ASME BPE",
+        "sector": "Biotechnological Medicine / Injectables",
+        "specs": [
+          "Nominal capacity: 2,500 Liters",
+          "Internal electropolish Ra finish of high sterile purity < 0.3 µm",
+          "Outer coil jacket welded by computer-aided plasma beam",
+          "Large section sight glass with IP67 refrigerated watertight LED light",
+          "Continuous sampling system with low hygienic drop retention"
+        ]
+      },
+      "23": {
+        "title": "Sanitary Manifold Ref. 1680-F",
+        "desc": "Fine sanitary piping distribution manifold with orbital welds and closed-loop argon purge.",
+        "material": "Stainless Steel AISI 316L ASME BPE",
+        "sector": "Fluid Laboratory / Sanitary",
+        "specs": [
+          "Welded union by orbital robot with internal inert formier gas control",
+          "Full traceability of sleeves by laser-engraved steel casts",
+          "100% inspection by endoscopic videofibroscopy recorded on physical media",
+          "Self-draining slopes ensuring zero biofilm formation in loop",
+          "High tolerance sanitary clamp fitting connections"
+        ]
+      },
+      "24": {
+        "title": "Powder Feed Hopper Ref. 1743",
+        "desc": "Asymmetric loading hopper with vibrator for dosed feeding of pigments and additives to mixing tanks.",
+        "material": "Stainless Steel AISI 304 / AISI 316",
+        "sector": "Food / Paint Manufacturing",
+        "specs": [
+          "Volumetric capacity: 2,200 Liters",
+          "Asymmetrical geometric design that prevents the formation of powder arches",
+          "Bed with oversized structural angular plate for vibration",
+          "Butterfly valve with quick-adjust pneumatic actuator",
+          "Exterior bead-blasted finish with glass microspheres"
+        ]
+      },
+      "25": {
+        "title": "Integral Pneumatic Valve Manifold Ref. 1749",
+        "desc": "Skid-mounted driving battery for switching and directing process and CIP flows.",
+        "material": "Stainless Steel AISI 316L (Piping) / AISI 304 (Chassis)",
+        "sector": "Pharmacy / Plant Automation",
+        "specs": [
+          "TIG-welded anti-vibration support bed",
+          "Piping passing sections machined and coupled by clappers",
+          "Hydrostatic leak test at 10 bar pressure",
+          "Traceability of welds in book with WPS welder specification",
+          "Hygienic manifolds free of sanitary corners"
+        ]
+      },
+      "26": {
+        "title": "Aspiration Silencer Filter Ref. 1937",
+        "desc": "Industrial filter housing designed to house airtight dry retention bag filters with hinged manual lid.",
+        "material": "Stainless Steel AISI 304",
+        "sector": "Industrial Filtration and Ventilation",
+        "specs": [
+          "Vessel diameter: 1,050 mm",
+          "Quick top opening type hinge balanced by counterweight",
+          "Internal step tightness tested by positive air pressure",
+          "Swing-bolts type manual tightening clamps",
+          "Matte exterior sandblasting resistant and integral brushing"
+        ]
+      },
+      "27": {
+        "title": "Chlorinated Acid Gas Duct Ref. 2149",
+        "desc": "Large format evacuation duct for highly corrosive vapors, hermetically welded with high purity alloy.",
+        "material": "Super Austenitic Stainless Steel AISI 904L",
+        "sector": "Hydrometallurgical Chemistry / Waste",
+        "specs": [
+          "Nominal conduit diameter: 550 mm with flanges at ends",
+          "High concentration of Nickel and Molybdenum against chlorine attack",
+          "Turned flanges for perfect flat seating of Teflon gaskets",
+          "Non-destructive testing by colored penetrant liquids in beads",
+          "Welded support struts for quick fixation"
+        ]
+      },
+      "28": {
+        "title": "Self-supporting Structural Bed Ref. 2195",
+        "desc": "Robust brushed stainless steel chassis structure serving as a rigid support for reactors and motorized pumps.",
+        "material": "Stainless Steel Profiling Thicknesses AISI 304",
+        "sector": "Plant Structures / Engineering",
+        "specs": [
+          "Structure calculated against intense mechanical loads and motor torsion",
+          "Final satin brushing with uniform fine 240 abrasive grain of profiles",
+          "Telescopic leveling threaded supports with damping rubber",
+          "Reinforced points and lugs for comfortable overhead crane bridge hoisting",
+          "All welding pickling by total immersion acid"
+        ]
+      },
+      "29": {
+        "title": "Dished Torispherical Dome Ref. 2198",
+        "desc": "High-precision dished boiler cap for top closure of hygienic agro-food silos.",
+        "material": "Stainless Steel AISI 316",
+        "sector": "Silos / Heavy Food Industry",
+        "specs": [
+          "Bottom diameter: 2,100 mm dished using hydraulic press",
+          "Calibrated sheet thickness and turned crown of high repeatability",
+          "Computerized plasma beam welding in protected atmosphere",
+          "Exterior brushed uniform aesthetic finish in circumferential shell",
+          "Free of metallic burrs with sterile electrochemical passivation"
+        ]
+      },
+      "30": {
+        "title": "High Section Syphon and Corrosive Discharge Ref. 2228",
+        "desc": "Siphonic purge devices for water and industrial effluents loaded with hot solvents.",
+        "material": "Reinforced Stainless Steel AISI 316L",
+        "sector": "Chemical Treatment / Effluents",
+        "specs": [
+          "Wrinkle-free curved sleeves with internal flat bead welding",
+          "Circular sight glass with borosilicate glass bolted against direct leaks",
+          "Viton fluoroelastomer gaskets resistant to organic solvents",
+          "Suitable for fluid thermal cycles from +10°C to +130°C constant",
+          "Aesthetic bead-blasted industrial finish of high chemical durability"
+        ]
       }
     }
   }

@@ -15,7 +15,8 @@
     "hablarTecnico": "Hablar con un técnico",
     "scroll": "Scroll",
     "verServicios": "Ver todos los servicios",
-    "consultanos": "Consúltanos tu proyecto"
+    "consultanos": "Consúltanos tu proyecto",
+    "consultar": "Consultar Servicio"
   },
   "home": {
     "heroLabel": "Calderería de Precisión",
@@ -23,6 +24,12 @@
     "heroSubtitle": "Más de 30 años transformando ideas en soluciones sólidas. Expertos en acero inoxidable, acero al carbono y aleaciones especiales para los sectores más exigentes.",
     "heroCta": "Solicitar Presupuesto",
     "heroSecondary": "Ver Sectores",
+    "stats": {
+      "years": "Años de Experiencia",
+      "projects": "Proyectos Realizados",
+      "quality": "Calidad Certificada",
+      "sectors": "Sectores Estratégicos"
+    },
     "sectoresLabel": "Sectores",
     "sectoresTitle": "Sectores de Aplicación",
     "sectoresDesc": "Nuestra experiencia técnica nos permite adaptarnos a las normativas y exigencias de las industrias más rigurosas.",
@@ -30,9 +37,11 @@
     "sectores": {
       "farma": { "name": "Farmacia y Cosmética", "desc": "Acabados sanitarios y pulido espejo bajo normativas FDA y GMP." },
       "alim": { "name": "Alimentación", "desc": "Diseños higiénicos para evitar contaminación cruzada y facilitar limpieza CIP." },
-      "quim": { "name": "Química y Petroquímica", "desc": "Equipos en aleaciones especiales para procesos corrosivos y alta presión." }
+      "quim": { "name": "Química y Petroquímica", "desc": "Equipos en aleaciones especiales para procesos corrosivos y alta presión." },
+      "cosm": { "name": "Cosmética", "desc": "Soluciones especializadas para la industria de la belleza y cuidado personal." }
     },
     "features": {
+      "qa": "Seguro de Calidad",
       "diseno": { "title": "Diseño y Cálculo", "desc": "Ingeniería de detalle y cálculo de equipos según normativas internacionales (ASME, EN-13445, TEMA, AD-Merkblätter)." },
       "servicio": { "title": "Servicio Integral", "desc": "Desde la fabricación hasta la instalación, mantenimiento y legalización de equipos en su planta." },
       "materiales": { "title": "Materiales Avanzados", "desc": "Expertos en acero inoxidable, acero al carbono y aleaciones especiales como Hastelloy y Duplex." }
@@ -41,12 +50,29 @@
     "serviciosTitle": "Soluciones de Calderería para la Industria Moderna",
     "serviciosLink": "Ver todos los servicios",
     "serviciosList": {
-      "dep": { "title": "Depósitos y Tanques", "desc": "Fabricación de recipientes a presión y almacenamiento con acabados sanitarios." },
-      "skid": { "title": "Skids Industriales", "desc": "Conjuntos modulares listos para conectar y funcionar en su línea de proceso." },
-      "sold": { "title": "Soldadura TIG/MIG", "desc": "Especialistas en soldadura de alta precisión para acero inoxidable y aleaciones." },
-      "mont": { "title": "Montaje en Planta", "desc": "Instalación y mantenimiento preventivo directo en sus instalaciones." }
+      "dep": { 
+        "title": "Depósitos y Tanques", 
+        "desc": "Fabricación de recipientes a presión y almacenamiento con acabados sanitarios.",
+        "bullets": ["Recipientes a presión (ASME/EN)", "Almacenamiento sanitario", "Acabados pulido espejo"]
+      },
+      "skid": { 
+        "title": "Skids Industriales", 
+        "desc": "Conjuntos modulares listos para conectar y funcionar en su línea de proceso.",
+        "bullets": ["Diseño modular Plug & Play", "Integración de instrumentación", "Pruebas de funcionamiento FAT"]
+      },
+      "sold": { 
+        "title": "Soldadura TIG/MIG", 
+        "desc": "Especialistas en soldadura de alta precisión para acero inoxidable y aleaciones.",
+        "bullets": ["Soldadores homologados", "TIG / MIG-MAG / SMAW", "Control de calidad por RX/Líquidos"]
+      },
+      "mont": { 
+        "title": "Montaje en Planta", 
+        "desc": "Instalación y mantenimiento preventivo directo en sus instalaciones.",
+        "bullets": ["Instalación directa en planta", "Mantenimiento preventivo", "Legalización de equipos"]
+      }
     },
     "saberMas": "Saber más",
+    "ctaPre": "¿Listo para empezar?",
     "ctaTitle": "¿Tienes un proyecto de calderería técnica?",
     "ctaDesc": "Nuestro equipo de ingeniería analizará tus planos y te ofrecerá la solución más eficiente en acero inoxidable.",
     "ctaPrimary": "Solicitar Presupuesto",
@@ -94,13 +120,38 @@
   "servicios": {
     "heroTitle": "Nuestros Servicios",
     "heroDesc": "Soluciones integrales de calderería inoxidable: desde la ingeniería de detalle hasta el montaje final en sus instalaciones.",
+    "capacidades": "Capacidades Técnicas",
     "list": {
-      "dep": { "title": "Depósitos a Presión y Equipos", "desc": "Diseño, cálculo (ASME, EN-13445, TEMA) y construcción de equipos de proceso y recipientes a presión con su correspondiente legalización." },
-      "medida": { "title": "Calderería Industrial", "desc": "Fabricación de tolvas, reactores, ciclones y piezas especiales. Trabajamos acero inoxidable, acero al carbono y aleaciones especiales (Hastelloy, Duplex)." },
-      "skids": { "title": "Skids y Conjuntos Industriales", "desc": "Estructuras modulares \"Plug & Play\" que integran bombas, válvulas, intercambiadores y tubería, listas para conectar en su línea de proceso." },
-      "sold": { "title": "Soldadura Homologada", "desc": "Especialistas en soldadura TIG, MIG-MAG y SMAW. Soldadores homologados para uniones de alta responsabilidad y control de calidad exhaustivo." },
-      "tub": { "title": "Piping y Tubería Industrial", "desc": "Instalación de líneas de proceso. Soldadura orbital y manual con purga de gas para garantizar la máxima higiene en sectores farma y alimentario." },
-      "mont": { "title": "Instalación y Mantenimiento", "desc": "Servicio integral en planta: instalación de equipos nuevos, legalización, paradas de mantenimiento y reformas de líneas existentes." }
+      "dep": { 
+        "title": "Depósitos a Presión y Equipos", 
+        "desc": "Diseño, cálculo (ASME, EN-13445, TEMA) y construcción de equipos de proceso y recipientes a presión con su correspondiente legalización.",
+        "bullets": ["Diseño ASME VIII Div.1 / EN-13445", "Cálculo de espesores y soportes", "Legalización y Marcado CE"]
+      },
+      "medida": { 
+        "title": "Calderería Industrial", 
+        "desc": "Fabricación de tolvas, reactores, ciclones y piezas especiales. Trabajamos acero inoxidable, acero al carbono y aleaciones especiales (Hastelloy, Duplex).",
+        "bullets": ["Tolvas, Reactores y Ciclones", "Aleaciones: Hastelloy, Duplex", "Piezas especiales bajo plano"]
+      },
+      "skids": { 
+        "title": "Skids y Conjuntos Industriales", 
+        "desc": "Estructuras modulares \"Plug & Play\" que integran bombas, válvulas, intercambiadores y tubería, listas para conectar en su línea de proceso.",
+        "bullets": ["Sistemas modulares Plug & Play", "Integración de bombas y válvulas", "Pruebas FAT y SAT en taller"]
+      },
+      "sold": { 
+        "title": "Soldadura Homologada", 
+        "desc": "Especialistas en soldadura TIG, MIG-MAG y SMAW. Soldadores homologados para uniones de alta responsabilidad y control de calidad exhaustivo.",
+        "bullets": ["Homologaciones TIG / MIG-MAG", "Ensayos No Destructivos (RX/LP)", "Soldadura de alta responsabilidad"]
+      },
+      "tub": { 
+        "title": "Piping y Tubería Industrial", 
+        "desc": "Instalación de líneas de proceso. Soldadura orbital y manual con purga de gas para garantizar la máxima higiene en sectores farma y alimentario.",
+        "bullets": ["Soldadura orbital automática", "Líneas de proceso higiénicas", "Purga de gas inerte"]
+      },
+      "mont": { 
+        "title": "Instalación y Mantenimiento", 
+        "desc": "Servicio integral en planta: instalación de equipos nuevos, legalización, paradas de mantenimiento y reformas de líneas existentes.",
+        "bullets": ["Montaje mecánico en planta", "Mantenimiento preventivo/correctivo", "Paradas técnicas programadas"]
+      }
     },
     "catalogTitle": "Catálogo de Fabricación y Servicios",
     "catalogDesc": "Detalle exhaustivo de nuestras capacidades de fabricación, equipos de proceso y servicios especializados para la industria.",
@@ -118,6 +169,8 @@
   "sectores": {
     "heroTitle": "Sectores de Aplicación y Proyectos",
     "heroDesc": "Nuestra experiencia técnica y capacidad de adaptación nos permite cumplir con las normativas y exigencias de los sectores industriales más rigurosos.",
+    "aplicaciones": "Aplicaciones",
+    "medida": "Equipos de proceso a medida",
     "list": {
       "farma": { "title": "Laboratorios Farmacéuticos", "desc": "Equipos con acabados sanitarios, pulido espejo y soldaduras orbitales que cumplen con las normativas más estrictas (FDA, GMP) para garantizar la máxima esterilidad y trazabilidad." },
       "alim": { "title": "Alimentación", "desc": "Soluciones en acero inoxidable diseñadas para evitar la contaminación cruzada y facilitar la limpieza CIP/SIP en procesos de lácteos, bebidas y procesado de alimentos." },
@@ -243,6 +296,469 @@
         "accept": "Aceptar todas",
         "settings": "Configurar",
         "decline": "Rechazar"
+      }
+    }
+  },
+  "proyectos": {
+    "heroLabel": "GALERÍA REAL DE CALDERERÍA INDUSTRIAL",
+    "heroTitle": "Nuestros Equipos",
+    "heroDesc": "Catálogo directo de nuestros proyectos reales industriales. Visualiza las fabricaciones asociadas a cada sección del taller con plano CAD o fotos reales.",
+    "filterLabel": "Búsqueda Rápida",
+    "filterPlaceholder": "Escribe referencia, material (316, 304)...",
+    "photoFilterLabel": "Filtrar Documentos por Fotografía",
+    "filterAll": "Todos",
+    "filterReal": "Con Foto",
+    "filterCad": "Plano CAD",
+    "showing": "Mostrando",
+    "of": "de",
+    "industrialFabrications": "fabricaciones industriales",
+    "noResults": "Sin Resultados",
+    "noResultsDesc": "No se han encontrado registros en nuestro dossier que coincidan con los filtros aplicados en este momento.",
+    "resetFilters": "Restablecer Buscador",
+    "clearSearch": "Limpiar búsqueda",
+    "viewFile": "Ficha",
+    "refLabel": "REF",
+    "ref": "Ref.",
+    "material": "Material",
+    "alloy": "ALEACIÓN",
+    "application": "APLICACIÓN",
+    "additionalSpecs": "Especificaciones Adicionales",
+    "workshopPhoto": "Foto Taller",
+    "cadBlueprint": "Plano Técnico CAD",
+    "cadNote": "Ref. disponible en dossier de cotización formal.",
+    "blueprintCode": "Código de Plano:",
+    "modalTitle": "Ficha Técnica de Homologación",
+    "close": "Cerrar",
+    "requestQuote": "Solicitar Presupuesto",
+    "footerTitle": "¿Buscas una fabricación a medida?",
+    "footerDesc": "Ofrecemos trazabilidad total de materiales con certificado de coladas 3.1, homologación de procesos de soldadura por EN o ASME y dossier de calidad oficial.",
+    "footerCta1": "Presupuestos y Planos Técnicos",
+    "footerCta2": "Acreditaciones de Soldadura",
+    "folders": {
+      "reactores": {
+        "title": "Reactores de Proceso Química y Farmacia",
+        "shortTitle": "REACTORES",
+        "desc": "Reactores e hidrolizadores diseñados para presiones elevadas y vacío, equipados con camisas térmicas, serpentines de media caña y sistemas de agitación coaxial avanzados.",
+        "features": ["Hasta 5.000 Litros de capacidad", "Homologación de vacío y presión certificada", "Sistemas de agitación coaxial / ancla a medida", "Acabados sanitarios finos con electropulido ASME BPE"]
+      },
+      "depositos": {
+        "title": "Depósitos y Tanques de Almacenamiento",
+        "shortTitle": "DEPÓSITOS",
+        "desc": "Tanques de almacenamiento, mezcla, dosificación y clasificación atmosféricos o presurizados. Modelos calorifugados e isotérmicos estancos soldados bajo proceso TIG.",
+        "features": ["Estructuras monocubas o encamisadas", "Aislamientos de lana de roca con revestimiento soldado", "Bolas de limpieza CIP integradas multidireccionales", "Células de carga de gran sensibilidad para dosificación"]
+      },
+      "intercambiadores": {
+        "title": "Intercambiadores de Calor Multitubulares",
+        "shortTitle": "INTERCAMBIADORES",
+        "desc": "Intercambiadores térmicos de haz tubular o de doble placa tubular (DTS) diseñados para prevenir contaminaciones cruzadas en el calentamiento o condensación.",
+        "features": ["Haces tubulares mandrinados y soldados", "Diseñado según códigos ASME Sec VIII y EN-13445", "Cámaras de fuga visible para seguridad máxima", "Opción de tubo corrugado para fluidos pesados"]
+      },
+      "caldereria": {
+        "title": "Calderería Técnica e Ingeniería Varia",
+        "shortTitle": "CALDERERÍA",
+        "desc": "Elementos auxiliares de alta precisión a medida: colectores, tolvas asimétricas, conductos de evacuación de vapores corrosivos y bancadas estructurales autoportantes.",
+        "features": ["Colectores sanitarios con soldadura orbital", "Tolvas asimétricas anti-bóveda para polvos", "Casquetes embutidos mediante prensa hidráulica", "Estructuras robustas de xapa inoxidable cepillada"]
+      }
+    },
+    "cad": {
+      "diameter": "Ø",
+      "pipingCode": "PIPING EN-13480",
+      "anchor": "ANCLA / 45 RPM",
+      "thermal": "MEDIA CAÑA TÉRMICA",
+      "inletOutlet": "INLET / OUTLET",
+      "tubeBundle": "HAZ MULTITUBULAR",
+      "asymmetricPart": "PIEZA ASIMÉTRICA"
+    },
+    "items": {
+      "1": {
+        "title": "Tanque de Proceso Químico Texapel",
+        "desc": "Depósito pulmón de dosificación y mezcla controlada para formulaciones químicas complejas y resinas.",
+        "material": "Acero Inoxidable AISI 316L",
+        "sector": "Química Industrial / Suministros",
+        "specs": [
+          "Capacidad útil: 8.500 Litros",
+          "Fondo cónico inclinado autodrenante para purga completa de resinas",
+          "Agitación superior de hélice marina de doble par motor",
+          "Pulido mecánico interno Ra < 0.6 µm y decapado integral",
+          "Visor acristalado de seguridad para control ocular directo"
+        ]
+      },
+      "2": {
+        "title": "Depósito Decantador de Fases Ref. 1593",
+        "desc": "Equipo acumulador con separador interno estanco para vertido y clasificación de mezclas bifásicas en continuo.",
+        "material": "Acero Inoxidable AISI 304L / AISI 316",
+        "sector": "Medio Ambiente / Conservación",
+        "specs": [
+          "Capacidad útil: 6.000 Litros",
+          "Baffles internos pasivados para separación laminar estática",
+          "Sistema de tuberías de purga superior regulable en altura",
+          "Presión admisible: Presión atmosférica",
+          "Soportes acoplados al chasis reforzados contra sismos"
+        ]
+      },
+      "3": {
+        "title": "Tanque Pulmón Sanitario Calorifugado Ref. 1737",
+        "desc": "Almacenamiento térmico para fluidos finos o alimentarios estériles con camisa de agua caliente y lana mineral.",
+        "material": "Acero Inoxidable Sanitario AISI 316L (contacto)",
+        "sector": "Cosmética e Higiene / Lácteo",
+        "specs": [
+          "Capacidad útil: 11.000 Litros",
+          "Aislamiento de lana de roca de 80 mm de espesor soldado a chapa exterior",
+          "Camisa de serpentín interior de circulación rápida de agua a 85°C",
+          "Bolas de limpieza CIP integradas multidireccionales",
+          "Tratamiento de juntas sanitarias según normativas FDA"
+        ]
+      },
+      "4": {
+        "title": "Tanque Isotérmico a la Intemperie Ref. 1952",
+        "desc": "Depósito exterior aislado con revestimiento estanco soldado por proceso TIG, inmune a condensaciones de humedad.",
+        "material": "Acero Inoxidable AISI 316 y Chapa Exterior de Protección AISI 304",
+        "sector": "Química General y Auxiliar",
+        "specs": [
+          "Capacidad útil: 15.000 Litros",
+          "Camisa exterior tipo dimple-jacket para mantenimiento térmico uniforme",
+          "Churreado y pasivado químico total posterior al cordón de soldadura",
+          "Boca de hombre elíptica en virola con brida lateral de junta elástica",
+          "Instalación con escuadras de anclaje de perfiles pesados"
+        ]
+      },
+      "5": {
+        "title": "Recipiente Acumulador a Presión Ref. 2153",
+        "desc": "Depósito hermético reforzado certificado bajo la Directiva Europea 2014/68/UE de Equipos a Presión.",
+        "material": "Acero Inoxidable Súper Austenítico AISI 316L",
+        "sector": "Química Hidráulica / Petroquímica",
+        "specs": [
+          "Capacidad útil: 3.200 Litros",
+          "Presión de diseño: +8.5 bar a +100°C",
+          "Fondos embutidos tipo Klopper con espesores ajustados por software FEA",
+          "Inspección al 100% de soldaduras longitudinales por radiografía industrial",
+          "Certificación CE y dossier de pruebas hidrostáticas oficiales"
+        ]
+      },
+      "6": {
+        "title": "Depósito de Dosificación Farmacéutico Ref. 2157 B-1",
+        "desc": "Depósito intermedio de ultra-pureza, pulido espejo mecánico para la correcta esterilidad de la mezcla.",
+        "material": "Acero Inoxidable AISI 316L Electropulido ASME BPE",
+        "sector": "Farmacéutico / Biotecnología",
+        "specs": [
+          "Capacidad útil: 900 Litros",
+          "Pulido de alta calidad interna con rugosidad certificada Ra < 0.38 µm",
+          "Ausencia total de zonas muertas e hilos de rosca interiores",
+          "Conexiones rápidas tipo Clamp sanitarias",
+          "Instalación sobre bancada con pies antivibratorios regulables"
+        ]
+      },
+      "7": {
+        "title": "Tanque de Enfriamiento por Glicol Ref. 2178-D",
+        "desc": "Depósito estéril provisto de camisas inferiores preparadas para el rápido enfriamiento de bases alimenticias.",
+        "material": "Acero Inoxidable AISI 316L / AISI 304",
+        "sector": "Alimentación / Bebidas de Proceso",
+        "specs": [
+          "Capacidad útil: 10.000 Litros",
+          "Circuito de placa Pillow-Plate para circulación de agua glicolada a -5°C",
+          "Aislamiento de poliuretano inyectado de alta durabilidad",
+          "Agitador de bajas r.p.m. de paso variable para evitar degradación de mezcla",
+          "Válvula de vaciado inferior higiénica de cierre por diafragma"
+        ]
+      },
+      "8": {
+        "title": "Batería de Almacenamiento Acoplada Ref. 2338",
+        "desc": "Tres tanques idénticos conectados mecánicamente mediante pasarelas superiores para dosificación paralela.",
+        "material": "Acero Inoxidable AISI 316L",
+        "sector": "Pinturas / Recubrimientos Industriales",
+        "specs": [
+          "Capacidad combinada: 3 x 4.000 Litros",
+          "Pasarela de paso superior con barandillas integradas según norma de seguridad",
+          "Agitadores rápidos axiales suspendidos con deflectores laterales ajustables",
+          "Colectores inferiores de descarga acoplados a bomba de engranajes",
+          "Células de carga de alta sensibilidad sobre bancada estructural de soporte"
+        ]
+      },
+      "9": {
+        "title": "Intercambiador Multitubular Compacto Ref. 2010-B",
+        "desc": "Intercambiador tubular soldado para condensación de vapores orgánicos y refrigeración de fluidos corrosivos.",
+        "material": "Acero Inoxidable AISI 316L / Aleación de Níquel",
+        "sector": "Química Industrial / Petróleo",
+        "specs": [
+          "Superficie de intercambio térmico: 16 m²",
+          "Diseñado según código ASME Sección VIII División 1",
+          "Haz de tubos de pared delgada mandrinados térmicamente",
+          "Carcasa exterior protegida con imprimación de alta resistencia térmica",
+          "Control estanqueidad mediante prueba neumática por helio"
+        ]
+      },
+      "10": {
+        "title": "Intercambiador de Haz de Vapor Ref. 2084",
+        "desc": "Equipo industrial multitubular de alta resistencia, idóneo para procesos de calentamiento por vapor de agua saturado.",
+        "material": "Acero Inoxidable AISI 316 (Haces) / Acero al Carbono (Carcasa)",
+        "sector": "Procesos Térmicos / Metalurgia",
+        "specs": [
+          "Superficie de intercambio: 40 m²",
+          "Presión máxima de servicio de vapor: 12 bar",
+          "Tubos expandidos y soldados a la placa tubular con mecanizado radial",
+          "Deflectors internos de diseño segmentado rígido para favorecer flujos cruzados",
+          "Soportes soldados tipo cuna para fijación fácil en planta"
+        ]
+      },
+      "11": {
+        "title": "Pasteurizador Multitubular Sanitario Ref. 2090-B",
+        "desc": "Intercambiador de doble placa tubular (DTS) que evita intercontaminaciones accidentales en fluidos alimentarios.",
+        "material": "Acero Inoxidable Pulido Sanitario AISI 316L",
+        "sector": "Alimentario / Bebidas Sanatarias",
+        "specs": [
+          "Superficie de intercambio: 25 m²",
+          "Exclusivo diseño DTS con cámara de fuga visible de seguridad",
+          "Facilidad de autodrenado completo según directivas higiénicas de diseño",
+          "Acabado interno electropulido fino Ra < 0.4 µm",
+          "Accesorios clamp y juntas aptas para ciclos térmicos intensos"
+        ]
+      },
+      "12": {
+        "title": "Condensador de Destilación Vertical Ref. 2157-C",
+        "desc": "Intercambiador multitubular sanitario de gran rendimiento, destinado a la destilación al vacío de alcoholes estériles.",
+        "material": "Acero Inoxidable Sanitario AISI 316L ASME BPE",
+        "sector": "Farmacéutico / Síntesis Fina",
+        "specs": [
+          "Superficie de intercambio: 32 m²",
+          "Haces tubulares interiores de acabado espejo sin costuras mecánicas",
+          "Carcasa dotada de visor acristalado de expansión de condensado",
+          "Endoscopia por videofibroscopio y certificado de rugosidad en dossier técnico",
+          "Listo para acoplamiento de sistemas de validación FDA IQ/OQ"
+        ]
+      },
+      "13": {
+        "title": "Intercambiador de Plancha y Tubos Especial Ref. 2157-D",
+        "desc": "Intercambiador de haz tubular para intercambio de calor de alta responsabilidad con fluidos orgánicos volátiles.",
+        "material": "Acero Inoxidable AISI 316L",
+        "sector": "Química Industrial / Refinería",
+        "specs": [
+          "Superficie de intercambio: 20 m²",
+          "Diseñado y calculado bajo código normativo EN-13445",
+          "Junta de expansión elástica soldada a la carcasa para absorber choques térmicos",
+          "Bridas planas normalizadas de alta rigidez EN 1092-1",
+          "Soldaduras pasivadas y decapadas selectivamente"
+        ]
+      },
+      "14": {
+        "title": "Intercambiador para Fluidos Densos Ref. 2317",
+        "desc": "Equipo multitubular con tubos corrugados interiores para fluidos con lodos o carga de sólidos en suspensión.",
+        "material": "Acero Inoxidable AISI 316 de espesor abrasivo",
+        "sector": "Tratamiento de Aguas / EDAR",
+        "specs": [
+          "Superficie de intercambio: 50 m²",
+          "Manguitos interiores corrugados para inducir flujo de mezcla turbulenta",
+          "Cabezal embridado basculable desmontable para rápido acceso de limpieza",
+          "Resistencia superior ante la incrustación biológica e industrial",
+          "Presión y temperatura de diseño: 10 bar a +120°C"
+        ]
+      },
+      "15": {
+        "title": "Condensador Multitubular de Gran Sección Ref. 1834",
+        "desc": "Unidad de condensación de gran diámetro diseñada para manejar altos volúmenes gaseosos corrosivos.",
+        "material": "Acero Inoxidable AISI 316L",
+        "sector": "Química Fina / Solventes",
+        "specs": [
+          "Superficie de intercambio: 36 m²",
+          "Carcasa exterior sobredimensionada para soportar expansión rápida de volumen",
+          "Certificados de radiografías de soldaduras y dossier constructivo",
+          "Pulido decapado exterior mate estético de gran uniformidad",
+          "Cáncamos superiores integrados probados a tracción para izado"
+        ]
+      },
+      "16": {
+        "title": "Reactor Piloto de Laboratorio Labi-1433",
+        "desc": "Reactor piloto compacto, con camisa térmica y tapa desmontable cepillada para pequeñas dosificaciones y pruebas químicas.",
+        "material": "Acero Inoxidable AISI 316L Electropulido",
+        "sector": "Farmacia / Síntesi en Miniatura",
+        "specs": [
+          "Capacidad nominal: 50 Litros",
+          "Camisa de calefacción por circulación de aceite térmico a +180°C",
+          "Sistema de agitación de áncora especial con rascadores modulares de teflón",
+          "Sello mecánico coaxial con depósito de lubricación fluido estéril",
+          "Acabado ultra-fino interno espejo Ra < 0.3 µm sanitariamente óptimo"
+        ]
+      },
+      "17": {
+        "title": "Reactor de Proceso Químico Completo Ref. 1564",
+        "desc": "Reactor de reacción e hidrólisis dotado de serpentín exterior tipo media caña soldada para transferencia térmica severa.",
+        "material": "Acero Inoxidable AISI 316L",
+        "sector": "Química Fina / Resinas",
+        "specs": [
+          "Capacidad nominal: 3.500 Litros",
+          "Media caña de acero inoxidable de calefacción dividida en 3 zonas independientes",
+          "Aislamiento de lana de roca de alta protección calorifugada mediante chapa soldada",
+          "Agitación principal por turbina de palas inclinadas de alto par motriz",
+          "Sello mecánico doble equilibrado que admite presiones de vacío a +6 bar"
+        ]
+      },
+      "18": {
+        "title": "Reactor Mezclador Cosmético con Camisa Ref. 1709-D",
+        "desc": "Reactor de homogeneización rápida para elaboración de bases cosméticas, pomadas y cremas de alta viscosidad.",
+        "material": "Acero Inoxidable Sanitario AISI 316L / AISI 304",
+        "sector": "Cosmética e Higiene de Proceso",
+        "specs": [
+          "Capacidad nominal: 2.200 Litros",
+          "Calentamiento camisa por inyección directa de vapor saturado a 3 bar",
+          "Agitación coaxial sincronizada: áncora periférica y dispersor superior ultra-rápido",
+          "Rociadores CIP en tapa superior y válvula de fondo de bola de vaciado higiénico",
+          "Acabados Ra < 0.4 µm con pasivación química y videofibroscopia interna"
+        ]
+      },
+      "19": {
+        "title": "Reactor de Vacío y Destilación Ref. 1741-B",
+        "desc": "Equipo especializado para destilación química a baja presión con camisa de refrigeración y condensación directa.",
+        "material": "Acero Inoxidable AISI 316L",
+        "sector": "Química Industrial / Farmacia",
+        "specs": [
+          "Capacidad nominal: 1.800 Litros",
+          "Presión de diseño: Vacío total (-1 bar) a +4 bar de presión",
+          "Haz de condensador de reflujo integrado en acoplamiento superior",
+          "Agitador de tipo hélice doble flujo y motorreductor ATEX de seguridad",
+          "Trazabilidad total de chapas bajo ensayos destructivos e inoxidabilidad"
+        ]
+      },
+      "20": {
+        "title": "Reactor de Polimerización y Alta Viscosidad Ref. 1918",
+        "desc": "Reactor de mezcla robusto provisto de motorreductor sobredimensionado y agitador de áncora cizallante.",
+        "material": "Aleación de Níquel / Hastelloy C22",
+        "sector": "Química Ácida / Polímeros",
+        "specs": [
+          "Capacidad nominal: 4.500 Litros",
+          "Fabricado íntegramente en Hastelloy para protección contra reactivos altamente ácidos",
+          "Agitador de áncora reforzado con barras de tracción macizas",
+          "Camisa térmica de enfriamiento rápido accionada por agua glicolada",
+          "Cartucho de estanqueidad de sello mecánico presurizado mediante nitrógeno barrier"
+        ]
+      },
+      "21": {
+        "title": "Reactor Hidrogenador de Presión Ref. 1961",
+        "desc": "Equipo hermético reforzado para reacciones químicas catalizadas que operan a presiones sumamente elevadas.",
+        "material": "Acero Inoxidable AISI 316L de espesor especial superior",
+        "sector": "Química Fina / Catalizadores",
+        "specs": [
+          "Capacidad nominal: 1.200 Litros",
+          "Presión máxima de servicio de cuerpo interno: 16 bar",
+          "Temperatura admisible de operación: +220°C",
+          "Agitador tipo Hollow-Shaft con eje hueco inductor de gas de alta disolución",
+          "Dossier oficial visado de ensayos no destructivos por OCA de control técnico"
+        ]
+      },
+      "22": {
+        "title": "Reactor Farmacéutico Sanitario Ref. 2243",
+        "desc": "Recipiente de síntesis estéril biotecnológica, pulido espejo electrolítico optimizado conforme a pautas ASME BPE.",
+        "material": "Acero Inoxidable Súper Sanitario AISI 316L ASME BPE",
+        "sector": "Medicina Biotecnológica / Inyectables",
+        "specs": [
+          "Capacidad nominal: 2.500 Litros",
+          "Acabado de electropulido interno Ra de alta pureza estéril < 0.3 µm",
+          "Camisa serpentín exterior soldada por haz de plasma por computador",
+          "Mirilla de gran sección dotada de luz led IP67 refrigerada estanca",
+          "Sistema de muestreo en continuo de baja retención de gota higiénica"
+        ]
+      },
+      "23": {
+        "title": "Colector Sanitario Ref. 1680-F",
+        "desc": "Colector de distribución de tuberías sanitarias finas con soldaduras orbitales con purga de argón en lazo cerrado.",
+        "material": "Acero Inoxidable AISI 316L ASME BPE",
+        "sector": "Laboratorio de Fluids / Sanitario",
+        "specs": [
+          "Unión soldada por robot orbital con control de gas formier inerte interno",
+          "Trazabilidad total de manguitos por coladas de acero grabadas con láser",
+          "Inspección al 100% por videofibroscopia endoscópica grabada en soporte físico",
+          "Pendientes autodrenantes que garantizan la nula formación de biofilms en lazo",
+          "Conexiones tipo racor clamp higiénico de gran tolerancia"
+        ]
+      },
+      "24": {
+        "title": "Tolva de Alimentación de Polvos Ref. 1743",
+        "desc": "Tolva asimétrica de carga con vibrador para alimentación dosificada de pigmentos y aditivos a depósitos de mezcla.",
+        "material": "Acero Inoxidable AISI 304 / AISI 316",
+        "sector": "Alimentación / Fabricación de Pintura",
+        "specs": [
+          "Capacidad volumétrica: 2.200 Litros",
+          "Diseño geométrico asimétrico que previene la formación de arcos de polvo",
+          "Bancada con pletina angular estructural sobredimensionada para vibración",
+          "Válvula de mariposa con actuador neumático de ajuste rápido",
+          "Acabado exterior chorreado con chorro de microesferas de vidrio"
+        ]
+      },
+      "25": {
+        "title": "Colector Integral de Válvulas Neumáticas Ref. 1749",
+        "desc": "Batería de conducción muntada sobre skid para la conmutación y direccionamiento de flujos de proceso y CIP.",
+        "material": "Acero Inoxidable AISI 316L (Tubería) / AISI 304 (Chasis)",
+        "sector": "Farmacia / Automatización de Planta",
+        "specs": [
+          "Bancada soporte antivibratoria soldada por TIG",
+          "Secciones de tuberías de paso mecanizadas y acopladas mediante clapetas",
+          "Prueba hidrostática de estanqueidad a 10 bar de presión",
+          "Trazabilidad de soldaduras en libro con especificación de soldador WPS",
+          "Colectores higiénicos exentos de recovecos sanitarios"
+        ]
+      },
+      "26": {
+        "title": "Filtro Silenciador de Aspiración Ref. 1937",
+        "desc": "Carcasa de filtro industrial diseñada para albergar filtros de mangas estancos de retención en seco con tapa manual abatible.",
+        "material": "Acero Inoxidable AISI 304",
+        "sector": "Filtración y Ventilación Industrial",
+        "specs": [
+          "Diámetro del depósito: 1.050 mm",
+          "Apertura superior rápida tipo bisagra equilibrada por contrapeso",
+          "Estanqueidad interna de paso ensayada por presión positiva de aire",
+          "Abrazaderas de apriete manual basculantes tipo swing-bolts",
+          "Chorreado de arena mate exterior resistente y cepillado integral"
+        ]
+      },
+      "27": {
+        "title": "Conducto de Gases Ácidos Clorados Ref. 2149",
+        "desc": "Conducto de evacuación de gran formato para vapores muy corrosivos, soldado herméticamente con aleación de alta pureza.",
+        "material": "Acero Inoxidable Súper Austenítico AISI 904L",
+        "sector": "Química Hidrometalúrgica / Residuos",
+        "specs": [
+          "Diámetro nominal de conducción: 550 mm con bridas en extremos",
+          "Alta concentración en Níquel y Molibdeno contra el ataque por cloro",
+          "Bridados torneados para asiento plano perfecto de juntas de teflón",
+          "Ensayos no destructivos por líquidos penetrantes coloreados en cordones",
+          "Puntales de soporte soldados soldados de fijación rápida"
+        ]
+      },
+      "28": {
+        "title": "Bancada Estructural Autoportante Ref. 2195",
+        "desc": "Estructura robusta de chasis inoxidable cepillada que sirve de soporte rígido a reactores y bombas motorizadas.",
+        "material": "Acero Inoxidable de Espesores Perfilados AISI 304",
+        "sector": "Estructuras de Planta / Ingeniería",
+        "specs": [
+          "Estructura calculada contra cargas mecánicas intensas y torsión de motor",
+          "Cepillado final satinado con grano abrasivo 240 fino uniforme de perfiles",
+          "Soportes roscados de nivelación telescópicos con goma de amortiguación",
+          "Puntos y orejetas reforzados para agarre cómodo de grúa puente de izado",
+          "Toda soldadura decantada por ácido de inmersión total"
+        ]
+      },
+      "29": {
+        "title": "Cúpula Torisférica Embutida Ref. 2198",
+        "desc": "Casquete embutido de caldera de gran precisión para cierre superior de silos agroalimentarios higiénicos.",
+        "material": "Acero Inoxidable AISI 316",
+        "sector": "Silos / Alimentaria Pesada",
+        "specs": [
+          "Diámetro del fondo: 2.100 mm embutido mediante prensa hidráulica",
+          "Espesor calibrado de lámina y corona torneada de alta repetibilidad",
+          "Soldadura en atmósfera protegida por robot de cordón rectilíneo",
+          "Pulido exterior cepillado estético uniforme en virola circunferencial",
+          "Libre de rebabas metálicas con pasivación electroquímica estéril"
+        ]
+      },
+      "30": {
+        "title": "Sifón de Alta Sección y Descarga Corrosiva Ref. 2228",
+        "desc": "Dispositivos sifónicos de purga de aguas y efluentes industriales cargados de solventes calientes.",
+        "material": "Acero Inoxidable Reforzado AISI 316L",
+        "sector": "Tratamiento Químico / Efluentes",
+        "specs": [
+          "Manguitos curvados sin arrugas con soldadura de cordón plano interna",
+          "Mirilla circular con cristal borosilicato empernado contra fugas directas",
+          "Juntas de fluoroelastómero Viton resistentes a disolventes orgánicos",
+          "Apto para ciclos térmicos de fluidos desde +10°C a +130°C constantes",
+          "Chorreado estético de acabado industrial de alta durabilidad química"
+        ]
       }
     }
   }

@@ -828,6 +828,7 @@ const EXISTING_PHOTOS = [
 ];
 
 function BlueprintPlaceholder({ category }: { category: string }) {
+  const { t } = useTranslation();
   // Select technical SVG drawing based on category of metal fabrications
   const renderSvg = () => {
     switch (category) {
@@ -842,7 +843,7 @@ function BlueprintPlaceholder({ category }: { category: string }) {
             <rect x="45" y="100" width="10" height="3" strokeOpacity="0.8" />
             <path d="M22,15 V105 M22,15 H28 M22,105 H28" stroke="currentColor" strokeOpacity="0.25" strokeDasharray="1,2" />
             <path d="M80,25 V85 M80,25 H75 M80,85 H75" stroke="currentColor" strokeOpacity="0.25" />
-            <text x="50" y="55" fill="currentColor" fillOpacity="0.4" fontSize="5.5" fontFamily="monospace" textAnchor="middle">Ø 2100 mm</text>
+            <text x="50" y="55" fill="currentColor" fillOpacity="0.4" fontSize="5.5" fontFamily="monospace" textAnchor="middle">{t('proyectos.cad.diameter')} 2100 mm</text>
             <text x="88" y="58" fill="currentColor" fillOpacity="0.4" fontSize="4.5" fontFamily="monospace" textAnchor="middle" transform="rotate(90 88 58)">H=3200 (mm)</text>
           </svg>
         );
@@ -857,8 +858,8 @@ function BlueprintPlaceholder({ category }: { category: string }) {
             <path d="M35,65 H65 M35,61 V69 M65,61 V69" strokeWidth="1.2" strokeOpacity="0.8" />
             <path d="M27,40 C27,42 30,42 30,40 M27,48 C27,50 30,50 30,48 M27,56 C27,58 30,58 30,56" strokeWidth="0.8" strokeOpacity="0.6" />
             <path d="M73,40 C73,42 70,42 70,40 M73,48 C73,50 70,50 70,48 M73,56 C73,58 70,58 70,56" strokeWidth="0.8" strokeOpacity="0.6" />
-            <text x="50" y="48" fill="currentColor" fillOpacity="0.4" fontSize="5.5" fontFamily="monospace" textAnchor="middle">ANCLA / 45 RPM</text>
-            <text x="50" y="103" fill="currentColor" fillOpacity="0.4" fontSize="4.5" fontFamily="monospace" textAnchor="middle">MEDIA CAÑA TÉRMICA</text>
+            <text x="50" y="48" fill="currentColor" fillOpacity="0.4" fontSize="5.5" fontFamily="monospace" textAnchor="middle">{t('proyectos.cad.anchor')}</text>
+            <text x="50" y="103" fill="currentColor" fillOpacity="0.4" fontSize="4.5" fontFamily="monospace" textAnchor="middle">{t('proyectos.cad.thermal')}</text>
           </svg>
         );
       case 'intercambiadores':
@@ -877,8 +878,8 @@ function BlueprintPlaceholder({ category }: { category: string }) {
             <line x1="33" y1="24" x2="47" y2="24" strokeWidth="1.5" strokeOpacity="0.8" />
             <rect x="75" y="68" width="10" height="8" strokeOpacity="0.8" />
             <line x1="73" y1="76" x2="87" y2="76" strokeWidth="1.5" strokeOpacity="0.8" />
-            <text x="60" y="20" fill="currentColor" fillOpacity="0.4" fontSize="4.5" fontFamily="monospace" textAnchor="middle">INLET / OUTLET</text>
-            <text x="60" y="86" fill="currentColor" fillOpacity="0.4" fontSize="4.5" fontFamily="monospace" textAnchor="middle">HAZ TEMA MULTITUBULAR</text>
+            <text x="60" y="20" fill="currentColor" fillOpacity="0.4" fontSize="4.5" fontFamily="monospace" textAnchor="middle">{t('proyectos.cad.inletOutlet')}</text>
+            <text x="60" y="86" fill="currentColor" fillOpacity="0.4" fontSize="4.5" fontFamily="monospace" textAnchor="middle">{t('proyectos.cad.tubeBundle')}</text>
           </svg>
         );
       case 'caldereria':
@@ -892,8 +893,8 @@ function BlueprintPlaceholder({ category }: { category: string }) {
             <line x1="30" y1="45" x2="70" y2="45" strokeWidth="1.2" strokeDasharray="1,1" strokeOpacity="0.8" />
             <line x1="40" y1="85" x2="60" y2="85" strokeWidth="1.2" strokeDasharray="1,1" strokeOpacity="0.8" />
             <path d="M85,25 L92,25 V75 L85,75" stroke="currentColor" strokeOpacity="0.25" />
-            <text x="96" y="52" fill="currentColor" fillOpacity="0.4" fontSize="4.5" fontFamily="monospace" textAnchor="middle" transform="rotate(90 96 52)">PIPING EN-13480</text>
-            <text x="50" y="65" fill="currentColor" fillOpacity="0.4" fontSize="4" fontFamily="monospace" textAnchor="middle">PIEZA ASIMÉTRICA</text>
+            <text x="96" y="52" fill="currentColor" fillOpacity="0.4" fontSize="4.5" fontFamily="monospace" textAnchor="middle" transform="rotate(90 96 52)">{t('proyectos.cad.pipingCode')}</text>
+            <text x="50" y="65" fill="currentColor" fillOpacity="0.4" fontSize="4" fontFamily="monospace" textAnchor="middle">{t('proyectos.cad.asymmetricPart')}</text>
           </svg>
         );
     }
@@ -910,10 +911,10 @@ function BlueprintPlaceholder({ category }: { category: string }) {
       <div className="relative z-10 flex flex-col items-center">
         {renderSvg()}
         <span className="text-[9px] font-mono font-bold uppercase tracking-[0.25em] text-brand-accent mb-1 animate-pulse">
-          Plano Técnico CAD
+          {t('proyectos.cadBlueprint')}
         </span>
         <p className="text-[10px] text-white/50 max-w-[190px] leading-tight font-mono">
-          Ref. disponible en dossier de cotización formal.
+          {t('proyectos.cadNote')}
         </p>
       </div>
     </div>
@@ -984,11 +985,11 @@ export function Proyectos() {
       if (!searchQuery) return true;
       const query = searchQuery.toLowerCase();
       return (
-        project.title.toLowerCase().includes(query) ||
+        t(`proyectos.items.${project.id}.title`, project.title).toLowerCase().includes(query) ||
         project.ref.toLowerCase().includes(query) ||
-        project.material.toLowerCase().includes(query) ||
-        project.desc.toLowerCase().includes(query) ||
-        project.sector.toLowerCase().includes(query)
+        t(`proyectos.items.${project.id}.material`, project.material).toLowerCase().includes(query) ||
+        t(`proyectos.items.${project.id}.desc`, project.desc).toLowerCase().includes(query) ||
+        t(`proyectos.items.${project.id}.sector`, project.sector).toLowerCase().includes(query)
       );
     });
   };
@@ -1003,13 +1004,13 @@ export function Proyectos() {
              style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <span className="text-brand-accent font-bold uppercase tracking-[0.25em] text-xs mb-2 block">
-            GALERÍA REAL DE CALDERERÍA INDUSTRIAL
+            {t('proyectos.heroLabel')}
           </span>
           <h1 className="text-3xl md:text-4xl font-display font-bold text-white mb-4 uppercase tracking-tight">
-            Nuestros Equipos por Carpetas
+            {t('proyectos.heroTitle')}
           </h1>
           <p className="text-sm md:text-base text-white/75 max-w-2xl mx-auto font-light leading-relaxed">
-            Catálogo directo de nuestros proyectos reales industriales. Visualiza las fabricaciones asociadas a cada sección del taller con plano CAD o fotos reales.
+            {t('proyectos.heroDesc')}
           </p>
 
           {/* Premium Filter Controls Board */}
@@ -1018,7 +1019,7 @@ export function Proyectos() {
               {/* Search Box */}
               <div>
                 <label className="block text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-brand-accent mb-2">
-                  Búsqueda Rápida
+                  {t('proyectos.filterLabel')}
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -1028,14 +1029,14 @@ export function Proyectos() {
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Escribe referencia, material (316, 304)..."
+                    placeholder={t('proyectos.filterPlaceholder')}
                     className="block w-full pl-9 pr-8 py-2.5 bg-brand-dark/50 border border-white/10 rounded-sm text-xs text-white placeholder-white/35 focus:outline-hidden focus:border-brand-accent transition-colors"
                   />
                   {searchQuery && (
                     <button
                       onClick={() => setSearchQuery('')}
                       className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-white/40 hover:text-white"
-                      title="Limpiar búsqueda"
+                      title={t('proyectos.clearSearch')}
                     >
                       <X size={14} />
                     </button>
@@ -1046,7 +1047,7 @@ export function Proyectos() {
               {/* Gallery Filter Switch */}
               <div>
                 <label className="block text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-brand-accent mb-2">
-                  Filtrar Documentos por Fotografía
+                  {t('proyectos.photoFilterLabel')}
                 </label>
                 <div className="grid grid-cols-3 gap-1 bg-brand-dark/50 border border-white/10 p-1 rounded-sm">
                   <button
@@ -1057,7 +1058,7 @@ export function Proyectos() {
                         : 'text-white/60 hover:text-white hover:bg-white/5'
                     }`}
                   >
-                    Todos (30)
+                    {t('proyectos.filterAll')}
                   </button>
                   <button
                     onClick={() => setPhotoFilter('real')}
@@ -1067,17 +1068,17 @@ export function Proyectos() {
                         : 'text-white/60 hover:text-white hover:bg-white/5'
                     }`}
                   >
-                    Con Foto (30)
+                    {t('proyectos.filterReal')}
                   </button>
                   <button
                     onClick={() => setPhotoFilter('cad')}
                     className={`py-1.5 text-[10px] font-mono font-bold uppercase tracking-wider rounded-xs transition-all ${
                       photoFilter === 'cad'
-                        ? 'bg-sky-655/70 text-white shadow-xs bg-sky-600'
+                        ? 'bg-sky-600 text-white shadow-xs'
                         : 'text-white/60 hover:text-white hover:bg-white/5'
                     }`}
                   >
-                    Plano CAD (0)
+                    {t('proyectos.filterCad')}
                   </button>
                 </div>
               </div>
@@ -1094,10 +1095,10 @@ export function Proyectos() {
                     if (photoFilter === 'cad' && hasPhoto) return false;
                     if (!searchQuery) return true;
                     const query = searchQuery.toLowerCase();
-                    return project.title.toLowerCase().includes(query) ||
+                    return t(`proyectos.items.${project.id}.title`, project.title).toLowerCase().includes(query) ||
                       project.ref.toLowerCase().includes(query) ||
-                      project.material.toLowerCase().includes(query) ||
-                      project.desc.toLowerCase().includes(query);
+                      t(`proyectos.items.${project.id}.material`, project.material).toLowerCase().includes(query) ||
+                      t(`proyectos.items.${project.id}.desc`, project.desc).toLowerCase().includes(query);
                   }).length;
 
                   // Disabled button style if there are zero hits
@@ -1114,7 +1115,7 @@ export function Proyectos() {
                           : 'bg-brand-dark hover:bg-white/10 text-white border border-white/5'
                       }`}
                     >
-                      <span>{folderId.toUpperCase()}</span>
+                      <span>{t(`proyectos.folders.${folderId}.shortTitle`)}</span>
                       <span className="bg-brand-accent/20 text-brand-accent px-1 rounded-xs font-sans text-[9px] font-extrabold">
                         {itemsMatching}
                       </span>
@@ -1124,7 +1125,7 @@ export function Proyectos() {
               </div>
 
               <span className="text-[10px] font-mono text-white/50">
-                Mostrando <strong className="text-brand-accent">{visibleCount}</strong> de 30 fabricaciones industriales
+                {t('proyectos.showing')} <strong className="text-brand-accent">{visibleCount}</strong> {t('proyectos.of')} 30 {t('proyectos.industrialFabrications')}
               </span>
             </div>
           </div>
@@ -1140,16 +1141,16 @@ export function Proyectos() {
               <div className="text-center py-24 bg-white border border-gray-200 rounded-sm shadow-xs max-w-xl mx-auto">
                 <Database className="text-brand-steel/40 mx-auto mb-4" size={40} />
                 <h3 className="text-sm font-display font-extrabold text-brand-dark uppercase tracking-widest mb-1.5">
-                  Sin Resultados
+                  {t('proyectos.noResults')}
                 </h3>
                 <p className="text-xs text-brand-steel max-w-sm mx-auto leading-relaxed mb-6 px-4">
-                  No se han encontrado registros en nuestro dossier que coincidan con los filtros aplicados en este momento.
+                  {t('proyectos.noResultsDesc')}
                 </p>
                 <button
                   onClick={() => { setSearchQuery(''); setPhotoFilter('all'); }}
                   className="bg-brand-dark hover:bg-brand-accent text-white px-5 py-2.5 rounded-sm text-xs font-bold uppercase tracking-wider transition-colors"
                 >
-                  Restablecer Buscador
+                  {t('proyectos.resetFilters')}
                 </button>
               </div>
             )}
@@ -1169,11 +1170,11 @@ export function Proyectos() {
 
                 if (!searchQuery) return true;
                 const query = searchQuery.toLowerCase();
-                return project.title.toLowerCase().includes(query) ||
+                return t(`proyectos.items.${project.id}.title`, project.title).toLowerCase().includes(query) ||
                   project.ref.toLowerCase().includes(query) ||
-                  project.material.toLowerCase().includes(query) ||
-                  project.desc.toLowerCase().includes(query) ||
-                  project.sector.toLowerCase().includes(query);
+                  t(`proyectos.items.${project.id}.material`, project.material).toLowerCase().includes(query) ||
+                  t(`proyectos.items.${project.id}.desc`, project.desc).toLowerCase().includes(query) ||
+                  t(`proyectos.items.${project.id}.sector`, project.sector).toLowerCase().includes(query);
               });
 
               // If a folder has 0 matching items, we hide the folder to keep the page short and compact
@@ -1193,16 +1194,17 @@ export function Proyectos() {
 
                     <div className="max-w-3xl">
                       <h2 className="text-xl md:text-2xl font-display font-black text-white uppercase tracking-tight mb-3">
-                        {info.title}
+                        {t(`proyectos.folders.${folderId}.title`)}
                       </h2>
                       
                       <p className="text-xs md:text-sm text-white/75 leading-relaxed font-light mb-5">
-                        {info.desc}
+                        {t(`proyectos.folders.${folderId}.desc`)}
                       </p>
 
                       {/* Folder key metrics list */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pb-1">
-                        {info.features.map((feat, idx) => (
+                        {Array.isArray(t(`proyectos.folders.${folderId}.features`, { returnObjects: true })) && 
+                         (t(`proyectos.folders.${folderId}.features`, { returnObjects: true }) as string[]).map((feat, idx) => (
                           <div key={idx} className="flex items-center gap-2 text-[11px] text-white/90">
                             <CheckCircle2 size={13} className="text-brand-accent shrink-0" />
                             <span>{feat}</span>
@@ -1229,14 +1231,14 @@ export function Proyectos() {
                               <SafeProjectImage
                                 category={project.category}
                                 filename={project.filename}
-                                alt={project.title}
+                                alt={t(`proyectos.items.${project.id}.title`, project.title)}
                               />
                               <div className="absolute top-3 left-3 bg-brand-dark/95 backdrop-blur-xs text-brand-accent text-[8.5px] font-mono font-bold uppercase tracking-widest px-2 py-0.5 rounded-sm border border-brand-accent/20">
-                                Ref. {project.ref}
+                                {t('proyectos.refLabel')} {project.ref}
                               </div>
                               {hasRealPhoto && (
                                 <div className="absolute top-3 right-3 bg-emerald-600 text-white text-[8px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-sm shadow-xs">
-                                  Foto Taller
+                                  {t('proyectos.workshopPhoto')}
                                 </div>
                               )}
                             </div>
@@ -1245,26 +1247,26 @@ export function Proyectos() {
                             <div className="p-4 flex-1 flex flex-col justify-between space-y-4">
                               <div className="space-y-2">
                                 <span className="text-[9px] font-mono font-semibold text-brand-accent uppercase tracking-widest block">
-                                  {project.sector}
+                                  {t(`proyectos.items.${project.id}.sector`, project.sector)}
                                 </span>
                                 <h3 className="text-sm font-display font-bold text-brand-dark uppercase tracking-tight group-hover:text-brand-accent transition-colors line-clamp-1">
-                                  {project.title}
+                                  {t(`proyectos.items.${project.id}.title`, project.title)}
                                 </h3>
                                 <p className="text-xs text-brand-steel leading-relaxed line-clamp-2 font-light">
-                                  {project.desc}
+                                  {t(`proyectos.items.${project.id}.desc`, project.desc)}
                                 </p>
                               </div>
 
                               <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
                                 <span className="text-[10px] text-brand-steel font-medium">
-                                  Material: <span className="font-bold text-brand-dark truncate max-w-[120px] inline-block align-bottom">{project.material}</span>
+                                  {t('proyectos.material')}: <span className="font-bold text-brand-dark truncate max-w-[120px] inline-block align-bottom">{project.material}</span>
                                 </span>
                                 
                                 <button
                                   onClick={() => setSelectedProject(project)}
                                   className="inline-flex items-center gap-1 text-[10.5px] font-display font-bold uppercase tracking-widest text-brand-dark hover:text-brand-accent transition-all group/btn"
                                 >
-                                  <span>Ficha</span>
+                                  <span>{t('proyectos.viewFile')}</span>
                                   <Eye size={11} className="group-hover/btn:translate-x-0.5 transition-transform" />
                                 </button>
                               </div>
@@ -1287,17 +1289,17 @@ export function Proyectos() {
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-3xl">
           <Wrench className="text-brand-accent mx-auto mb-3" size={32} />
           <h2 className="text-2xl md:text-3xl font-display font-extrabold mb-4 uppercase tracking-wider">
-            ¿Buscas una fabricación a medida?
+            {t('proyectos.footerTitle')}
           </h2>
           <p className="text-xs md:text-sm text-white/70 leading-relaxed font-light mb-8 max-w-xl mx-auto">
-            Ofrecemos trazabilidad total de materiales con certificado de coladas 3.1, homologación de procesos de soldadura por EN o ASME y dossier de calidad oficial.
+            {t('proyectos.footerDesc')}
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link to="/contacto" className="bg-brand-accent hover:bg-white hover:text-brand-dark text-white px-6 py-3.5 rounded-sm text-xs font-bold uppercase tracking-wider transition-all">
-              Presupuestos y Planos Técnicos
+              {t('proyectos.footerCta1')}
             </Link>
             <Link to="/empresa" className="border border-white/20 hover:bg-white/10 text-white px-6 py-3.5 rounded-sm text-xs font-bold uppercase tracking-wider transition-all">
-              Acreditaciones de Soldadura
+              {t('proyectos.footerCta2')}
             </Link>
           </div>
         </div>
@@ -1331,20 +1333,20 @@ export function Proyectos() {
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <span className="font-mono text-[9px] font-bold uppercase bg-brand-dark text-brand-accent px-2 py-0.5 rounded-sm">
-                      REF #{selectedProject.ref}
+                      {t('proyectos.refLabel')} #{selectedProject.ref}
                     </span>
                     <span className="text-[9px] font-bold text-brand-steel uppercase tracking-wider">
-                      • {selectedProject.categoryLabel}
+                      • {t(`proyectos.folders.${selectedProject.category}.title`)}
                     </span>
                   </div>
                   <h2 className="text-base font-display font-black text-brand-dark uppercase tracking-tight">
-                    Ficha Técnica de Homologación
+                    {t('proyectos.modalTitle')}
                   </h2>
                 </div>
                 <button
                   onClick={() => setSelectedProject(null)}
                   className="p-1 border border-gray-200 hover:border-brand-dark text-brand-steel hover:text-brand-dark rounded-xs transition-colors"
-                  aria-label="Cerrar"
+                  aria-label={t('proyectos.close')}
                 >
                   <X size={16} />
                 </button>
@@ -1357,44 +1359,52 @@ export function Proyectos() {
                   <SafeProjectImage
                     category={selectedProject.category}
                     filename={selectedProject.filename}
-                    alt={selectedProject.title}
+                    alt={t(`proyectos.items.${selectedProject.id}.title`, selectedProject.title)}
                   />
                 </div>
 
                 {/* Details layout */}
                 <div className="space-y-2">
                   <h3 className="text-sm font-bold text-brand-dark uppercase tracking-tight">
-                    {selectedProject.title}
+                    {t(`proyectos.items.${selectedProject.id}.title`, selectedProject.title)}
                   </h3>
                   <p className="text-xs text-brand-steel leading-relaxed">
-                    {selectedProject.desc}
+                    {t(`proyectos.items.${selectedProject.id}.desc`, selectedProject.desc)}
                   </p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4 py-3 border-y border-gray-100 text-xs">
                   <div>
-                    <span className="text-[9px] uppercase font-bold text-gray-400 block tracking-wider mb-0.5">ALEACIÓN</span>
-                    <span className="font-bold text-brand-dark">{selectedProject.material}</span>
+                    <span className="text-[9px] uppercase font-bold text-gray-400 block tracking-wider mb-0.5">{t('proyectos.alloy')}</span>
+                    <span className="font-bold text-brand-dark">{t(`proyectos.items.${selectedProject.id}.material`, selectedProject.material)}</span>
                   </div>
                   <div>
-                    <span className="text-[9px] uppercase font-bold text-gray-400 block tracking-wider mb-0.5">APLICACIÓN</span>
-                    <span className="font-bold text-brand-dark">{selectedProject.sector}</span>
+                    <span className="text-[9px] uppercase font-bold text-gray-400 block tracking-wider mb-0.5">{t('proyectos.application')}</span>
+                    <span className="font-bold text-brand-dark">{t(`proyectos.items.${selectedProject.id}.sector`, selectedProject.sector)}</span>
                   </div>
                 </div>
 
                 {/* Technical Bullet List */}
                 <div className="bg-gray-50 p-4 rounded-sm border-l-2 border-brand-accent">
                   <span className="text-[9.5px] font-mono font-bold uppercase tracking-wider text-brand-dark block mb-2.5">
-                    Especificaciones Adicionales
+                    {t('proyectos.additionalSpecs')}
                   </span>
                   
                   <ul className="space-y-2.5">
-                    {selectedProject.specs.map((item, index) => (
-                      <li key={index} className="flex items-start gap-2 text-xs text-brand-dark font-medium">
-                        <CheckCircle2 size={13} className="text-brand-accent mt-0.5 shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
+                    {Array.isArray(t(`proyectos.items.${selectedProject.id}.specs`, { returnObjects: true })) 
+                      ? (t(`proyectos.items.${selectedProject.id}.specs`, { returnObjects: true }) as string[]).map((item, index) => (
+                        <li key={index} className="flex items-start gap-2 text-xs text-brand-dark font-medium">
+                          <CheckCircle2 size={13} className="text-brand-accent mt-0.5 shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))
+                      : selectedProject.specs.map((item, index) => (
+                        <li key={index} className="flex items-start gap-2 text-xs text-brand-dark font-medium">
+                          <CheckCircle2 size={13} className="text-brand-accent mt-0.5 shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))
+                    }
                   </ul>
                 </div>
               </div>
@@ -1402,7 +1412,7 @@ export function Proyectos() {
               {/* Action Buttons */}
               <div className="p-5 border-t border-gray-100 bg-gray-50 flex flex-col sm:flex-row gap-2.5 items-center justify-between">
                 <span className="text-[10px] font-bold text-brand-steel">
-                  Código de Plano: <span className="font-mono text-brand-dark select-all">#EQ-{selectedProject.ref.replace(/\s+/g, '-')}</span>
+                  {t('proyectos.blueprintCode')} <span className="font-mono text-brand-dark select-all">#EQ-{selectedProject.ref.replace(/\s+/g, '-')}</span>
                 </span>
                 
                 <div className="flex gap-2 w-full sm:w-auto shrink-0 justify-end">
@@ -1410,13 +1420,13 @@ export function Proyectos() {
                     onClick={() => setSelectedProject(null)}
                     className="flex-1 sm:flex-initial border border-gray-200 text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-sm transition-colors text-brand-steel hover:text-brand-dark"
                   >
-                    Cerrar
+                    {t('proyectos.close')}
                   </button>
                   <Link
                     to={`/contacto?ref=${encodeURIComponent(selectedProject.ref)}`}
                     className="flex-1 sm:flex-initial bg-brand-accent hover:bg-brand-dark text-white text-center text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-sm transition-colors shadow-sm"
                   >
-                    Solicitar Presupuesto
+                    {t('proyectos.requestQuote')}
                   </Link>
                 </div>
               </div>

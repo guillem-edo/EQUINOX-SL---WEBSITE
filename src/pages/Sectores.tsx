@@ -137,7 +137,7 @@ export function Sectores() {
                 <div className="mt-auto">
                   <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-dark/40 mb-4 flex items-center gap-2">
                     <span className="w-4 h-[1px] bg-brand-accent"></span>
-                    {sector.projects && sector.projects.length > 0 ? t('sectores.proyectosDestacados') : 'Aplicaciones'}
+                    {sector.projects && sector.projects.length > 0 ? t('sectores.proyectosDestacados') : t('sectores.aplicaciones')}
                   </h4>
                   
                   <ul className="space-y-3">
@@ -155,7 +155,7 @@ export function Sectores() {
                       // Fallback bullets if no projects are defined
                       <li className="flex items-start gap-3">
                         <div className="w-1.5 h-1.5 rounded-full bg-brand-accent mt-1.5 shrink-0"></div>
-                        <span className="text-sm text-brand-steel">Equipos de proceso a medida</span>
+                        <span className="text-sm text-brand-steel">{t('sectores.medida')}</span>
                       </li>
                     )}
                   </ul>
