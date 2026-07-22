@@ -11,28 +11,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div className="flex flex-col gap-6">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-white flex items-center justify-center rounded-sm">
-                <span className="text-brand-dark font-display font-bold text-xl">E</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display font-extrabold text-xl leading-none tracking-tighter text-white">
-                  EQUINOX
-                </span>
-                <span className="text-[10px] font-medium tracking-[0.2em] uppercase text-white/60">
-                  Equipos Inoxidables
-                </span>
-              </div>
+            <Link to="/" className="inline-block -ml-2 -mt-4 relative z-10">
+              <img src="/logo_def.png" alt="EQUINOX Logo" className="h-40 md:h-56 w-auto object-contain mix-blend-screen" />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed max-w-xs">
               {t('footer.desc')}
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
+              <a href="https://www.linkedin.com/company/equinoxsl/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
                 <Linkedin size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
-                <Instagram size={18} />
               </a>
             </div>
           </div>
@@ -83,11 +70,11 @@ export function Footer() {
               </li>
               <li className="flex gap-4">
                 <Phone className="text-brand-accent shrink-0" size={20} />
-                <span className="text-white/70 text-sm">+34 93 000 00 00</span>
+                <span className="text-white/70 text-sm">+34 93 849 98 38</span>
               </li>
               <li className="flex gap-4">
                 <Mail className="text-brand-accent shrink-0" size={20} />
-                <span className="text-white/70 text-sm">info@equinox.es</span>
+                <span className="text-white/70 text-sm">comercial@equinoxsl.com</span>
               </li>
             </ul>
           </div>

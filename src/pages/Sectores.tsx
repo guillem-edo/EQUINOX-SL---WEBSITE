@@ -12,7 +12,7 @@ export function Sectores() {
       title: t('sectores.list.farma.title'),
       icon: <FlaskConical size={32} />,
       desc: t('sectores.list.farma.desc'),
-      img: 'https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?q=80&w=2070&auto=format&fit=crop',
+      img: '/nave-equinox.jpg.png',
       projects: [
         { id: 2, title: 'Skid de Filtración Tangencial', client: 'Laboratorio Farmacéutico' }
       ]
@@ -22,7 +22,7 @@ export function Sectores() {
       title: t('sectores.list.alim.title'),
       icon: <Wheat size={32} />,
       desc: t('sectores.list.alim.desc'),
-      img: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2070&auto=format&fit=crop',
+      img: '/nave-equinox.jpg.png',
       projects: [
         { id: 3, title: 'Línea de Tubería Sanitaria', client: 'Planta Láctea' },
         { id: 4, title: 'Tolvas de Recepción Inoxidable', client: 'Procesado de Cereales' }
@@ -33,7 +33,7 @@ export function Sectores() {
       title: t('sectores.list.cosm.title'),
       icon: <Sparkles size={32} />,
       desc: t('sectores.list.cosm.desc'),
-      img: 'https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?q=80&w=2070&auto=format&fit=crop',
+      img: '/nave-equinox.jpg.png',
       projects: [
         { id: 5, title: 'Depósitos de Mezcla con Agitador', client: 'Fabricante de Cosmética' }
       ]
@@ -43,7 +43,7 @@ export function Sectores() {
       title: t('sectores.list.quimf.title'),
       icon: <TestTube2 size={32} />,
       desc: t('sectores.list.quimf.desc'),
-      img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop',
+      img: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?q=80&w=2070&auto=format&fit=crop',
       projects: []
     },
     {
@@ -51,7 +51,7 @@ export function Sectores() {
       title: t('sectores.list.quim.title'),
       icon: <Beaker size={32} />,
       desc: t('sectores.list.quim.desc'),
-      img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop',
+      img: '/nave-equinox.jpg.png',
       projects: [
         { id: 1, title: 'Batería de Reactores 5.000L', client: 'Sector Químico' }
       ]
@@ -61,7 +61,7 @@ export function Sectores() {
       title: t('sectores.list.pint.title'),
       icon: <PaintBucket size={32} />,
       desc: t('sectores.list.pint.desc'),
-      img: 'https://images.unsplash.com/photo-1565439390118-bbf3252f238f?q=80&w=2069&auto=format&fit=crop',
+      img: '/nave-equinox.jpg.png',
       projects: []
     },
     {
@@ -70,7 +70,7 @@ export function Sectores() {
       handle: 'petroquimica',
       icon: <Fuel size={32} />,
       desc: t('sectores.list.petro.desc'),
-      img: 'https://images.unsplash.com/photo-1529939440282-72971f486e91?q=80&w=2070&auto=format&fit=crop',
+      img: '/nave-equinox.jpg.png',
       projects: []
     },
     {
@@ -78,7 +78,7 @@ export function Sectores() {
       title: t('sectores.list.asfalto.title'),
       icon: <Droplet size={32} />,
       desc: t('sectores.list.asfalto.desc'),
-      img: 'https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?q=80&w=2070&auto=format&fit=crop',
+      img: '/nave-equinox.jpg.png',
       projects: []
     },
     {
@@ -86,7 +86,7 @@ export function Sectores() {
       title: t('sectores.list.medio.title'),
       icon: <Leaf size={32} />,
       desc: t('sectores.list.medio.desc'),
-      img: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop',
+      img: '/nave-equinox.jpg.png',
       projects: [
         { id: 6, title: 'Decantadores de Acero Inoxidable', client: 'EDAR Municipal' }
       ]
@@ -97,7 +97,7 @@ export function Sectores() {
     <div className="flex flex-col pt-20">
       {/* Header */}
       <section className="bg-brand-dark py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1581094751594-f3d8901f3f71?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity"></div>
+        <div className="absolute inset-0 opacity-10 bg-[url('/nave-equinox.jpg.png')] bg-cover bg-center mix-blend-luminosity"></div>
         <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-display font-extrabold text-white mb-6">
             {t('sectores.heroTitle')}

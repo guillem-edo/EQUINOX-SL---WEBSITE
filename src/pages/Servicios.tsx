@@ -12,42 +12,42 @@ export function Servicios() {
       icon: <Droplets size={32} />,
       title: t('servicios.list.dep.title'),
       desc: t('servicios.list.dep.desc'),
-      img: 'https://images.unsplash.com/photo-1584263347416-85a18a482d99?q=80&w=2070&auto=format&fit=crop'
+      img: '/nave-equinox.jpg.png'
     },
     {
       id: 'medida',
       icon: <Shield size={32} />,
       title: t('servicios.list.medida.title'),
       desc: t('servicios.list.medida.desc'),
-      img: 'https://images.unsplash.com/photo-1565439390118-bbf3252f238f?q=80&w=2069&auto=format&fit=crop'
+      img: '/nave-equinox.jpg.png'
     },
     {
       id: 'skids',
       icon: <Box size={32} />,
       title: t('servicios.list.skids.title'),
       desc: t('servicios.list.skids.desc'),
-      img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop'
+      img: '/nave-equinox.jpg.png'
     },
     {
       id: 'soldadura',
       icon: <Settings size={32} />,
       title: t('servicios.list.sold.title'),
       desc: t('servicios.list.sold.desc'),
-      img: 'https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1974&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 'tuberia',
       icon: <Activity size={32} />,
       title: t('servicios.list.tub.title'),
       desc: t('servicios.list.tub.desc'),
-      img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop'
+      img: '/nave-equinox.jpg.png'
     },
     {
       id: 'montaje',
       icon: <Wrench size={32} />,
       title: t('servicios.list.mont.title'),
       desc: t('servicios.list.mont.desc'),
-      img: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ec3?q=80&w=2070&auto=format&fit=crop'
+      img: '/nave-equinox.jpg.png'
     }
   ];
 

@@ -3,12 +3,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, ShieldCheck, Zap, Settings, FlaskConical, Wheat, Beaker } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { cn } from '../lib/utils';
 
 const HERO_IMAGES = [
-  'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1584263347416-85a18a482d99?q=80&w=2070&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop'
+  '/soldador.png',
+  '/deposito.png'
 ];
 
 export function Home() {
@@ -18,7 +17,7 @@ export function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % HERO_IMAGES.length);
-    }, 10000);
+    }, 15000);
     return () => clearInterval(timer);
   }, []);
 
@@ -33,15 +32,15 @@ export function Home() {
               key={currentImageIndex}
               src={HERO_IMAGES[currentImageIndex]}
               alt="Industrial Background"
-              initial={{ opacity: 0, scale: 1.1 }}
+              initial={{ opacity: 0, scale: 1.05 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 2, ease: "easeInOut" }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
           </AnimatePresence>
-          <div className="absolute inset-0 bg-brand-dark/75 backdrop-blur-[1px]"></div>
+          <div className="absolute inset-0 bg-brand-dark/75 backdrop-blur-[2px]"></div>
           
           {/* Technical Grid Overlay */}
           <div className="absolute inset-0 opacity-10 pointer-events-none" 
@@ -100,9 +99,8 @@ export function Home() {
 
         {/* Technical Micro-labels */}
         <div className="absolute bottom-12 left-12 hidden lg:block text-white/30 font-mono text-[10px] uppercase tracking-widest space-y-2 z-10">
-          <div>LAT: 41.3851° N</div>
-          <div>LON: 2.1734° E</div>
-          <div>EQUINOX INDUSTRIAL SYSTEMS v2.0</div>
+          <div>EQUINOX INDUSTRIAL SYSTEMS</div>
+          <div>Granollers, Cataluña, España</div>
         </div>
 
         {/* Scroll Indicator */}
@@ -137,12 +135,11 @@ export function Home() {
 
       {/* Sectores Section - Redesigned */}
       <section className="py-32 bg-brand-dark text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="flex flex-col lg:flex-row gap-20 items-start">
             <div className="lg:w-1/3 sticky top-32">
               <span className="text-brand-accent font-bold uppercase tracking-[0.3em] text-xs mb-6 block">{t('home.sectoresLabel')}</span>
-              <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-8 leading-tight uppercase tracking-tighter">{t('home.sectoresTitle')}</h2>
+              <h2 className="text-4xl md:text-5xl xl:text-6xl font-display font-extrabold mb-8 leading-tight uppercase tracking-tighter text-white break-words hyphens-auto">{t('home.sectoresTitle')}</h2>
               <p className="text-white/60 text-lg leading-relaxed mb-10">
                 {t('home.sectoresDesc')}
               </p>
@@ -191,7 +188,7 @@ export function Home() {
                   <div className="text-brand-accent mb-8 group-hover:scale-110 transition-transform origin-left">
                     {sector.icon}
                   </div>
-                  <h3 className="font-bold text-2xl mb-4 uppercase tracking-tight">{sector.name}</h3>
+                  <h3 className="font-bold text-2xl mb-4 uppercase tracking-tight text-white">{sector.name}</h3>
                   <p className="text-white/50 leading-relaxed text-sm">{sector.desc}</p>
                 </motion.div>
               ))}
@@ -210,7 +207,12 @@ export function Home() {
               { icon: <Settings size={32} />, title: t('home.features.materiales.title'), desc: t('home.features.materiales.desc'), accent: 'brand-steel' }
             ].map((feature, i) => (
               <div key={i} className="flex flex-col gap-8 p-12 hover:bg-gray-50 transition-colors group">
-                <div className={`w-16 h-16 bg-${feature.accent}/5 flex items-center justify-center rounded-sm text-${feature.accent} group-hover:scale-110 transition-transform`}>
+                <div className={cn(
+                  "w-16 h-16 flex items-center justify-center rounded-sm group-hover:scale-110 transition-transform",
+                  feature.accent === 'brand-accent' && "bg-brand-accent/5 text-brand-accent",
+                  feature.accent === 'brand-dark' && "bg-brand-dark/5 text-brand-dark",
+                  feature.accent === 'brand-steel' && "bg-brand-steel/5 text-brand-steel"
+                )}>
                   {feature.icon}
                 </div>
                 <div>

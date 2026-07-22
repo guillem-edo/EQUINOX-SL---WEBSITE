@@ -18,10 +18,10 @@ interface Project {
 }
 
 const CATEGORY_BACKUPS: Record<string, string> = {
-  depositos: 'https://images.unsplash.com/photo-1584263347416-85a18a482d99?q=80&w=1200&auto=format&fit=crop', // stainless tanks
-  intercambiadores: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1200&auto=format&fit=crop', // tube haz 
-  reactores: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1200&auto=format&fit=crop', // chemical vessel
-  caldereria: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop' // metallurgy shop
+  depositos: '/nave-equinox.jpg.png',
+  intercambiadores: '/nave-equinox.jpg.png',
+  reactores: '/nave-equinox.jpg.png',
+  caldereria: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?q=80&w=1200&auto=format&fit=crop'
 };
 
 // Complete database of 30 physical equipment fabrications grouped by folders
@@ -1288,7 +1288,7 @@ export function Proyectos() {
       <section className="bg-brand-dark text-white py-14 relative overflow-hidden" id="projects_footer_info">
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-3xl">
           <Wrench className="text-brand-accent mx-auto mb-3" size={32} />
-          <h2 className="text-2xl md:text-3xl font-display font-extrabold mb-4 uppercase tracking-wider">
+          <h2 className="text-2xl md:text-3xl font-display font-extrabold mb-4 uppercase tracking-wider text-white">
             {t('proyectos.footerTitle')}
           </h2>
           <p className="text-xs md:text-sm text-white/70 leading-relaxed font-light mb-8 max-w-xl mx-auto">

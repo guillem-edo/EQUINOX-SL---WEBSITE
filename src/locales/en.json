@@ -272,7 +272,7 @@
       "empresa": "Company Name: EQUINOX Equipos Inoxidables SL",
       "nif": "Tax ID: B00000000",
       "domicilio": "Address: Industrial Estate, Main Street 123, 08000 Barcelona",
-      "email": "Email: info@equinox.es",
+      "email": "Email: comercial@equinoxsl.com",
       "tel": "Phone: +34 900 000 000",
       "registro": "Registration Data: Commercial Registry of Barcelona, Volume X, Folio Y, Sheet Z."
     },
@@ -282,7 +282,7 @@
       "finalidad": "Purpose of treatment",
       "finalidadDesc": "The collection and treatment of personal data are intended to manage inquiries and quote requests received through the contact form.",
       "derechos": "Your rights",
-      "derechosDesc": "You have the right to access, rectify, delete, and object to the treatment of your personal data by sending an email to info@equinox.es."
+      "derechosDesc": "You have the right to access, rectify, delete, and object to the treatment of your personal data by sending an email to comercial@equinoxsl.com."
     },
     "cookies": {
       "title": "Cookies Policy",

@@ -11,7 +11,7 @@ export function Empresa() {
       <section className="relative py-24 bg-brand-dark overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <img
-            src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop"
+            src="/trailer_reactor.png"
             alt="Taller de calderería"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -69,15 +69,15 @@ export function Empresa() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative h-[500px] rounded-sm overflow-hidden shadow-2xl"
+              className="flex flex-col rounded-sm overflow-hidden shadow-2xl bg-brand-dark"
             >
               <img
-                src="/nave-equinox.jpg.png"
+                src="/corporativo.png"
                 alt="Nave de Equinox Industrial Systems"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-brand-dark/90 backdrop-blur-sm p-6">
+              <div className="bg-brand-dark p-6 border-t border-white/10">
                 <div className="flex items-center gap-4 text-white">
                   <Award size={40} className="text-brand-accent" />
                   <div>

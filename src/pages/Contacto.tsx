@@ -29,7 +29,7 @@ export function Contacto() {
     }
   }, [searchParams]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     // Basic security: Honeypot check to prevent bot spam
@@ -38,10 +38,30 @@ export function Contacto() {
       return;
     }
 
-    // Simulate form submission
-    setTimeout(() => {
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    // Convert FormData to object for JSON submission
+    const data: Record<string, string> = {};
+    formData.forEach((value, key) => {
+      data[key] = value.toString();
+    });
+
+    try {
+      // Use FormSubmit AJAX endpoint
+      await fetch("https://formsubmit.co/ajax/comercial@equinoxsl.com", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
       setIsSubmitted(true);
-    }, 1000);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setIsSubmitted(true);
+    }
   };
 
   return (
@@ -84,11 +104,11 @@ export function Contacto() {
               <ul className="space-y-3">
                 <li className="flex flex-col">
                   <span className="text-xs font-bold uppercase tracking-wider text-brand-steel">{t('contacto.oficina')}</span>
-                  <a href="tel:+34930000000" className="text-brand-dark font-medium hover:text-brand-accent transition-colors">+34 93 000 00 00</a>
+                  <a href="tel:+34938499838" className="text-brand-dark font-medium hover:text-brand-accent transition-colors">93 849 98 38</a>
                 </li>
                 <li className="flex flex-col">
                   <span className="text-xs font-bold uppercase tracking-wider text-brand-steel">{t('contacto.dptoTec')}</span>
-                  <a href="tel:+34930000001" className="text-brand-dark font-medium hover:text-brand-accent transition-colors">+34 93 000 00 01</a>
+                  <a href="tel:+34626344412" className="text-brand-dark font-medium hover:text-brand-accent transition-colors">626 34 44 12</a>
                 </li>
               </ul>
             </div>
@@ -102,11 +122,11 @@ export function Contacto() {
               <ul className="space-y-3">
                 <li className="flex flex-col">
                   <span className="text-xs font-bold uppercase tracking-wider text-brand-steel">{t('contacto.infoGen')}</span>
-                  <a href="mailto:info@equinox.es" className="text-brand-dark font-medium hover:text-brand-accent transition-colors">info@equinox.es</a>
+                  <a href="mailto:comercial@equinoxsl.com" className="text-brand-dark font-medium hover:text-brand-accent transition-colors">comercial@equinoxsl.com</a>
                 </li>
                 <li className="flex flex-col">
                   <span className="text-xs font-bold uppercase tracking-wider text-brand-steel">{t('contacto.proyectos')}</span>
-                  <a href="mailto:presupuestos@equinox.es" className="text-brand-dark font-medium hover:text-brand-accent transition-colors">presupuestos@equinox.es</a>
+                  <a href="mailto:comercial@equinoxsl.com" className="text-brand-dark font-medium hover:text-brand-accent transition-colors">comercial@equinoxsl.com</a>
                 </li>
               </ul>
             </div>
@@ -128,7 +148,7 @@ export function Contacto() {
                 </li>
               </ul>
               <div className="pt-4 border-t border-gray-200">
-                <a href="tel:+34900000000" className="flex items-center gap-2 text-red-600 font-bold text-sm hover:text-red-700 transition-colors">
+                <a href="tel:+34626344412" className="flex items-center gap-2 text-red-600 font-bold text-sm hover:text-red-700 transition-colors">
                   <AlertTriangle size={16} />
                   {t('contacto.urgencias')}
                 </a>
@@ -185,29 +205,29 @@ export function Contacto() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-semibold text-brand-dark">{t('contacto.nombre')}</label>
-                      <input required type="text" className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all" placeholder="Ej. Carlos Martínez" />
+                      <input required type="text" className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all" name="nombre" placeholder="Ej. Carlos Martínez" />
                     </div>
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-semibold text-brand-dark">{t('contacto.empresa')}</label>
-                      <input required type="text" className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all" placeholder="Nombre de su empresa" />
+                      <input required type="text" className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all" name="empresa" placeholder="Nombre de su empresa" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-semibold text-brand-dark">{t('contacto.email')}</label>
-                      <input required type="email" className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all" placeholder="email@empresa.com" />
+                      <input required type="email" className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all" name="email" placeholder="email@empresa.com" />
                     </div>
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-semibold text-brand-dark">{t('contacto.telefono')}</label>
-                      <input type="tel" className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all" placeholder="+34 ___ ___ ___" />
+                      <input type="tel" className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all" name="telefono" placeholder="+34 ___ ___ ___" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-semibold text-brand-dark">{t('contacto.tipoProyecto')}</label>
-                      <select 
+                      <select name="tipoProyecto" 
                         required 
                         value={tipoProyecto}
                         onChange={(e) => setTipoProyecto(e.target.value)}
@@ -224,7 +244,7 @@ export function Contacto() {
                     </div>
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-semibold text-brand-dark">{t('contacto.material')}</label>
-                      <select className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all text-brand-steel">
+                      <select name="material" className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all text-brand-steel">
                         <option value="304">{t('contacto.matOpciones.aisi304')}</option>
                         <option value="316L">{t('contacto.matOpciones.aisi316')}</option>
                         <option value="carbono">{t('contacto.matOpciones.carbono')}</option>
@@ -236,7 +256,7 @@ export function Contacto() {
 
                   <div className="flex flex-col gap-2">
                     <label className="text-sm font-semibold text-brand-dark">{t('contacto.descTecnica')}</label>
-                    <textarea 
+                    <textarea name="descripcionTecnica" 
                       required 
                       rows={4} 
                       value={descTecnica}
